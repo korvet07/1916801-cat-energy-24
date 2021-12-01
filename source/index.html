@@ -8,7 +8,7 @@
 
 <body class="page__body">
   <header class="page-header">
-    <div class="container">
+    <div class="container page-header__container">
       <a class="page-header__logo logo" href="#">
         <div class="logo__icon"><img class="logo__icon-image" src="../source/img/logo-icon-mobile.svg"
             alt="иконка-логотип магазина" width="34" height="38">
@@ -18,13 +18,18 @@
         </div>
       </a>
       <nav class="main-nav">
-        <button class="main-nav__toggle--open visually-hidden" type="button">
+        <button class="main-nav-toggle main-nav-toggle--open visually-hidden" type="button">
           <span class="visually-hidden">Открыть меню</span>
         </button>
         <ul class="main-nav__list">
-          <li class="main-nav__item"><a class="main-nav__link--current" href="#">Главная</a></li>
-          <li class="main-nav__item"><a class="main-nav__link" href="catalog.html">Каталог продукции</a></li>
-          <li class="main-nav__item"><a class="main-nav__link" href="form.html">Подбор программы</a></li>
+          <li class="main-nav__item">
+            <a class="main-nav__link main-nav__link--current" href="#">Главная</a>
+          </li>
+          <li class="main-nav__item">
+            <a class="main-nav__link" href="catalog.html">Каталог продукции</a>
+          </li>
+          <li class="main-nav__item"><a class="main-nav-link" href="form.html">Подобрать программу</a>
+          </li>
         </ul>
       </nav>
     </div>
@@ -34,9 +39,9 @@
     <span class="page-main__slogan">Занялся собой? Займись котом!</span>
     <div class="page-main__image"> <img src="../source/img/index-can.png" alt="упаковка Cat Energy" width="280"
         height="270"></div>
-    <a class="page-main__button primary-button" href="form.html">Подобрать программу</a>
+    <a class="page-main-button button" href="form.html">Подобрать программу</a>
     <section class="page-main__selection-diet selection-diet">
-      <div class="container">
+      <div class="container selection-diet__container">
         <article class="selection-diet__slimming slimming">
           <div class="slimming__icon"></div>
           <h2 class="slimming__title">Похудение</h2>
@@ -54,14 +59,14 @@
           <p class="fatten__argument">Заработать авторитет среди дворовых котов и даже собак? Серия Cat Energy Pro
             поможет вашему коту нарастить необходимые мышцы!
           </p>
-          <a href="catalog.html" class="fatten__link">каталог pro
+          <a class="fatten__link" href="catalog.html">каталог pro
             <span class="fatten__link-arrow"></span>
           </a>
         </article>
       </div>
     </section>
     <section class="advantages">
-      <div class="container">
+      <div class="container advantages__container">
         <h2 class="advantages__title">Как это работает?</h2>
         <ul class="advantages__list">
           <li class="advantages__item">
@@ -97,7 +102,7 @@
       </div>
     </section>
     <section class="example">
-      <div class="container">
+      <div class="container example__container">
         <h2 class="example__title">Живой пример</h2>
         <p class="example__argument">Борис сбросил 5 кг за 2 месяца, просто заменив свой обычный корм на Cat Energy
           Slim. Отличный результат без изнуряющих тренировок! При этом он не менял своих привычек и по-прежнему спит по
@@ -113,8 +118,8 @@
           <dd class="example__description">затрачено времени</dd>
         </dl>
         <p class="example__profit-wrapper">
-        <span class="example__profit">Затраты на питание:</span>
-        <span class="example__profit-price"> 15 000 РУБ.</span>
+          <span class="example__profit">Затраты на питание:</span>
+          <span class="example__profit-price"> 15 000 РУБ.</span>
         </p>
         <aside class="example__result">
           <input type="radio" id="result-before" name="result" checked>
@@ -127,14 +132,14 @@
       </div>
     </section>
     <section class="address">
-      <div class="container">
+      <div class="container address__container">
         <h2 class="visually-hidden">Адрес магазина</h2>
-        <article class="address__contacts">
-          <p class="address__contacts-dealer">приглашаем <br> к сотрудничеству <br> дилеров!</p>
+        <p class="address__contacts-dealer">приглашаем <br> к сотрудничеству <br> дилеров!</p>
+        <address class="address__contacts">
           <p class="address__contacts-text">ул. Большая <br>
             Конюшенная, д. 19/8 <br>
             Санкт-Петербург</p>
-        </article>
+        </address>
         <div class="address__map"><img class="address__map-image" src="#" alt="">
           <span class="address__map-mark"></span>
         </div>
@@ -142,7 +147,7 @@
     </section>
   </main>
   <footer class="page-footer">
-    <div class="container">
+    <div class="container page-footer__container">
       <a class="page-footer__logo">
         <div class="page-footer__logo-name-shop">
           <img class="page-footer__logo-name-shop-image" src="/source/img/logo-footer-name-shop.svg"
