@@ -1,0 +1,22 @@
+.header-nav {
+  font-family: "Oswald", sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 20px;
+  color: #000000;
+}
+
+.page-header__logo {
+  display: flex;
+  justify-content: space-between;
+}
+
+.header-nav__list {
+  position: absolute;
+  background-color: #ffffff;
+  left: 0;
+  width: 320px;
+  box-sizing: border-box;
+  margin: 0;
+}

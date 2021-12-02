@@ -1,37 +1,38 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html class="page" lang="ru">
 
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>HTML Academy: Кэт энерджи</title>
+  <link rel="stylesheet" href="css/style.css">
 </head>
 
-<body>
+<body class="page__body">
   <header class="page-header">
-    <div class="container page-header__container">
-      <a class="page-header__logo logo" href="index.html">
-        <div class="logo__icon"><img class="logo__icon-image" src="img/logo-icon-mobile.svg"
+    <div class="container container--mob page-header__container">
+      <a class="page-header__logo" href="index.html">
+        <div class="page-header__wrapper-logo"><img class="page-header__image-logo" src="img/logo-icon-mobile.svg"
             alt="иконка-логотип магазина" width="34" height="38">
         </div>
-        <div class="logo__name-shop"><img class="logo__name-shop-image" src="img/logo-header-name-shop.svg"
-            alt="логотип магазина" width="101" height="18">
+        <div class="page-header__name-shop-wrapper"><img class="page-header__name-shop-image"
+            src="img/logo-header-name-shop.svg" alt="логотип магазина" width="101" height="18">
         </div>
       </a>
-      <nav class="main-nav">
-        <button class="main-nav-toggle main-nav-toggle--open visually-hidden" type="button">
+      <nav class="header-nav">
+        <button class="header-nav__toggle header-nav__toggle--open visually-hidden" type="button">
           <span class="visually-hidden">Открыть меню</span>
         </button>
-        <ul class="main-nav__list">
-          <li class="main-nav__item">
-            <a class="main-nav__link" href="index.html">Главная</a>
+        <ul class="header-nav__list">
+          <li class="header-nav__item">
+            <a class="header-nav__link" href="index.html">Главная</a>
           </li>
-          <li class="main-nav__item">
-            <a class="main-nav__link" href="catalog.html">Каталог продукции</a>
+          <li class="header-nav__item">
+            <a class="header-nav__link" href="catalog.html">Каталог продукции</a>
           </li>
-          <li class="main-nav__item">
-            <a class="main-nav__link main-nav__link--current" href="#">Подбор программы</a>
+          <li class="header-nav__item">
+            <a class="header-nav__link header-nav__link--current" href="#">Подбор программы</a>
           </li>
         </ul>
       </nav>
@@ -39,7 +40,7 @@
   </header>
   <main class="main-form">
     <section class="questionnaire">
-      <div class="container questionnaire__container">
+      <div class="container container--mob questionnaire__container">
         <h1 class="questionnaire__title">Подбор программы</h1>
         <p class="questionnaire__filling">Заполните анкету, и мы подберем
           программу питания для вашего кота</p>
@@ -134,26 +135,30 @@
       </div>
     </section>
     <section class="address">
-      <div class="container address__container">
-        <h2 class="visually-hidden">Адрес магазина</h2>
-        <p class="address__dealer">приглашаем <br> к сотрудничеству <br> дилеров!</p>
-        <address class="address__content">
-          ул. Большая <br>
-          Конюшенная, д. 19/8 <br>
-          Санкт-Петербург
-        </address>
-        <div class="address__map"><img class="address__map-image" src="#" alt="">
-          <span class="address__map-mark"></span>
+      <h2 class="visually-hidden">Адрес магазина</h2>
+      <div class="container container--mob container--mob">
+        <div class="address__container">
+          <p class="address__dealer">приглашаем <br> к сотрудничеству <br> дилеров!</p>
+          <address class="address__content">
+            ул. Большая <br>
+            Конюшенная, д. 19/8 <br>
+            Санкт-Петербург
+          </address>
+        </div>
+        <div class="address__map map">
+          <script type="text/javascript" charset="utf-8" async
+            src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A1d593e7e2216e36edefcf5f2ad7742e84e3081fb365b3868cb100803ada3624f&amp;width=320&amp;height=362&amp;lang=ru_RU&amp;scroll=true">
+          </script></span>
         </div>
       </div>
     </section>
   </main>
   <footer class="page-footer">
-    <div class="container page-footer__container">
+    <div class="container container--mob page-footer__container">
       <a class="page-footer__logo">
         <div class="page-footer__logo-name-shop">
-          <img class="page-footer__logo-name-shop-image" src="img/logo-footer-name-shop.svg"
-            alt="логотип магазина" width="128" height="24">
+          <img class="page-footer__logo-name-shop-image" src="img/logo-footer-name-shop.svg" alt="логотип магазина"
+            width="128" height="24">
         </div>
       </a>
       <ul class="page-footer__social-list social">

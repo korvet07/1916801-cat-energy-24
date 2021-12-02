@@ -1,0 +1,31 @@
+.address__container {
+  display: flex;
+  justify-content: space-between;
+  padding: 26px 20px;
+  background-color: $white;
+  box-sizing: border-box;
+}
+
+.address__container--catalog {
+  background-color: #f2f2f2;
+}
+
+.address__content {
+  font-style: normal;
+  line-height: 20px;
+}
+
+.address__dealer {
+  font-family: "Oswald", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 20px;
+  text-transform: uppercase;
+  color: #111111;
+}
+
+.address__map {
+  width: 320px;
+  height: 362px;
+}
