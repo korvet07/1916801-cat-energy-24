@@ -1,5 +1,5 @@
 .header-nav {
-  font-family: "Oswald", sans-serif;
+  font-family: $font-default;
   font-style: normal;
   font-weight: 500;
   font-size: 20px;
@@ -14,7 +14,7 @@
 
 .header-nav__list {
   position: absolute;
-  background-color: #ffffff;
+  background-color: $white;
   left: 0;
   width: 320px;
   box-sizing: border-box;

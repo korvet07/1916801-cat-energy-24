@@ -1,4 +1,6 @@
 @import "global/fonts.scss";
+@import "variables.scss";
+@import "mixins.scss";
 @import "global/page.scss";
 @import "blocks/page-header.scss";
 @import "blocks/container.scss";
@@ -15,4 +17,5 @@
 @import "blocks/addition-item.scss";
 @import "blocks/selection-diet.scss";
 @import "blocks/advantages.scss";
-@import "variables.scss";
+@import "blocks/main-catalog.scss";
+@import "blocks/questionnaire.scss";

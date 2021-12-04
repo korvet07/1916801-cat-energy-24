@@ -2,6 +2,11 @@
   display: block;
   background-color: $basic-green;
   color: $white;
+  text-align: center;
+  text-transform: uppercase;
+  min-height: 40px;
+  min-width: 280px;
+  border: none;
 }
 
 .button--new {

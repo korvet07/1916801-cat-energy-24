@@ -3,11 +3,10 @@
   background: url("../img/bg-image-cat.jpg") center no-repeat,
     $basic-green;
   background-blend-mode: soft-light;
-  font-family: "Oswald",
-    sans-serif;
+  font-family: $font-default;
   font-style: normal;
   font-weight: normal;
-  color: #ffffff;
+  color: $white;
   margin-bottom: 135px;
 }
 
