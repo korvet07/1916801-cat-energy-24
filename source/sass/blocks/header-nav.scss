@@ -19,4 +19,18 @@
   width: 320px;
   box-sizing: border-box;
   margin: 0;
+
+  @include list-default;
+}
+
+.header-nav__link {
+  font-family: $font-default;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 20px;
+  padding: 22px;
+  border-top: 1px solid #e6e6e6;
+  min-height: 66px;
+
+  @include link-default;
 }

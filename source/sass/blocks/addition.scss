@@ -1,5 +1,5 @@
 .addition__list {
-  padding: 25px 20px 35px;
+  @include list-default;
 }
 
 .addition__action {
@@ -12,5 +12,5 @@
 }
 
 .addition__title {
-  margin: 0;
+  @include margin-non;
 }
