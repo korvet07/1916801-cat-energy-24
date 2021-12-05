@@ -1,0 +1,16 @@
+.addition__list {
+  @include list-default;
+}
+
+.addition__action {
+  height: 290px;
+  width: 280px;
+  margin: 0 auto;
+  background: url("../img/bg-addition.png") center no-repeat,
+    $basic-green;
+  background-blend-mode: soft-light;
+}
+
+.addition__title {
+  @include margin-non;
+}

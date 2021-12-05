@@ -1,0 +1,14 @@
+.selection-diet__container {
+  padding-top: 20px;
+}
+
+.selection-diet__link {
+  @include link-default;
+  color: $black;
+  padding: 20px;
+}
+
+.selection-diet__title {
+  @include margin-non;
+  padding: 30px 80px 30px 20px;
+}
