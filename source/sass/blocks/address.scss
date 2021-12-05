@@ -1,0 +1,29 @@
+.address__container {
+  display: flex;
+  justify-content: space-between;
+  padding: 26px 20px;
+  background-color: $white;
+}
+
+.address__container--catalog {
+  background-color: #f2f2f2;
+}
+
+.address__content {
+  font-style: normal;
+  line-height: 20px;
+}
+
+.address__dealer {
+  font-family: $font-default;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 20px;
+  text-transform: uppercase;
+  color: #111111;
+}
+
+.address__map {
+  height: 362px;
+}

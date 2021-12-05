@@ -1,0 +1,35 @@
+.page-main__container {
+  min-height: 302px;
+  background: url("../img/bg-image-cat.jpg") center no-repeat,
+    $basic-green;
+  background-blend-mode: soft-light;
+  font-family: $font-default;
+  font-style: normal;
+  font-weight: normal;
+  color: $white;
+  margin-bottom: 135px;
+}
+
+.page-main__title {
+  font-size: 36px;
+  line-height: 36px;
+}
+
+.page-main__slogan {
+
+  font-size: 14px;
+  line-height: 14px;
+}
+
+.page-main__image {
+  position: absolute;
+  bottom: 0;
+}
+
+.page-main__background {
+  position: relative;
+}
+
+.page-main-button {
+  padding: 10px 44px;
+}
