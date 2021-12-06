@@ -1,8 +1,21 @@
+.address {
+  position: relative;
+}
+
 .address__container {
   display: flex;
   justify-content: space-between;
   padding: 26px 20px;
   background-color: $white;
+
+  @media (min-width: $desktop-width) {
+    width: 565px;
+    height: 198px;
+    position: absolute;
+    bottom: 107px;
+    left: 110px;
+    z-index: 1;
+  }
 }
 
 .address__container--catalog {

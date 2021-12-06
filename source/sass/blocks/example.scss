@@ -1,3 +1,23 @@
 .example__container {
   background-color: #eaeaea;
+
+  @media (min-width: $tablet-width) {
+    background-color: $white;
+  }
+
+  @media (min-width: $desktop-width) {
+    display: flex;
+    background-color: $basic_grey;
+  }
+}
+
+.example__wrapper-item {
+  @media (min-width: $tablet-width) {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  @media (min-width: $desktop-width) {
+    display: block;
+  }
 }

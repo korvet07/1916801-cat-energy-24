@@ -1,4 +1,12 @@
+.page-main__selection-diet {
+  background-color: $white;
+}
+
 .page-main__container {
+  background-color: $white;
+}
+
+.page-main__wrapper {
   min-height: 302px;
   background: url("../img/bg-image-cat.jpg") center no-repeat,
     $basic-green;
@@ -7,29 +15,62 @@
   font-style: normal;
   font-weight: normal;
   color: $white;
-  margin-bottom: 135px;
+  margin-bottom: 138px;
+
+  @media (min-width: $tablet-width) {
+    background-color: $white;
+    margin-bottom: 50px;
+    min-height: auto;
+  }
 }
 
 .page-main__title {
   font-size: 36px;
   line-height: 36px;
+
+  @media (min-width: $desktop-width) {
+    margin-right: 650px;
+  }
 }
 
 .page-main__slogan {
-
   font-size: 14px;
   line-height: 14px;
+
+  @media (min-width: $tablet-width) {
+    color: $black;
+  }
 }
 
 .page-main__image {
   position: absolute;
+  margin: auto;
+  top: 0;
+  left: 0;
+  right: 0;
   bottom: 0;
 }
 
 .page-main__background {
   position: relative;
+  top: -150px;
+
+  @media (min-width: $tablet-width) {
+    position: absolute;
+    top: 300px;
+    left: 100px;
+  }
+
+  @media (min-width: $desktop-width) {
+    left: 600px;
+    z-index: 2;
+  }
 }
 
 .page-main-button {
   padding: 10px 44px;
+
+  @media (min-width: $tablet-width) {
+    position: relative;
+  }
 }
