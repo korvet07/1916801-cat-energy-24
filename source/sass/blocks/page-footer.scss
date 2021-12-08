@@ -1,3 +1,28 @@
 .page-footer__container {
+  min-height: 236px;
   background-color: #f2f2f2;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+
+  @media (min-width: $tablet-width) {
+    flex-direction: row;
+  }
+}
+
+.page-footer__social-list {
+  @include list-default;
+  width: 100%;
+  min-height: 63px;
+  border-bottom: 1px solid #d9d9d9;
+  border-top: 1px solid #d9d9d9;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  @media (min-width: $tablet-width) {
+    justify-content: center;
+    border: none;
+  }
 }

@@ -1,3 +1,58 @@
-.advantages__title {
-  @include margin-non;
+.advantages__container {
+  padding-top: 20px;
+  background-color: $white;
+}
+
+.advantages__list {
+  @include list-default;
+  display: grid;
+  grid-auto-rows: 60px;
+  row-gap: 20px;
+
+  @media (min-width: $tablet-width) {
+    grid-template-columns: repeat(2, auto);
+    grid-auto-rows: 280px;
+    row-gap: 37px;
+    column-gap: 137px;
+  }
+
+  @media (min-width: $desktop-width) {
+    grid-template-columns: repeat(4, auto);
+    column-gap: 77px;
+  }
+}
+
+.advantages__item {
+  height: 60px;
+  display: grid;
+  grid-template-columns: 60px auto;
+  column-gap: 20px;
+
+  @media (min-width: $tablet-width) {
+    grid-template-rows: 40px 80px 31px auto 57px;
+    grid-template-columns: auto;
+    column-gap: 0;
+    height: 100%;
+  }
+}
+
+.advantages__icon {
+  width: 60px;
+  height: 60px;
+  background-color: $basic-green;
+  grid-column: 1/2;
+
+  @media (min-width: $tablet-width) {
+    width: 80px;
+    height: 80px;
+    grid-row: 2/3;
+  }
+}
+
+.advantages__argument {
+  grid-column: 2/3;
+
+  @media (min-width: $tablet-width) {
+    grid-area: 4/1/5/-1;
+  }
 }
