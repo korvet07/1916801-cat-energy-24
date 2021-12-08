@@ -10,7 +10,7 @@
 .header-nav__list {
   @include list-default;
   position: absolute;
-  z-index: 2;
+  z-index: 0;
   background-color: $white;
   left: 0;
   min-width: 320px;
@@ -35,8 +35,9 @@
       right: 0;
       height: 694px;
       width: 720px;
-      background: url("../img/bg-image-cat.jpg") right no-repeat,
+      background: url("../../img/index-background-desktop.jpg") no-repeat,
         $basic-green;
+      background-size: contain;
       background-blend-mode: soft-light;
       z-index: -1;
     }
