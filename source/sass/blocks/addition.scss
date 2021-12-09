@@ -33,31 +33,6 @@
   }
 }
 
-.addition__action {
-  min-height: 290px;
-  min-width: 280px;
-  margin: 0 auto;
-  background: url("../img/bg-addition.png") center no-repeat,
-    $basic-green;
-  background-blend-mode: soft-light;
-
-  @media (min-width: $tablet-width) {
-    min-height: 200px;
-    max-width: 707px;
-  }
-
-  @media (min-width: $desktop-width) {
-    width: 245px;
-    height: 289px;
-  }
-}
-
-.addition__container {
-  @media (min-width: $desktop-width) {
-    display: flex;
-  }
-}
-
 .addition__mark {
   display: inline-block;
   width: 30px;
