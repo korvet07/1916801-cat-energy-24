@@ -1,0 +1,31 @@
+.additional__action {
+  min-height: 290px;
+  min-width: 280px;
+  margin: 0 auto;
+  background: url("../img/bg-addition.png") center no-repeat,
+    $basic-green;
+  background-blend-mode: soft-light;
+
+  @media (min-width: $tablet-width) {
+    min-height: 200px;
+    max-width: 707px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 245px;
+  }
+}
+
+.additional__container {
+  @media (min-width: $desktop-width) {
+    display: flex;
+  }
+}
+
+.additional__list {
+  @include list-default;
+
+  @media (min-width: $desktop-width) {
+    min-width: 895px;
+  }
+}
