@@ -70,8 +70,12 @@
 
 .page-main-button {
   padding: 10px 44px;
+  max-width: 280px;
+
 
   @media (min-width: $tablet-width) {
     position: relative;
+    max-width: 244px;
+    max-height: 54px;
   }
 }

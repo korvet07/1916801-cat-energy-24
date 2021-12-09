@@ -1,3 +1,19 @@
-.main-catalog {
+.main-catalog__container {
   background-color: $white;
+}
+
+.main-catalog__wrapper {
+  @media (min-width: $tablet-width) {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 60px;
+    grid-auto-rows: 511px;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
+  @media (min-width: $desktop-width) {
+    grid-template-columns: repeat(4, 1fr);
+    gap: 63px 80px;
+  }
 }

@@ -1,0 +1,35 @@
+.form {
+  max-width: 630px;
+
+  @media (min-width: $desktop-width) {
+    max-width: none;
+  }
+}
+
+.form__data-cat {
+  border: none;
+  padding: 0;
+}
+
+.form__data-owner {
+  border: none;
+  padding: 0;
+}
+
+.form__owner-comment {
+  border: none;
+  padding: 0;
+}
+
+.form__addition {
+  border: none;
+  padding: 0;
+}
+
+.form__container {
+  @media (min-width: $desktop-width) {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 80px;
+  }
+}

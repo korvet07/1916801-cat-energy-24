@@ -1,8 +1,8 @@
 @import "global/fonts.scss";
 @import "variables.scss";
 @import "mixins.scss";
+@import "blocks/common.scss";
 @import "global/page.scss";
-@import "blocks/title.scss";
 @import "blocks/button.scss";
 @import "blocks/page-header.scss";
 @import "blocks/container.scss";
@@ -15,8 +15,12 @@
 @import "blocks/address.scss";
 @import "blocks/product-card.scss";
 @import "blocks/addition.scss";
-@import "blocks/addition-item.scss";
+@import "blocks/additional-item.scss";
 @import "blocks/selection-diet.scss";
 @import "blocks/advantages.scss";
 @import "blocks/main-catalog.scss";
 @import "blocks/questionnaire.scss";
+@import "blocks/form.scss";
+@import "blocks/control-data.scss";
+@import "blocks/data-owner.scss";
+@import "blocks/additional.scss";
