@@ -1,8 +1,8 @@
 @import "global/fonts.scss";
 @import "variables.scss";
 @import "mixins.scss";
+@import "blocks/common.scss";
 @import "global/page.scss";
-@import "blocks/title.scss";
 @import "blocks/button.scss";
 @import "blocks/page-header.scss";
 @import "blocks/container.scss";
@@ -20,3 +20,6 @@
 @import "blocks/advantages.scss";
 @import "blocks/main-catalog.scss";
 @import "blocks/questionnaire.scss";
+@import "blocks/form.scss";
+@import "blocks/control-data.scss";
+@import "blocks/data-owner.scss";

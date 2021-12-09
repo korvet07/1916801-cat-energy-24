@@ -10,7 +10,7 @@
 .header-nav__list {
   @include list-default;
   position: absolute;
-  z-index: 0;
+  z-index: 1;
   background-color: $white;
   left: 0;
   min-width: 320px;
@@ -23,7 +23,9 @@
     align-items: center;
     justify-content: center;
   }
+}
 
+.header-nav__list--index-bg {
   @media (min-width: $desktop-width) {
     position: relative;
     color: $white;

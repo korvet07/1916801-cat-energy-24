@@ -1,12 +1,75 @@
 .addition__list {
   @include list-default;
+  display: grid;
+  grid-template-rows: repeat(4, 30px);
+  row-gap: 12px;
+  max-width: 148px;
+
+  @media (min-width: $tablet-width) {
+    max-width: 565px;
+    grid-template-columns: repeat(2, 221px);
+    column-gap: 123px;
+    grid-template-rows: repeat(2, 40px);
+    row-gap: 32px;
+  }
+
+  @media (min-width: $desktop-width) {
+    max-width: auto;
+    grid-template-columns: repeat(4, 221px);
+    column-gap: 104px;
+    grid-template-rows: 40px;
+  }
+}
+
+.addition__item {
+  display: grid;
+  grid-template-columns: 30px 1fr;
+  column-gap: 16px;
+
+
+  @media (min-width: $tablet-width) {
+    grid-template-columns: 40px 1fr;
+    column-gap: 19px;
+  }
 }
 
 .addition__action {
-  height: 290px;
-  width: 280px;
+  min-height: 290px;
+  min-width: 280px;
   margin: 0 auto;
   background: url("../img/bg-addition.png") center no-repeat,
     $basic-green;
   background-blend-mode: soft-light;
+
+  @media (min-width: $tablet-width) {
+    min-height: 200px;
+    max-width: 707px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 245px;
+    height: 289px;
+  }
+}
+
+.addition__container {
+  @media (min-width: $desktop-width) {
+    display: flex;
+  }
+}
+
+.addition__mark {
+  display: inline-block;
+  width: 30px;
+  height: 30px;
+  border: 1px solid $special_grey;
+
+  @media (min-width: $tablet-width) {
+    width: 40px;
+    height: 40px;
+  }
+}
+
+.addition__label {
+  align-self: center;
 }

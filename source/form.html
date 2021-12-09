@@ -42,60 +42,64 @@
     <section class="questionnaire">
       <div class="container  questionnaire__container">
         <h1 class="questionnaire__title title">Подбор программы</h1>
-        <p class="questionnaire__filling">Заполните анкету, и мы подберем
+        <p class="questionnaire__filling">Заполните анкету, и мы подберем <br>
           программу питания для вашего кота</p>
-        <form class="questionnaire-form form" action="https://echo.htmlacademy.ru/" method="get">
-          <fieldset class="form__data-cat">
-            <div class="control-data">
-              <label class="control-data__title title" for="cat-name">Имя:* </label>
-              <input class="control-data__input" type="text" id="cat-name" name="cat-name" placeholder="Барсик"
-                required>
-            </div>
-            <div class="control-data">
-              <label class="control-data__title title" for="cat-heft">Вес (кг):* </label>
-              <input class="control-data__input" type="text" id="cat-heft" name="cat-heft" placeholder="7" required>
-            </div>
-            <div class="control-data">
-              <label class="control-data__title title" for="cat-age">Возраст (лет): </label>
-              <input class="control-data__input" type="text" id="cat-age" name="cat-age" placeholder="7">
-            </div>
-          </fieldset>
-          <fieldset class="form__select ">
-            <ul class="form__select-list control-select">
-              <li class="control-select__item">
-                <input class="visually-hidden control-select__input" type="radio" id="slimming-programm"
-                  name="select-programm" value="slimming">
-                <span class="control-select__mark"></span>
-                <label class="control-select__title title" for="slimming-programm">Похудение</label>
-              </li>
-              <li class="control-select__item">
-                <input class="visually-hidden control-select__input" id="fatten-programm" type="radio"
-                  name="select-programm" value="fatten">
-                <span class="control-select__mark"></span>
-                <label class="control-select__title title" for="fatten-programm">Набор массы </label>
-              </li>
-              <li class="control-select__item">
-                <input class="visually-hidden control-select__input" type="radio" id="no-savvy" name="select-programm"
-                  value="no-savvy">
-                <span class="control-select__mark"></span>
-                <label class="control-select__title title" for="no-savvy">Не знаю (Нужен ваш совет)
-                </label>
-              </li>
-            </ul>
-          </fieldset>
-          <fieldset class="form__data-owner ">
+        <form class="questionnaire__form form" action="https://echo.htmlacademy.ru/" method="get">
+          <div class="form__container">
+            <fieldset class="form__data-cat">
+              <div class="control-data">
+                <label class="control-data__title title" for="cat-name">Имя:* </label>
+                <input class="control-data__input" type="text" id="cat-name" name="cat-name" placeholder="Барсик"
+                  required>
+              </div>
+              <div class="control-data">
+                <label class="control-data__title title" for="cat-heft">Вес (кг):* </label>
+                <input class="control-data__input" type="text" id="cat-heft" name="cat-heft" placeholder="7" required>
+              </div>
+              <div class="control-data">
+                <label class="control-data__title title" for="cat-age">Возраст (лет): </label>
+                <input class="control-data__input" type="text" id="cat-age" name="cat-age" placeholder="7">
+              </div>
+            </fieldset>
+            <fieldset class="form__select ">
+              <ul class="form__select-list control-select">
+                <li class="control-select__item">
+                  <input class="visually-hidden control-select__input" type="radio" id="slimming-programm"
+                    name="select-programm" value="slimming">
+                  <span class="control-select__mark"></span>
+                  <label class="control-select__title title" for="slimming-programm">Похудение</label>
+                </li>
+                <li class="control-select__item">
+                  <input class="visually-hidden control-select__input" id="fatten-programm" type="radio"
+                    name="select-programm" value="fatten">
+                  <span class="control-select__mark"></span>
+                  <label class="control-select__title title" for="fatten-programm">Набор массы </label>
+                </li>
+                <li class="control-select__item">
+                  <input class="visually-hidden control-select__input" type="radio" id="no-savvy" name="select-programm"
+                    value="no-savvy">
+                  <span class="control-select__mark"></span>
+                  <label class="control-select__title title" for="no-savvy">Не знаю (Нужен ваш совет)
+                  </label>
+                </li>
+              </ul>
+            </fieldset>
+          </div>
+          <fieldset class="form__data-owner data-owner ">
             <legend class="form-title title">Контактные данные (владельца кота)
             </legend>
-            <div class="data-owner-mail">
-              <label class="data-owner-mail__title title" for="owner-mail">E-mail:* </label>
-              <input class="data-owner-mail__input" type="email" placeholder="kuklachev@gmail.com" id="owner-mail"
-                name="owner-mail" required>
-              <span class="data-owner-mail__icon"></span>
-            </div>
-            <div class="data-owner-tel">
-              <label class="data-owner-tel__title title" for="owner-tel">Телефон:*</label>
-              <input class="data-owner-tel__input" type="tel" name="owner-tel" id="owner-tel"
-                placeholder="8 (960) 900-60-90" required><span class="data-owner-tel__icon"></span>
+            <div class="data-owner__wrapper">
+              <div class="data-owner__mail">
+                <label class="data-owner__mail-title title" for="owner-mail">E-mail:* </label>
+                <input class="data-owner__mail-input" type="email" placeholder="kuklachev@gmail.com" id="owner-mail"
+                  name="owner-mail" required>
+                <span class="data-owner__mail-icon"></span>
+              </div>
+              <div class="data-owner__tel">
+                <label class="data-owner__tel-title title" for="owner-tel">Телефон:*</label>
+                <input class="data-owner__tel-input" type="tel" name="owner-tel" id="owner-tel"
+                  placeholder="8 (960) 900-60-90" required><span class="data-owner__tel-icon"></span>
+              </div>
             </div>
           </fieldset>
           <fieldset class="form__owner-comment">
@@ -103,29 +107,29 @@
             <textarea class="form__owner-comment-input" placeholder="Расскажите обо всех повадках кота"
               name="owner-comment" cols="30" rows="6"></textarea>
           </fieldset>
-          <fieldset class="form__additional additional">
+          <fieldset class="form__addition addition">
             <legend class="form-title title">Дополнительно</legend>
-            <ul class="additional__list">
-              <li class="additional__item">
-                <input class="visually-hidden additional__input" type="checkbox" id="sweetener" name="sweetener"
+            <ul class="addition__list">
+              <li class="addition__item">
+                <input class="visually-hidden addition__input" type="checkbox" id="sweetener" name="sweetener"
                   checked>
-                <span class="additional__mark"></span>
-                <label class="additional__label"> Сахарозаменитель</label>
+                <span class="addition__mark"></span>
+                <label class="addition__label"> Сахарозаменитель</label>
               </li>
-              <li class="additional__item">
-                <input class="visually-hidden additional__input" type="checkbox" id="water" name="water">
-                <span class="additional__mark"></span>
-                <label class="additional__label" for="water">Питьевая вода</label>
+              <li class="addition__item">
+                <input class="visually-hidden addition__input" type="checkbox" id="water" name="water">
+                <span class="addition__mark"></span>
+                <label class="addition__label" for="water">Питьевая вода</label>
               </li>
-              <li class="additional__item">
-                <input class="visually-hidden additional__input" type="checkbox" id="milk" name="milk">
-                <span class="additional__mark"></span>
-                <label class="additional__label" for="milk">Молоко</label>
+              <li class="addition__item">
+                <input class="visually-hidden addition__input" type="checkbox" id="milk" name="milk">
+                <span class="addition__mark"></span>
+                <label class="addition__label" for="milk">Молоко</label>
               </li>
-              <li class="additional__item">
-                <input class="visually-hidden additional__input" type="checkbox" id="vitamins" name="vitamins">
-                <span class="additional__mark"></span>
-                <label class="additional__label" for="vitamins">Витамины</label>
+              <li class="addition__item">
+                <input class="visually-hidden addition__input" type="checkbox" id="vitamins" name="vitamins">
+                <span class="addition__mark"></span>
+                <label class="addition__label" for="vitamins">Витамины</label>
               </li>
             </ul>
           </fieldset>
@@ -136,7 +140,7 @@
     </section>
     <section class="address">
       <h2 class="visually-hidden">Адрес магазина</h2>
-      <div class="container  ">
+      <div class="container address__wrapper">
         <div class="address__container">
           <p class="address__dealer">приглашаем <br> к сотрудничеству <br> дилеров!</p>
           <address class="address__content">
