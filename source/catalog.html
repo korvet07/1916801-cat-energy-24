@@ -13,17 +13,17 @@
   <header class="page-header">
     <div class="container  page-header__container">
       <a class="page-header__logo" href="index.html">
-        <div class="page-header__wrapper-logo"><img class="page-header__image-logo" src="img/logo-icon-mobile.svg"
+        <div class="logo-head__wrapper-icon"><img class="logo__icon" src="img/logo-icon-mobile.svg"
             alt="иконка-логотип магазина" width="34" height="38">
         </div>
-        <div class="page-header__name-shop-wrapper"><img class="page-header__name-shop-image"
+        <div class="logo-head__wrapper-name-shop"><img class="page-header__name-shop-image"
             src="img/logo-header-name-shop.svg" alt="логотип магазина" width="101" height="18">
         </div>
       </a>
-      <nav class="header-nav">
-        <button class="header-nav__toggle header-nav__toggle--open visually-hidden" type="button">
-          <span class="visually-hidden">Открыть меню</span>
-        </button>
+      <button class="page-header__toggle" type="button">
+        <span class="visually-hidden">Открыть меню</span>
+      </button>
+      <nav class="header-nav header-nav--closed">
         <ul class="header-nav__list">
           <li class="header-nav__item">
             <a class="header-nav__link" href="index.html">Главная</a>
@@ -307,12 +307,13 @@
               Санкт-Петербург</p>
           </address>
         </div>
-        <div class="address__map map">
-          <script type="text/javascript" charset="utf-8" async
-            src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A2411c7624a4af825bc890385ed59acbc2e883790caa1d6ea6a73eb78f472fe71&amp;width=100%25&amp;height=362&amp;lang=ru_RU&amp;scroll=true">
-          </script>
-        </div>
       </div>
+      <div class="address__map map">
+        <script type="text/javascript" charset="utf-8" async
+          src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A2411c7624a4af825bc890385ed59acbc2e883790caa1d6ea6a73eb78f472fe71&amp;width=100%25&amp;height=362&amp;lang=ru_RU&amp;scroll=true">
+        </script>
+      </div>
+
     </section>
   </main>
   <footer class="page-footer">
@@ -353,8 +354,8 @@
         </li>
       </ul>
       <div class="page-footer__copyright copyright ">
-        <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">
-          <span class="copyright__link-text">HTMLAcademy</span>
+        <a class="page-footer__copyright-link" href="https://htmlacademy.ru/intensive/adaptive">
+          <span class="page-footer__copyright-link-text">HTMLAcademy</span>
           <svg width="27" height="34" fill="none" xmlns="http://www.w3.org/2000/svg">
             <path
               d="M13.6 0h-.1L0 1.4V26l13.5 8L27 26V1.4L13.6 0Zm11.6 25-11.7 7-11.7-7V15l11.7 6.8v1.3l-8-4.7v1.2l8 4.8v1.3l-8-4.8v1.2l8 4.9 8.1-4.9V17l3.6-2.1V25Zm0-11.5L22 15.3l-1.5 1-7-4.3v1.2l6 3.6-.2.1-.8.5-5-3v1.3l3.9 2.3-1 .6-3-1.7v1.2l2 1.2-2 1.1-11.6-6.8 11.6-7 11.8 6.9Zm0-1.3L13.4 5.3l-11.6 7V3l11.7-1.2L25.2 3v9.2Z"

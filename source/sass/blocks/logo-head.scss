@@ -1,0 +1,30 @@
+.logo-head__wrapper-name-shop {
+  margin: 0 auto;
+
+  @media (min-width: $tablet-width) {
+    margin: 0;
+  }
+}
+
+.logo-head__icon {
+  @media (min-width: $tablet-width) {
+    opacity: 0;
+  }
+}
+
+.logo-head__wrapper-icon {
+  @media (min-width: $tablet-width) {
+    &::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      margin: auto 0;
+      left: 30px;
+      width: 70px;
+      height: 60px;
+      background: url("../../img/logo-tab.svg") center no-repeat;
+      background-size: contain;
+    }
+  }
+}

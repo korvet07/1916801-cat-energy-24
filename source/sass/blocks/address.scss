@@ -5,16 +5,16 @@
 .address__container {
   display: flex;
   justify-content: space-between;
-  padding: 26px 20px;
   background-color: $white;
 
   @media (min-width: $desktop-width) {
     width: 565px;
     height: 198px;
     position: absolute;
-    bottom: 107px;
+    bottom: -260px;
     left: 110px;
     z-index: 1;
+    padding: 50px 80px;
   }
 }
 
@@ -38,5 +38,41 @@
 }
 
 .address__map {
-  height: 362px;
+  max-height: 400px;
+}
+
+.address__map-interactiv {
+  display: block;
+  margin: 0 auto;
+
+  @media (max-width: $desktop-width) {
+    max-width: 100vw;
+  }
+
+  @media (width: $tablet-width) {
+    max-width: $tablet-width;
+  }
+
+  @media (width: $mobile-width) {
+    max-width: $mobile-width;
+  }
+}
+
+.address__contacts-text {
+  font-style: normal;
+  font-size: 14px;
+  line-height: 20px;
+  margin: 26px 0;
+
+  @media (min-width: $desktop-width) {
+    margin: 0;
+  }
+}
+
+.address__contacts-dealer {
+  font-family: $font-default;
+  font-size: 16px;
+  line-height: 20px;
+  text-transform: uppercase;
+  color: #111111;
 }

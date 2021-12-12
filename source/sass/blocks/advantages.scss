@@ -1,3 +1,7 @@
+.advantages {
+  margin-bottom: 50px;
+}
+
 .advantages__container {
   padding-top: 20px;
   background-color: $white;
@@ -8,6 +12,7 @@
   display: grid;
   grid-auto-rows: 60px;
   row-gap: 20px;
+  counter-reset: list1;
 
   @media (min-width: $tablet-width) {
     grid-template-columns: repeat(2, auto);
@@ -34,12 +39,31 @@
     column-gap: 0;
     height: 100%;
   }
+
+  @media (min-width: $tablet-width) {
+    position: relative;
+    list-style-type: none;
+
+    &::after {
+      font-family: $font-default;
+      counter-increment: list1;
+      content: counter(list1) "";
+      position: absolute;
+      text-align: right;
+      line-height: 280px;
+      font-size: 280px;
+      min-height: 280px;
+      min-width: 136px;
+      color: $basic_grey;
+      top: 0;
+      right: 0;
+    }
+  }
 }
 
 .advantages__icon {
   width: 60px;
   height: 60px;
-  background-color: $basic-green;
   grid-column: 1/2;
 
   @media (min-width: $tablet-width) {
@@ -49,8 +73,29 @@
   }
 }
 
+.advantages__icon--num-1 {
+  background: url("../../img/advantages__icon-1.svg") center no-repeat,
+    $basic-green;
+}
+
+.advantages__icon--num-2 {
+  background: url("../../img/advantages__icon-2.svg") center no-repeat,
+    $basic-green;
+}
+
+.advantages__icon--num-3 {
+  background: url("../../img/advantages__icon-3.svg") center no-repeat,
+    $basic-green;
+}
+
+.advantages__icon--num-4 {
+  background: url("../../img/advantages__icon-4.svg") center no-repeat,
+    $basic-green;
+}
+
 .advantages__argument {
   grid-column: 2/3;
+  z-index: 1;
 
   @media (min-width: $tablet-width) {
     grid-area: 4/1/5/-1;
