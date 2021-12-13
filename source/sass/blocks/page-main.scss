@@ -6,7 +6,7 @@
   display: flex;
   flex-direction: column;
   min-height: 302px;
-  background: url("../img/bg-image-cat.jpg") center no-repeat,
+  background: url("../img/bg-image-cat.jpg") center/cover no-repeat,
     $basic-green;
   background-blend-mode: soft-light;
   font-family: $font-default;
