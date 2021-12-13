@@ -103,6 +103,7 @@
     left: 37%;
     top: 45%;
     z-index: 1;
+    transition: all 1s ease-out;
 
     @media (min-width: $tablet-width) {
       width: 34px;
@@ -113,6 +114,7 @@
         $white;
       top: -30%;
       left: 10%;
+      transition: all 1s ease-out;
     }
   }
 
@@ -135,6 +137,7 @@
 .example__result-image-fat {
   display: block;
   margin: 0 auto;
+  transition: all 1s ease-out;
 }
 
 .example__wrapper {
