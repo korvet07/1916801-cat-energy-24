@@ -64,14 +64,37 @@
 
 .example__result-wrap {
   display: flex;
+  justify-content: space-between;
   margin: 0 auto;
+  margin-top: 15px;
+  position: relative;
 
-  @media (max-width: $tablet-width) and(min-width: $tablet-width) {
-    max-width: 590px;
+  &::before {
+    content: "";
+    position: absolute;
+    width: 31%;
+    height: 70%;
+    border: 2px solid $special_grey;
+    border-radius: 6px;
+    background-color: $white;
+    right: 35%;
+    top: 25%;
+  }
+
+  &::after {
+    content: "";
+    position: absolute;
+    width: 12.5%;
+    height: 30%;
+    border-radius: 6px;
+    background-color: $basic-green;
+    left: 37%;
+    top: 45%;
+    z-index: 1;
   }
 
   @media (min-width: $tablet-width) {
-    max-width: 426px;
+
   }
 }
 
@@ -79,13 +102,11 @@
   margin-left: auto;
   font-size: 16px;
   line-height: 20px;
-  flex-grow: 1;
 }
 
 .example__result-before {
   font-size: 16px;
   line-height: 20px;
-  flex-grow: 1;
 }
 
 .example__result-image-fat {
@@ -96,5 +117,43 @@
 .example__wrapper {
   @media (min-width: $desktop-width) {
     max-width: 436px;
+  }
+}
+
+
+.example__result-input-after:checked + .example__result-control-mark {
+  position: relative;
+
+  .example__result-image-fat {
+    opacity: 0;
+    transition: all 1s ease-out;
+  }
+
+  &::after {
+    content: "";
+    position: absolute;
+    width: 280px;
+    height: 232px;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    top: 0;
+    margin: auto;
+    background: url("../../img/cat-skinny.png") center no-repeat;
+    background-size: contain;
+  }
+}
+
+.example__result-input-after:checked ~ .example__result-wrap {
+  &::after {
+    content: "";
+    width: 25%;
+    transition: all 1s ease-out;
+  }
+}
+
+.example__result {
+  @media (min-width: $mobile-width) {
+    max-width: 592px;
   }
 }
