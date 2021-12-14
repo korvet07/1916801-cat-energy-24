@@ -2,39 +2,13 @@
   margin: 0 auto;
 
   @media (max-width: $mobile-width) {
-    margin-left: 20%;
-  }
-
-  @media (min-width: $tablet-width) {
-    margin: 0;
+    margin-left: 57px;
   }
 }
 
-.logo-head__icon {
-  @media (min-width: $tablet-width) {
-    opacity: 0;
-    position: absolute;
-  }
-}
 
 .logo-head__wrapper-icon {
   @media (min-width: $tablet-width) {
-    &::before {
-      content: "";
-      position: absolute;
-      top: 5px;
-      left: 100px;
-      width: 70px;
-      height: 60px;
-      background: url("../../img/logo-tab.svg") center no-repeat;
-      background-size: contain;
-    }
-  }
-
-  @media (min-width: $desktop-width) {
-    &::before {
-      content: "";
-      top: 20px;
-    }
+    margin-right: 10px;
   }
 }

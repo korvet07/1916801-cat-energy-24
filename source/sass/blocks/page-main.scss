@@ -83,9 +83,10 @@
   }
 
   @media (min-width: $desktop-width) {
-    position: absolute;
-    right: 900px;
-    top: 100px;
+    position: relative;
+    width: 552px;
+    height: 500px;
+    top: -240px;
   }
 }
 
@@ -101,5 +102,11 @@
     max-height: 54px;
     top: -600px;
     left: -130px;
+  }
+
+  @media (min-width: $desktop-width) {
+    top: -420px;
+    left: -400px;
+    margin-top: -100px;
   }
 }

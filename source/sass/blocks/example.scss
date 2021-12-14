@@ -7,7 +7,8 @@
   padding-bottom: 40px;
 
   @media (min-width: $tablet-width) {
-    background-color: $white;
+    background-color: #eaeaea;
+    padding: 0;
     padding-bottom: 55px;
   }
 
@@ -140,10 +141,32 @@
   transition: all 1s ease-out;
 }
 
+.example__title {
+  @media (min-width: $tablet-width) {
+    text-align: left;
+    padding: 43px 0 63px 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 0;
+    padding-left: 110px;
+    position: relative;
+    top: -146px;
+  }
+}
+
 .example__wrapper {
+  @media (min-width: $tablet-width) {
+    background-color: $white;
+    border-top: 1px solid #e6e6e6;
+    padding: 0 30px 250px;
+  }
+
   @media (min-width: $desktop-width) {
     max-width: 436px;
     padding-top: 70px;
+    background-color: $basic_grey;
+    border: none;
   }
 }
 
@@ -166,7 +189,7 @@
     bottom: 0;
     top: 0;
     margin: auto;
-    background: url("../../img/cat-skinny.png") center no-repeat;
+    background: url("/img/cat-skinny.png") center no-repeat;
     background-size: contain;
   }
 }
@@ -175,6 +198,10 @@
 .example__result {
   @media (min-width: $mobile-width) {
     max-width: 592px;
+  }
+
+  @media (min-width: $tablet-width) {
+    margin: 0 auto;
   }
 
   @media (min-width: $desktop-width) {

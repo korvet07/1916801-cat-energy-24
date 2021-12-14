@@ -4,7 +4,12 @@
 
   @media (min-width: $tablet-width) {
     display: flex;
-    justify-content: space-between;
+    min-height: 76px;
+    align-items: flex-end;
+  }
+
+  @media (min-width: $desktop-width) {
+    min-height: 107px;
   }
 }
 
@@ -86,14 +91,10 @@
 
 .page-header__logo {
   display: flex;
-  min-height: 66px;
   align-items: center;
+  min-height: 66px;
 
   @media (min-width: $tablet-width) {
-    padding-left: 150px;
-  }
-
-  @media (min-width: $desktop-width) {
-    padding-left: 70px;
+    min-height: 0;
   }
 }

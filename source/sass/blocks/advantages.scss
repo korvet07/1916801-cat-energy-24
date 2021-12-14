@@ -1,5 +1,9 @@
 .advantages {
   margin-bottom: 50px;
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 205px;
+  }
 }
 
 .advantages__container {
@@ -74,22 +78,22 @@
 }
 
 .advantages__icon--num-1 {
-  background: url("../../img/advantages__icon-1.svg") center no-repeat,
+  background: url("/img/advantages__icon-1.svg") center no-repeat,
     $basic-green;
 }
 
 .advantages__icon--num-2 {
-  background: url("../../img/advantages__icon-2.svg") center no-repeat,
+  background: url("/img/advantages__icon-2.svg") center no-repeat,
     $basic-green;
 }
 
 .advantages__icon--num-3 {
-  background: url("../../img/advantages__icon-3.svg") center no-repeat,
+  background: url("/img/advantages__icon-3.svg") center no-repeat,
     $basic-green;
 }
 
 .advantages__icon--num-4 {
-  background: url("../../img/advantages__icon-4.svg") center no-repeat,
+  background: url("/img/advantages__icon-4.svg") center no-repeat,
     $basic-green;
 }
 
