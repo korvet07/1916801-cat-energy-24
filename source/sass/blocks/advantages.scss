@@ -105,3 +105,12 @@
     grid-area: 4/1/5/-1;
   }
 }
+
+.advantages__title {
+  margin-bottom: 40px;
+  text-align: left;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 32px;
+  }
+}
