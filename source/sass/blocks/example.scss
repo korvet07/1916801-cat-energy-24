@@ -1,5 +1,5 @@
 .example {
-  background-color: $white;
+  background-color: $basic_grey;
 }
 
 .example__container {
@@ -167,6 +167,7 @@
     padding-top: 70px;
     background-color: $basic_grey;
     border: none;
+    padding-bottom: 0;
   }
 }
 

@@ -4,12 +4,12 @@
 
   @media (min-width: $tablet-width) {
     padding: 0 30px;
-    max-width: 768px;
+    width: 768px;
     margin: 0 auto;
   }
 
   @media (min-width: $desktop-width) {
     padding: 0 110px;
-    max-width: 1440px;
+    width: 1440px;
   }
 }
