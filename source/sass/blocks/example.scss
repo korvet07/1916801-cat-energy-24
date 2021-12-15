@@ -1,23 +1,225 @@
+.example {
+  background-color: $basic_grey;
+}
+
 .example__container {
   background-color: #eaeaea;
+  padding-bottom: 40px;
 
   @media (min-width: $tablet-width) {
-    background-color: $white;
+    background-color: #eaeaea;
+    padding: 0;
+    padding-bottom: 55px;
   }
 
   @media (min-width: $desktop-width) {
     display: flex;
+    justify-content: space-between;
     background-color: $basic_grey;
+    padding-bottom: 66px;
   }
 }
 
 .example__wrapper-item {
+  display: flex;
+  flex-direction: column;
+
   @media (min-width: $tablet-width) {
     display: flex;
+    flex-direction: row;
     justify-content: space-between;
   }
 
   @media (min-width: $desktop-width) {
     display: block;
+  }
+}
+
+.example__wrap {
+  display: flex;
+  justify-content: space-between;
+}
+
+.example__item {
+  margin: 0;
+  border: 1px solid #cdcdcd;
+
+  @media (min-width: $tablet-width) {
+    &:first-child {
+      margin-right: 42px;
+    }
+  }
+}
+
+.example__description {
+  margin: 0;
+}
+
+.example__number {
+  text-align: center;
+}
+
+.example__profit-wrapper {
+  text-align: center;
+
+  @media (min-width: $desktop-width) {
+    text-align: left;
+  }
+}
+
+.example__result-wrap {
+  display: flex;
+  justify-content: space-between;
+  margin: 0 auto;
+  margin-top: 15px;
+  position: relative;
+
+  &::before {
+    content: "";
+    position: absolute;
+    width: 31%;
+    height: 70%;
+    border: 2px solid $special_grey;
+    border-radius: 6px;
+    background-color: $white;
+    right: 35%;
+    top: 25%;
+
+    @media (min-width: $tablet-width) {
+      width: 72%;
+      height: 15%;
+      right: 15%;
+      top: 45%;
+      background-color: $special_grey;
+    }
+  }
+
+  &::after {
+    content: "";
+    position: absolute;
+    width: 12.5%;
+    height: 30%;
+    border-radius: 6px;
+    background-color: $basic-green;
+    left: 37%;
+    top: 45%;
+    z-index: 1;
+    transition: all 1s ease-out;
+
+    @media (min-width: $tablet-width) {
+      width: 34px;
+      height: 34px;
+      border: 2px solid $special_grey;
+      border-radius: 50%;
+      background: url("../../img/slider-control.svg") center no-repeat,
+        $white;
+      top: -30%;
+      left: 10%;
+      transition: all 1s ease-out;
+    }
+  }
+
+  @media (min-width: $tablet-width) {
+    margin-top: 25px;
+  }
+}
+
+.example__result-after {
+  margin-left: auto;
+  font-size: 16px;
+  line-height: 20px;
+}
+
+.example__result-before {
+  font-size: 16px;
+  line-height: 20px;
+}
+
+.example__result-image-fat {
+  display: block;
+  margin: 0 auto;
+  transition: all 1s ease-out;
+}
+
+.example__title {
+  @media (min-width: $tablet-width) {
+    text-align: left;
+    padding: 43px 0 63px 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 0;
+    padding-left: 110px;
+    position: relative;
+    top: -146px;
+  }
+}
+
+.example__wrapper {
+  @media (min-width: $tablet-width) {
+    background-color: $white;
+    border-top: 1px solid #e6e6e6;
+    padding: 0 30px 250px;
+  }
+
+  @media (min-width: $desktop-width) {
+    max-width: 436px;
+    padding-top: 70px;
+    background-color: $basic_grey;
+    border: none;
+    padding-bottom: 0;
+  }
+}
+
+
+.example__result-input-after:checked + .example__result-control-mark {
+  position: relative;
+
+  .example__result-image-fat {
+    opacity: 0;
+    transition: all 1s ease-out;
+  }
+
+  &::after {
+    content: "";
+    position: absolute;
+    width: 280px;
+    height: 232px;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    top: 0;
+    margin: auto;
+    background: url("/img/cat-skinny.png") center no-repeat;
+    background-size: contain;
+  }
+}
+
+
+.example__result {
+  @media (min-width: $mobile-width) {
+    max-width: 592px;
+  }
+
+  @media (min-width: $tablet-width) {
+    margin: 0 auto;
+  }
+
+  @media (min-width: $desktop-width) {
+    min-width: 592px;
+  }
+}
+
+.example__result-input-after:checked ~ .example__result-wrap {
+  &::after {
+    content: "";
+    width: 25%;
+    transition: all 1s ease-out;
+
+    @media (min-width: $tablet-width) {
+      width: 34px;
+      transform: translateX(1250%);
+      transition: all 1s ease-out;
+    }
   }
 }

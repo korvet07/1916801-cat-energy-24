@@ -1,3 +1,7 @@
+.page-footer {
+  background-color: $basic_grey;
+}
+
 .page-footer__container {
   min-height: 236px;
   background-color: #f2f2f2;
@@ -8,6 +12,12 @@
 
   @media (min-width: $tablet-width) {
     flex-direction: row;
+    min-height: 147px;
+  }
+
+  @media (min-width: $desktop-width) {
+    min-height: 150px;
+    padding: 0 110px;
   }
 }
 
@@ -21,8 +31,31 @@
   align-items: center;
   justify-content: space-between;
 
+  @media (min-width: $mobile-width) {
+    flex-grow: 1;
+  }
+
   @media (min-width: $tablet-width) {
     justify-content: center;
     border: none;
+  }
+}
+
+.page-footer__copyright-link {
+  @include link-default;
+  text-transform: none;
+}
+
+.page-footer__logo {
+  @media (min-width: $mobile-width) {
+    flex-grow: 1;
+    padding-top: 35px;
+  }
+}
+
+
+.page-footer__copyright {
+  @media (min-width: $mobile-width) {
+    flex-grow: 1;
   }
 }

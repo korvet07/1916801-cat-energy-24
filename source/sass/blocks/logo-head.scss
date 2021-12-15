@@ -1,0 +1,14 @@
+.logo-head__wrapper-name-shop {
+  margin: 0 auto;
+
+  @media (max-width: $mobile-width) {
+    margin-left: 57px;
+  }
+}
+
+
+.logo-head__wrapper-icon {
+  @media (min-width: $tablet-width) {
+    margin-right: 10px;
+  }
+}

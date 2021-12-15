@@ -5,23 +5,13 @@
   row-gap: 20px;
 
   @media (min-width: $tablet-width) {
-    padding-top: 526px;
+    padding-top: 0;
+    row-gap: 30px;
   }
 
   @media (min-width: $desktop-width) {
     grid-template-columns: repeat(2, 1fr);
     column-gap: 80px;
     grid-template-rows: 374px;
-    padding-top: 526px;
   }
-}
-
-.selection-diet__link {
-  @include link-default;
-  color: $black;
-  padding: 20px;
-}
-
-.selection-diet__title {
-  padding: 30px 80px 30px 20px;
 }
