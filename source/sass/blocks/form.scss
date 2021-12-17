@@ -12,16 +12,19 @@
 }
 
 .form__data-owner {
+  position: relative;
   border: none;
   padding: 0;
 }
 
 .form__owner-comment {
+  position: relative;
   border: none;
   padding: 0;
 }
 
 .form__addition {
+  position: relative;
   border: none;
   padding: 0;
 }
@@ -32,4 +35,88 @@
     grid-template-columns: 1fr 1fr;
     column-gap: 80px;
   }
+}
+
+.form__select {
+  position: relative;
+  border: none;
+  padding: 0;
+
+  &::after,
+  &::before {
+    content: "";
+    position: absolute;
+    height: 2px;
+    left: -20px;
+    right: -20px;
+    background-color: #d9d9d9;
+  }
+}
+
+.form__select-list {
+  min-height: 157px;
+}
+
+.form-title {
+  font-size: 24px;
+  line-height: 26px;
+  text-transform: none;
+  text-align: left;
+  max-width: 187px;
+  padding-top: 26px;
+  padding-bottom: 35px;
+
+  &::after {
+    content: "";
+    position: absolute;
+    height: 2px;
+    background-color: $basic-green;
+    top: 40px;
+    right: -20px;
+    left: 201px;
+  }
+
+  &--addition {
+    &::after {
+      left: 167px;
+    }
+  }
+
+  &--comment {
+    padding: 0;
+    padding-bottom: 38px;
+
+    &::after {
+      left: 143px;
+      top: 14px;
+    }
+  }
+}
+
+.form__owner-comment-input {
+  min-width: 280px;
+  min-height: 150px;
+
+  &::placeholder {
+    font-family: $font-default;
+    font-size: 16px;
+    line-height: 18px;
+    text-transform: uppercase;
+    color: #444444;
+    text-align: center;
+  }
+}
+
+.form__submit {
+  min-width: 280px;
+  margin: 0 auto;
+  margin-bottom: 20px;
+}
+
+.form__note {
+  display: block;
+  line-height: 16px;
+  color: $black;
+  text-align: center;
+  margin-bottom: 32px;
 }

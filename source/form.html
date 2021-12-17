@@ -11,28 +11,28 @@
 
 <body class="page__body">
   <header class="page-header">
-    <div class="container  page-header__container">
-      <a class="page-header__logo" href="index.html">
-        <div class="logo-head__wrapper-icon"><img class="logo__icon" src="img/logo-icon-mobile.svg"
+    <div class="container  page-header__container page-header__container--closed page-header__container--nojs">
+      <a class="page-header__logo logo-head" href="index.html">
+        <div class="logo-head__wrapper-icon"><img class="logo-head__icon" src="img/logo-icon-mobile.svg"
             alt="иконка-логотип магазина" width="34" height="38">
         </div>
         <div class="logo-head__wrapper-name-shop"><img class="page-header__name-shop-image"
             src="img/logo-header-name-shop.svg" alt="логотип магазина" width="101" height="18">
         </div>
       </a>
-      <button class="page-header__toggle" type="button">
+      <button class="page-header__toggle" type="button" tabindex="1">
         <span class="visually-hidden">Открыть меню</span>
       </button>
-      <nav class="header-nav header-nav--closed">
+      <nav class="header-nav">
         <ul class="header-nav__list">
           <li class="header-nav__item">
             <a class="header-nav__link" href="index.html">Главная</a>
           </li>
           <li class="header-nav__item">
-            <a class="header-nav__link" href="catalog.html">Каталог продукции</a>
+            <a class="header-nav__link header-nav__link--current" href="#">Каталог продукции</a>
           </li>
-          <li class="header-nav__item">
-            <a class="header-nav__link header-nav__link--current" href="#">Подбор программы</a>
+          <li class="header-nav__item"><a class="header-nav__link" href="form.html">Подобор
+              программы</a>
           </li>
         </ul>
       </nav>
@@ -85,30 +85,29 @@
               </ul>
             </fieldset>
           </div>
-          <fieldset class="form__data-owner data-owner ">
+          <fieldset class="form__data-owner ">
             <legend class="form-title title">Контактные данные (владельца кота)
             </legend>
-            <div class="data-owner__wrapper">
-              <div class="data-owner__mail">
-                <label class="data-owner__mail-title title" for="owner-mail">E-mail:* </label>
-                <input class="data-owner__mail-input" type="email" placeholder="kuklachev@gmail.com" id="owner-mail"
-                  name="owner-mail" required>
-                <span class="data-owner__mail-icon"></span>
-              </div>
-              <div class="data-owner__tel">
-                <label class="data-owner__tel-title title" for="owner-tel">Телефон:*</label>
-                <input class="data-owner__tel-input" type="tel" name="owner-tel" id="owner-tel"
-                  placeholder="8 (960) 900-60-90" required><span class="data-owner__tel-icon"></span>
-              </div>
+            <div class="control-data">
+              <label class="control-data__title title" for="owner-mail">E-mail:* </label>
+              <input class="control-data__input" type="email" placeholder="kuklachev@gmail.com" id="owner-mail"
+                name="owner-mail" required>
+              <span class="control-data__mail-icon"></span>
+            </div>
+            <div class="control-data">
+              <label class="control-data__title title" for="owner-tel">Телефон:*</label>
+              <input class="control-data__input" type="tel" name="owner-tel" id="owner-tel"
+                placeholder="8 (960) 900-60-90" required>
+                <span class="control-data__tel-icon"></span>
             </div>
           </fieldset>
-          <fieldset class="form__owner-comment">
-            <legend class="form-title title">Комментарий</legend>
+          <fieldset class="form__owner-comment ">
+            <legend class="form-title form-title--comment title">Комментарий</legend>
             <textarea class="form__owner-comment-input" placeholder="Расскажите обо всех повадках кота"
               name="owner-comment" cols="30" rows="6"></textarea>
           </fieldset>
           <fieldset class="form__addition addition">
-            <legend class="form-title title">Дополнительно</legend>
+            <legend class="form-title form-title--addition title">Дополнительно</legend>
             <ul class="addition__list">
               <li class="addition__item">
                 <input class="visually-hidden addition__input" type="checkbox" id="sweetener" name="sweetener" checked>
@@ -132,8 +131,8 @@
               </li>
             </ul>
           </fieldset>
-          <button class="main-form-submit button" type="submit">Отправит заявку</button>
-          <span class="main-form__note" title="обязательные поля помечены *">* — Обязательные поля</span>
+          <button class="form__submit button" type="submit">Отправить заявку</button>
+          <span class="form__note" title="обязательные поля помечены *">* — Обязательные поля</span>
         </form>
       </div>
     </section>
@@ -205,6 +204,7 @@
       </div>
     </div>
   </footer>
+  <script src="js/script.js"></script>
 </body>
 
 </html>

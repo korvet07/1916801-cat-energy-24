@@ -1,0 +1,47 @@
+.control-select {
+  @include list-default;
+  display: grid;
+  margin-top: 22px;
+  grid-auto-rows: 30px;
+  row-gap: 13px;
+}
+
+.control-select__item {
+  display: grid;
+  grid-template-columns: 30px max-content;
+  column-gap: 15px;
+}
+
+.control-select__title {
+  font-family: $font-default;
+  font-size: 16px;
+  line-height: 18px;
+  color: $special_dark-grey-2;
+  grid-column: 2/3;
+  align-self: center;
+}
+
+.control-select__mark {
+  position: relative;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  border: 1px solid $special_grey;
+  grid-column: 1/2;
+}
+
+.control-select__input:checked + .control-select__mark {
+  &::before {
+    content: "";
+    position: absolute;
+    width: 14px;
+    height: 14px;
+    background-color: $basic-green;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    border-radius: 50%;
+  }
+}
