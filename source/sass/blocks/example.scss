@@ -1,5 +1,9 @@
 .example {
   background-color: $basic_grey;
+
+  @media (min-width: $tablet-width) {
+    background-color: $white;
+  }
 }
 
 .example__container {

@@ -98,3 +98,31 @@
     min-height: 0;
   }
 }
+
+.page-header {
+  position: relative;
+
+  &::before {
+    content: "";
+    position: absolute;
+    width: 100vw;
+    height: 1px;
+    background-color: #d9d9d9;
+    bottom: 0;
+    z-index: 1;
+  }
+
+  &--index {
+    &::before {
+      content: "";
+      display: none;
+    }
+  }
+
+  @media (min-width: $tablet-width) {
+    &::before {
+      content: "";
+      display: none;
+    }
+  }
+}

@@ -1,11 +1,34 @@
 .address__wrapper {
   position: relative;
+  min-width: 320px;
+  background-color: $basic_grey;
+
+  &--index {
+    background-color: $white;
+  }
+
+  @media (min-width: $tablet-width) {
+    &--index {
+      background-color: $white;
+    }
+  }
 }
 
 .address__container {
   display: flex;
   justify-content: space-between;
-  background-color: $white;
+  background-color: #f2f2f2;
+  padding: 26px 20px;
+
+  &--index {
+    background-color: $white;
+  }
+
+  @media (min-width: $tablet-width) {
+    max-width: 768px;
+    margin: 0 auto;
+    padding: 55px 70px;
+  }
 
   @media (min-width: $desktop-width) {
     width: 565px;
@@ -16,10 +39,6 @@
     z-index: 1;
     padding: 50px 80px;
   }
-}
-
-.address__container--catalog-bg {
-  background-color: #f2f2f2;
 }
 
 .address__content {
