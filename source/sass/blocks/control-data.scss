@@ -35,6 +35,13 @@
     font-family: $font-default;
     font-size: 16px;
     line-height: 18px;
+    text-transform: uppercase;
+    color: $special_dark-grey;
+
+    @media (min-width: $tablet-width) {
+      font-size: 20px;
+      line-height: 30px;
+    }
   }
 }
 

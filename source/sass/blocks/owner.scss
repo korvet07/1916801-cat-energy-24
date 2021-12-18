@@ -1,0 +1,8 @@
+.owner__wrap {
+  @media (min-width: $desktop-width) {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 78px;
+    grid-template-rows: 52px;
+  }
+}

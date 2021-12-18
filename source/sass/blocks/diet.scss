@@ -28,7 +28,7 @@
   &--fatten {
     width: 67px;
     height: 53px;
-    background: url("../../img/fatten-icon-mob.png") center no-repeat;
+    background: url("../../img/fatten-icon-mob.svg") center no-repeat;
     background-size: contain;
 
     @media (min-width: $tablet-width) {
@@ -40,7 +40,7 @@
   &--slimming {
     width: 50px;
     height: 53px;
-    background: url("/img/slimming-icon-mob.png") center no-repeat;
+    background: url("../../img/slimming-icon-mob.svg") center no-repeat;
     background-size: contain;
 
     @media (min-width: $tablet-width) {

@@ -185,6 +185,8 @@
     text-align: center;
 
     @media (min-width: $tablet-width) {
+      font-size: 20px;
+      line-height: 30px;
       text-align: left;
     }
   }
