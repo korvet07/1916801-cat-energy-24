@@ -11,7 +11,8 @@
 
 <body class="page__body">
   <header class="page-header">
-    <div class="container  page-header__container page-header__container--closed page-header__container--nojs">
+    <div
+      class="container container--short  page-header__container page-header__container--closed page-header__container--nojs">
       <a class="page-header__logo logo-head" href="index.html">
         <div class="logo-head__wrapper-icon"><img class="logo-head__icon" src="img/logo-icon-mobile.svg"
             alt="иконка-логотип магазина" width="34" height="38">
@@ -29,9 +30,9 @@
             <a class="header-nav__link" href="index.html">Главная</a>
           </li>
           <li class="header-nav__item">
-            <a class="header-nav__link header-nav__link--current" href="#">Каталог продукции</a>
+            <a class="header-nav__link header-nav__link" href="catalog.html">Каталог продукции</a>
           </li>
-          <li class="header-nav__item"><a class="header-nav__link" href="form.html">Подобор
+          <li class="header-nav__item"><a class="header-nav__link header-nav__link--current" href="#">Подобор
               программы</a>
           </li>
         </ul>
@@ -61,7 +62,7 @@
                 <input class="control-data__input" type="text" id="cat-age" name="cat-age" placeholder="7">
               </div>
             </fieldset>
-            <fieldset class="form__select ">
+            <fieldset class="form__select">
               <ul class="form__select-list control-select">
                 <li class="control-select__item">
                   <input class="visually-hidden control-select__input" type="radio" id="slimming-programm"
@@ -85,20 +86,22 @@
               </ul>
             </fieldset>
           </div>
-          <fieldset class="form__data-owner ">
+          <fieldset class="form__data-owner owner">
             <legend class="form-title title">Контактные данные (владельца кота)
             </legend>
-            <div class="control-data">
-              <label class="control-data__title title" for="owner-mail">E-mail:* </label>
-              <input class="control-data__input" type="email" placeholder="kuklachev@gmail.com" id="owner-mail"
-                name="owner-mail" required>
-              <span class="control-data__mail-icon"></span>
-            </div>
-            <div class="control-data">
-              <label class="control-data__title title" for="owner-tel">Телефон:*</label>
-              <input class="control-data__input" type="tel" name="owner-tel" id="owner-tel"
-                placeholder="8 (960) 900-60-90" required>
+            <div class="owner__wrap">
+              <div class="control-data">
+                <label class="control-data__title title" for="owner-mail">E-mail:* </label>
+                <input class="control-data__input" type="email" placeholder="kuklachev@gmail.com" id="owner-mail"
+                  name="owner-mail" required>
+                <span class="control-data__mail-icon"></span>
+              </div>
+              <div class="control-data">
+                <label class="control-data__title title" for="owner-tel">Телефон:*</label>
+                <input class="control-data__input" type="tel" name="owner-tel" id="owner-tel"
+                  placeholder="8 (960) 900-60-90" required>
                 <span class="control-data__tel-icon"></span>
+              </div>
             </div>
           </fieldset>
           <fieldset class="form__owner-comment ">
@@ -131,8 +134,10 @@
               </li>
             </ul>
           </fieldset>
-          <button class="form__submit button" type="submit">Отправить заявку</button>
-          <span class="form__note" title="обязательные поля помечены *">* — Обязательные поля</span>
+          <div class="form__wrap">
+            <button class="form__submit button" type="submit">Отправить заявку</button>
+            <span class="form__note" title="обязательные поля помечены *">* — Обязательные поля</span>
+          </div>
         </form>
       </div>
     </section>

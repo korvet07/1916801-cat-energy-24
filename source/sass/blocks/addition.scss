@@ -59,6 +59,11 @@
     left: 0;
     right: 0;
     margin: auto;
+
+    @media (min-width: $tablet-width) {
+      width: 24px;
+      height: 18px;
+    }
   }
 }
 

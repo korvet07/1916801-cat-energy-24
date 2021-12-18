@@ -4,12 +4,21 @@
   margin-top: 22px;
   grid-auto-rows: 30px;
   row-gap: 13px;
+
+  @media (min-width: $tablet-width) {
+    grid-auto-rows: 40px;
+  }
 }
 
 .control-select__item {
   display: grid;
   grid-template-columns: 30px max-content;
   column-gap: 15px;
+
+  @media (min-width: $tablet-width) {
+    grid-template-columns: 40px max-content;
+    column-gap: 20px;
+  }
 }
 
 .control-select__title {
@@ -28,6 +37,11 @@
   border-radius: 50%;
   border: 1px solid $special_grey;
   grid-column: 1/2;
+
+  @media (min-width: $tablet-width) {
+    width: 40px;
+    height: 40px;
+  }
 }
 
 .control-select__input:checked + .control-select__mark {
@@ -43,5 +57,10 @@
     right: 0;
     margin: auto;
     border-radius: 50%;
+
+    @media (min-width: $tablet-width) {
+      width: 18px;
+      height: 18px;
+    }
   }
 }

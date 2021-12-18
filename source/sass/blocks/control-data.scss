@@ -10,6 +10,14 @@
   &:last-child {
     margin-bottom: 24px;
   }
+
+  @media (min-width: $desktop-width) {
+    margin: 0;
+
+    &:last-child {
+      margin: 0;
+    }
+  }
 }
 
 .control-data__title {
@@ -22,6 +30,12 @@
 .control-data__input {
   border: 2px solid #e7e7e7;
   padding: 0 16px;
+
+  &::placeholder {
+    font-family: $font-default;
+    font-size: 16px;
+    line-height: 18px;
+  }
 }
 
 .control-data__mail-icon {

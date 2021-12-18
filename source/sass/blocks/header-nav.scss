@@ -6,11 +6,14 @@
   line-height: 20px;
   color: #000000;
 
+
   @media (min-width: $tablet-width) {
     margin-left: 94px;
+    flex-grow: 1;
   }
 
   @media (min-width: $desktop-width) {
+    flex-grow: 0;
     margin-left: auto;
   }
 }
@@ -28,7 +31,6 @@
 
   @media (min-width: $tablet-width) {
     position: static;
-    align-items: center;
   }
 
   @media (min-width: $desktop-width) {
@@ -72,6 +74,7 @@
 
     &:last-child {
       margin-right: 0;
+      margin-left: auto;
     }
   }
 }
