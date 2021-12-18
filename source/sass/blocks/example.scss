@@ -4,6 +4,10 @@
   @media (min-width: $tablet-width) {
     background-color: $white;
   }
+
+  @media (min-width: $desktop-width) {
+    background-color: $basic_grey;
+  }
 }
 
 .example__container {
@@ -13,7 +17,6 @@
   @media (min-width: $tablet-width) {
     background-color: #eaeaea;
     padding: 0;
-    padding-bottom: 55px;
   }
 
   @media (min-width: $desktop-width) {
@@ -206,7 +209,9 @@
   }
 
   @media (min-width: $tablet-width) {
+    position: relative;
     margin: 0 auto;
+    padding-bottom: 55px;
   }
 
   @media (min-width: $desktop-width) {
