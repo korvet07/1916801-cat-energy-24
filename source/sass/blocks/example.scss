@@ -12,7 +12,7 @@
 
 .example__container {
   background-color: #eaeaea;
-  padding-bottom: 40px;
+  padding: 0 20px 40px 20px;
 
   @media (min-width: $tablet-width) {
     background-color: #eaeaea;
@@ -24,6 +24,8 @@
     justify-content: space-between;
     background-color: $basic_grey;
     padding-bottom: 66px;
+    max-width: 1440px;
+    margin: 0 auto;
   }
 }
 
@@ -45,13 +47,20 @@
 .example__wrap {
   display: flex;
   justify-content: space-between;
+  margin-bottom: 15px;
 }
 
 .example__item {
   margin: 0;
   border: 1px solid #cdcdcd;
+  width: 124px;
+  height: 56px;
+  text-align: center;
 
   @media (min-width: $tablet-width) {
+    width: 162px;
+    height: 75px;
+
     &:first-child {
       margin-right: 42px;
     }
@@ -59,15 +68,42 @@
 }
 
 .example__description {
-  margin: 0;
+  display: inline-block;
+  line-height: 14px;
+  margin: 0 auto;
+  position: relative;
+  bottom: -10px;
+
+  @media (min-width: $tablet-width) {
+    bottom: -16px;
+  }
 }
 
 .example__number {
+  font-family: $font-default;
+  font-size: 24px;
+  line-height: 24px;
   text-align: center;
+  color: $black;
+  padding-top: 10px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 30px;
+    line-height: 37px;
+  }
 }
 
 .example__profit-wrapper {
   text-align: center;
+  font-family: $font-default;
+  font-size: 14px;
+  line-height: 20px;
+  text-transform: uppercase;
+  color: #000000;
+
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+  }
 
   @media (min-width: $desktop-width) {
     text-align: left;
@@ -149,6 +185,8 @@
 }
 
 .example__title {
+  padding-top: 10px;
+
   @media (min-width: $tablet-width) {
     text-align: left;
     padding: 43px 0 63px 0;
@@ -206,6 +244,7 @@
 .example__result {
   @media (min-width: $mobile-width) {
     max-width: 592px;
+    margin: 0 auto;
   }
 
   @media (min-width: $tablet-width) {
@@ -230,5 +269,13 @@
       transform: translateX(1250%);
       transition: all 1s ease-out;
     }
+  }
+}
+
+.example__argument {
+  @media (min-width: $tablet-width) {
+    font-size: 16px;
+    line-height: 24px;
+    color: #000000;
   }
 }

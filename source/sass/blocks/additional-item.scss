@@ -13,6 +13,11 @@
     border: 1px solid $special_grey;
     max-width: 708px;
     padding: 27px 38px;
+    margin-bottom: 0;
+
+    &:not(:last-child) {
+      border-bottom: none;
+    }
   }
 
   @media (min-width: $desktop-width) {
@@ -50,6 +55,7 @@
 
   @media (min-width: $desktop-width) {
     align-self: center;
+    margin-bottom: 0;
   }
 }
 
@@ -80,12 +86,13 @@
     display: flex;
     flex-grow: 1;
     align-items: center;
+    margin-bottom: 0;
   }
 }
 
 .additional-item__price {
-  @media (min-width: $desktop-width) {
-    margin-right: 38px;
+  @media (min-width: $tablet-width) {
+    margin-left: 50px;
   }
 }
 
