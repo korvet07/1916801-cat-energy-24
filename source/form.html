@@ -46,46 +46,45 @@
         <p class="questionnaire__filling">Заполните анкету, и мы подберем <br>
           программу питания для вашего кота</p>
         <form class="questionnaire__form form" action="https://echo.htmlacademy.ru/" method="get">
-          <div class="form__container">
-            <fieldset class="form__data-cat">
-              <div class="control-data">
-                <label class="control-data__title title" for="cat-name">Имя:* </label>
-                <input class="control-data__input" type="text" id="cat-name" name="cat-name" placeholder="Барсик"
-                  required>
-              </div>
-              <div class="control-data">
-                <label class="control-data__title title" for="cat-heft">Вес (кг):* </label>
-                <input class="control-data__input" type="text" id="cat-heft" name="cat-heft" placeholder="7" required>
-              </div>
-              <div class="control-data">
-                <label class="control-data__title title" for="cat-age">Возраст (лет): </label>
-                <input class="control-data__input" type="text" id="cat-age" name="cat-age" placeholder="7">
-              </div>
-            </fieldset>
-            <fieldset class="form__select">
-              <ul class="form__select-list control-select">
-                <li class="control-select__item">
-                  <input class="visually-hidden control-select__input" type="radio" id="slimming-programm"
-                    name="select-programm" value="slimming">
-                  <span class="control-select__mark"></span>
-                  <label class="control-select__title title" for="slimming-programm">Похудение</label>
-                </li>
-                <li class="control-select__item">
-                  <input class="visually-hidden control-select__input" id="fatten-programm" type="radio"
-                    name="select-programm" value="fatten">
-                  <span class="control-select__mark"></span>
-                  <label class="control-select__title title" for="fatten-programm">Набор массы </label>
-                </li>
-                <li class="control-select__item">
-                  <input class="visually-hidden control-select__input" type="radio" id="no-savvy" name="select-programm"
-                    value="no-savvy">
-                  <span class="control-select__mark"></span>
-                  <label class="control-select__title title" for="no-savvy">Не знаю (Нужен ваш совет)
-                  </label>
-                </li>
-              </ul>
-            </fieldset>
-          </div>
+          <fieldset class="form__data-cat">
+            <div class="control-data">
+              <label class="control-data__title title" for="cat-name">Имя:* </label>
+              <input class="control-data__input" type="text" id="cat-name" name="cat-name" placeholder="Барсик"
+                required>
+            </div>
+            <div class="control-data">
+              <label class="control-data__title title" for="cat-heft">Вес (кг):* </label>
+              <input class="control-data__input" type="text" id="cat-heft" name="cat-heft" placeholder="7" required>
+            </div>
+            <div class="control-data">
+              <label class="control-data__title title" for="cat-age">Возраст (лет): </label>
+              <input class="control-data__input control-data__input--last" type="text" id="cat-age" name="cat-age"
+                placeholder="7">
+            </div>
+          </fieldset>
+          <fieldset class="form__select">
+            <ul class="form__select-list control-select">
+              <li class="control-select__item">
+                <input class="visually-hidden control-select__input" type="radio" id="slimming-programm"
+                  name="select-programm" value="slimming">
+                <span class="control-select__mark"></span>
+                <label class="control-select__title title" for="slimming-programm">Похудение</label>
+              </li>
+              <li class="control-select__item">
+                <input class="visually-hidden control-select__input" id="fatten-programm" type="radio"
+                  name="select-programm" value="fatten">
+                <span class="control-select__mark"></span>
+                <label class="control-select__title title" for="fatten-programm">Набор массы </label>
+              </li>
+              <li class="control-select__item">
+                <input class="visually-hidden control-select__input" type="radio" id="no-savvy" name="select-programm"
+                  value="no-savvy">
+                <span class="control-select__mark"></span>
+                <label class="control-select__title title" for="no-savvy">Не знаю (Нужен ваш совет)
+                </label>
+              </li>
+            </ul>
+          </fieldset>
           <fieldset class="form__data-owner owner">
             <legend class="form-title title">Контактные данные (владельца кота)
             </legend>

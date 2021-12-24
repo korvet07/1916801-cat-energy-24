@@ -1,18 +1,17 @@
 .control-data {
   position: relative;
-  min-width: 280px;
   display: grid;
   grid-template-columns: max-content 1fr;
   column-gap: 12px;
-  grid-template-rows: 46px;
-  margin-bottom: 14px;
+  width: 280px;
 
-  &:last-child {
-    margin-bottom: 24px;
+  @media (min-width: 321px) {
+    width: auto;
   }
 
   @media (min-width: $desktop-width) {
     margin: 0;
+    max-width: auto;
 
     &:last-child {
       margin: 0;
@@ -30,6 +29,14 @@
 .control-data__input {
   border: 2px solid #e7e7e7;
   padding: 0 16px;
+
+  &--last {
+    width: 174px;
+
+    @media (min-width: 321px) {
+      width: auto;
+    }
+  }
 
   &::placeholder {
     font-family: $font-default;

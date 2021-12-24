@@ -70,7 +70,7 @@
 .example__description {
   display: inline-block;
   line-height: 14px;
-  margin: 0 auto;
+  margin: 0 15px;
   position: relative;
   bottom: -10px;
 
@@ -154,7 +154,7 @@
       height: 34px;
       border: 2px solid $special_grey;
       border-radius: 50%;
-      background: url("../../img/slider-control.svg") center no-repeat,
+      background: url("../img/slider-control.svg") center no-repeat,
         $white;
       top: -30%;
       left: 10%;
@@ -235,7 +235,7 @@
     bottom: 0;
     top: 0;
     margin: auto;
-    background: url("/img/cat-skinny.png") center no-repeat;
+    background: url("../img/cat-skinny.png") center no-repeat;
     background-size: contain;
   }
 }
