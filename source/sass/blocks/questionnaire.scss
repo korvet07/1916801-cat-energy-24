@@ -16,11 +16,18 @@
   text-transform: none;
   text-align: left;
   margin-bottom: 37px;
+  margin-top: 27px;
 
   @media (min-width: $tablet-width) {
     font-size: 60px;
     line-height: 60px;
     margin-bottom: 54px;
+    margin-top: 64px;
+  }
+
+  @media (min-width: $tablet-width) {
+    margin-top: 73px;
+    margin-bottom: 56px;
   }
 }
 

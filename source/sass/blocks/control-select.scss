@@ -1,9 +1,10 @@
 .control-select {
   @include list-default;
   display: grid;
-  margin-top: 22px;
-  grid-auto-rows: 30px;
+  margin-top: 26px;
+  grid-template-rows: repeat(3, 30px);
   row-gap: 13px;
+  padding-bottom: 20px;
 
   @media (min-width: $tablet-width) {
     grid-auto-rows: 40px;

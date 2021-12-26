@@ -32,10 +32,6 @@
   align-items: center;
   justify-content: space-evenly;
 
-  @media (min-width: $mobile-width) {
-    flex-grow: 1;
-  }
-
   @media (min-width: $tablet-width) {
     justify-content: center;
     border: none;
@@ -54,13 +50,7 @@
 .page-footer__logo {
   @media (min-width: $mobile-width) {
     align-self: center;
-  }
-}
-
-
-.page-footer__copyright {
-  @media (min-width: $mobile-width) {
-    flex-grow: 1;
+    min-height: 95px;
   }
 }
 
@@ -68,4 +58,9 @@
   @media (min-width: $tablet-width) {
     margin-right: 22px;
   }
+}
+
+.page-footer__logo-name-shop-image {
+  display: block;
+  margin-top: 39px;
 }
