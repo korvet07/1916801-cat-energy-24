@@ -28,15 +28,7 @@
 
 .control-data__input {
   border: 2px solid #e7e7e7;
-  padding: 0 16px;
-
-  &--last {
-    width: 174px;
-
-    @media (min-width: 321px) {
-      width: auto;
-    }
-  }
+  padding: 0 5px;
 
   &::placeholder {
     font-family: $font-default;
