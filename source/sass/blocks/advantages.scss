@@ -111,6 +111,8 @@
   text-align: left;
 
   @media (min-width: $tablet-width) {
+    font-size: 60px;
+    line-height: 60px;
     margin-bottom: 32px;
   }
 }

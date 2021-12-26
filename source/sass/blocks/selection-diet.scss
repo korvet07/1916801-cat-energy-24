@@ -5,6 +5,7 @@
   row-gap: 20px;
 
   @media (min-width: $tablet-width) {
+    margin-bottom: 45px;
     padding-top: 0;
     row-gap: 30px;
   }
@@ -13,5 +14,6 @@
     grid-template-columns: repeat(2, 1fr);
     column-gap: 80px;
     grid-template-rows: 374px;
+    margin-bottom: 71px;
   }
 }

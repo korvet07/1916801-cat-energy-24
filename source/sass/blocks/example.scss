@@ -199,13 +199,13 @@
   padding-top: 10px;
 
   @media (min-width: $tablet-width) {
+    font-size: 60px;
+    line-height: 60px;
     text-align: left;
     padding: 43px 0 63px 0;
   }
 
   @media (min-width: $desktop-width) {
-    font-size: 60px;
-    line-height: 60px;
     padding: 0;
     position: relative;
     top: -215px;
