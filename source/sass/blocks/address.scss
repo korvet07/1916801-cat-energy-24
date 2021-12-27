@@ -56,12 +56,8 @@
     left: 110px;
     z-index: 1;
     padding: 50px 80px;
+    align-items: center;
   }
-}
-
-.address__content {
-  font-style: normal;
-  line-height: 20px;
 }
 
 .address__dealer {
@@ -101,7 +97,7 @@
   }
 }
 
-.address__contacts-text {
+.address__contacts {
   font-style: normal;
   font-size: 14px;
   line-height: 20px;
@@ -109,6 +105,15 @@
 
   @media (min-width: $desktop-width) {
     margin: 0;
+  }
+}
+
+.address__contacts hr {
+  display: none;
+
+  @media (min-width: $tablet-width) {
+    display: block;
+    opacity: 0;
   }
 }
 
