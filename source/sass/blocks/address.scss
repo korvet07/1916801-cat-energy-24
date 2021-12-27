@@ -113,4 +113,9 @@
   line-height: 20px;
   text-transform: uppercase;
   color: #111111;
+
+  @media (width: $tablet-width) {
+    font-size: 20px;
+    line-height: 26px;
+  }
 }
