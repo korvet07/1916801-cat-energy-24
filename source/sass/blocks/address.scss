@@ -44,7 +44,7 @@
 
   @media (min-width: $tablet-width) {
     max-width: 768px;
-    padding: 55px 30px;
+    padding: 55px 70px;
   }
 
   @media (min-width: $desktop-width) {
@@ -119,7 +119,7 @@
   text-transform: uppercase;
   color: #111111;
 
-  @media (width: $tablet-width) {
+  @media (min-width: $tablet-width) {
     font-size: 20px;
     line-height: 26px;
   }
