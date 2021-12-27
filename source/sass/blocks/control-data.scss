@@ -29,6 +29,7 @@
 .control-data__input {
   border: 2px solid #e7e7e7;
   padding: 0 5px;
+  padding-top: 7px;
 
   &::placeholder {
     font-family: $font-default;
