@@ -95,6 +95,11 @@
 
   @media (min-width: $tablet-width) {
     bottom: -16px;
+    background-color: $white;
+  }
+
+  @media (min-width: $desktop-width) {
+    background-color: #f2f2f2;
   }
 }
 
