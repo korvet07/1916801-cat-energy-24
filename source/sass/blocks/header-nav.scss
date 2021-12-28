@@ -52,10 +52,10 @@
       left: -130px;
       width: 100vw;
       height: 694px;
-      min-width: 720px;
       background: url("../img/index-background-desktop.jpg") no-repeat,
         $basic-green;
       background-size: contain;
+      background-position-x: -28px;
       background-blend-mode: soft-light;
       z-index: -1;
     }
