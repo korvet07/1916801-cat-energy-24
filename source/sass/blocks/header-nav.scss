@@ -49,12 +49,11 @@
       position: absolute;
       top: 0;
       left: -130px;
-      width: 100vw;
+      right: -110px;
       height: 694px;
       background: url("../img/index-background-desktop.jpg") no-repeat,
         $basic-green;
-      background-size: contain;
-      background-position-x: -28px;
+      background-size: cover;
       background-blend-mode: soft-light;
       z-index: -1;
 
@@ -62,7 +61,6 @@
         background: url("../img/bg-image-cat-desctop@2x.jpg") left/contain  no-repeat,
           $basic-green;
         background-blend-mode: soft-light;
-        background-position-x: -28px;
       }
     }
   }
