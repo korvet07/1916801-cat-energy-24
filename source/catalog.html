@@ -14,8 +14,13 @@
     <div class="container container--short page-header__container page-header__container--closed
       page-header__container--nojs">
       <a class="page-header__logo logo-head" href="index.html">
-        <div class="logo-head__wrapper-icon"><img class="logo-head__icon" src="img/logo-icon-mobile.svg"
-            alt="иконка-логотип магазина" width="34" height="38">
+        <div class="logo-head__wrapper-icon">
+          <picture>
+            <source media="(min-width: 1440px)" srcset="img/logo-desktop.svg">
+            <source media="(min-width: 768px)" srcset="img/logo-tab.svg">
+            <img class="logo-head__icon" src="img/logo-icon-mobile.svg" alt="иконка-логотип магазина" width="34"
+              height="38">
+          </picture>
         </div>
         <div class="logo-head__wrapper-name-shop"><img class="page-header__name-shop-image"
             src="img/logo-header-name-shop.svg" alt="логотип магазина" width="101" height="18">
