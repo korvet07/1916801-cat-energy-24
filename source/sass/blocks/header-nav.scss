@@ -57,6 +57,13 @@
       background-position-x: -28px;
       background-blend-mode: soft-light;
       z-index: -1;
+
+      @media (min-resolution: 2dppx) {
+        background: url("../img/bg-image-cat-desctop@2x.jpg") left/contain  no-repeat,
+          $basic-green;
+        background-blend-mode: soft-light;
+        background-position-x: -28px;
+      }
     }
   }
 }
