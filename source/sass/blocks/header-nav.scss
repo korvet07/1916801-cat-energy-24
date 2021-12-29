@@ -44,6 +44,17 @@
     position: relative;
     color: $white;
 
+    &::after {
+      content: "";
+      position: absolute;
+      height: 694px;
+      top: 0;
+      left: 100%;
+      width: 100vw;
+      background-color: $basic-green;
+      z-index: -2;
+    }
+
     &::before {
       content: "";
       position: absolute;
