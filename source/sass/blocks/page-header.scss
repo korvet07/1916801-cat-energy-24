@@ -96,7 +96,7 @@
   min-height: 66px;
 
   @media (min-width: $tablet-width) {
-    min-height: 0;
+    display: block;
   }
 }
 
