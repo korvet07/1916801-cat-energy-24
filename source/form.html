@@ -11,28 +11,34 @@
 
 <body class="page__body">
   <header class="page-header">
-    <div class="container  page-header__container">
-      <a class="page-header__logo" href="index.html">
-        <div class="logo-head__wrapper-icon"><img class="logo__icon" src="img/logo-icon-mobile.svg"
-            alt="иконка-логотип магазина" width="34" height="38">
+    <div
+      class="container container--short  page-header__container page-header__container--closed page-header__container--nojs">
+      <a class="page-header__logo logo-head" href="index.html">
+        <div class="logo-head__wrapper-icon">
+          <picture>
+            <source media="(min-width: 1440px)" srcset="img/logo-desktop.svg">
+            <source media="(min-width: 768px)" srcset="img/logo-tab.svg">
+            <img class="logo-head__icon" src="img/logo-icon-mobile.svg" alt="иконка-логотип магазина" width="34"
+              height="38">
+          </picture>
         </div>
         <div class="logo-head__wrapper-name-shop"><img class="page-header__name-shop-image"
             src="img/logo-header-name-shop.svg" alt="логотип магазина" width="101" height="18">
         </div>
       </a>
-      <button class="page-header__toggle" type="button">
+      <button class="page-header__toggle" type="button" tabindex="1">
         <span class="visually-hidden">Открыть меню</span>
       </button>
-      <nav class="header-nav header-nav--closed">
+      <nav class="header-nav">
         <ul class="header-nav__list">
           <li class="header-nav__item">
             <a class="header-nav__link" href="index.html">Главная</a>
           </li>
           <li class="header-nav__item">
-            <a class="header-nav__link" href="catalog.html">Каталог продукции</a>
+            <a class="header-nav__link header-nav__link" href="catalog.html">Каталог продукции</a>
           </li>
-          <li class="header-nav__item">
-            <a class="header-nav__link header-nav__link--current" href="#">Подбор программы</a>
+          <li class="header-nav__item"><a class="header-nav__link header-nav__link--current" href="#">Подобор
+              программы</a>
           </li>
         </ul>
       </nav>
@@ -45,7 +51,7 @@
         <p class="questionnaire__filling">Заполните анкету, и мы подберем <br>
           программу питания для вашего кота</p>
         <form class="questionnaire__form form" action="https://echo.htmlacademy.ru/" method="get">
-          <div class="form__container">
+          <div class="form__wrapper">
             <fieldset class="form__data-cat">
               <div class="control-data">
                 <label class="control-data__title title" for="cat-name">Имя:* </label>
@@ -61,7 +67,7 @@
                 <input class="control-data__input" type="text" id="cat-age" name="cat-age" placeholder="7">
               </div>
             </fieldset>
-            <fieldset class="form__select ">
+            <fieldset class="form__select">
               <ul class="form__select-list control-select">
                 <li class="control-select__item">
                   <input class="visually-hidden control-select__input" type="radio" id="slimming-programm"
@@ -85,30 +91,31 @@
               </ul>
             </fieldset>
           </div>
-          <fieldset class="form__data-owner data-owner ">
-            <legend class="form-title title">Контактные данные (владельца кота)
+          <fieldset class="form__data-owner owner">
+            <legend class="form-title title line">Контактные данные (владельца кота)
             </legend>
-            <div class="data-owner__wrapper">
-              <div class="data-owner__mail">
-                <label class="data-owner__mail-title title" for="owner-mail">E-mail:* </label>
-                <input class="data-owner__mail-input" type="email" placeholder="kuklachev@gmail.com" id="owner-mail"
+            <div class="owner__wrap">
+              <div class="control-data">
+                <label class="control-data__title title" for="owner-mail">E-mail:* </label>
+                <input class="control-data__input" type="email" placeholder="kuklachev@gmail.com" id="owner-mail"
                   name="owner-mail" required>
-                <span class="data-owner__mail-icon"></span>
+                <span class="control-data__mail-icon"></span>
               </div>
-              <div class="data-owner__tel">
-                <label class="data-owner__tel-title title" for="owner-tel">Телефон:*</label>
-                <input class="data-owner__tel-input" type="tel" name="owner-tel" id="owner-tel"
-                  placeholder="8 (960) 900-60-90" required><span class="data-owner__tel-icon"></span>
+              <div class="control-data">
+                <label class="control-data__title title" for="owner-tel">Телефон:*</label>
+                <input class="control-data__input" type="tel" name="owner-tel" id="owner-tel"
+                  placeholder="8 (960) 900-60-90" required>
+                <span class="control-data__tel-icon"></span>
               </div>
             </div>
           </fieldset>
-          <fieldset class="form__owner-comment">
-            <legend class="form-title title">Комментарий</legend>
+          <fieldset class="form__owner-comment ">
+            <legend class="form-title form-title--comment title line">Комментарий</legend>
             <textarea class="form__owner-comment-input" placeholder="Расскажите обо всех повадках кота"
               name="owner-comment" cols="30" rows="6"></textarea>
           </fieldset>
           <fieldset class="form__addition addition">
-            <legend class="form-title title">Дополнительно</legend>
+            <legend class="form-title form-title--addition title line">Дополнительно</legend>
             <ul class="addition__list">
               <li class="addition__item">
                 <input class="visually-hidden addition__input" type="checkbox" id="sweetener" name="sweetener" checked>
@@ -132,8 +139,10 @@
               </li>
             </ul>
           </fieldset>
-          <button class="main-form-submit button" type="submit">Отправит заявку</button>
-          <span class="main-form__note" title="обязательные поля помечены *">* — Обязательные поля</span>
+          <div class="form__wrap">
+            <button class="form__submit button" type="submit">Отправить заявку</button>
+            <span class="form__note" title="обязательные поля помечены *">* — Обязательные поля</span>
+          </div>
         </form>
       </div>
     </section>
@@ -142,9 +151,10 @@
       <div class="container address__wrapper">
         <div class="address__container">
           <p class="address__dealer">приглашаем <br> к сотрудничеству <br> дилеров!</p>
-          <address class="address__content">
+          <address class="address__contacts">
             ул. Большая <br>
             Конюшенная, д. 19/8 <br>
+            <hr>
             Санкт-Петербург
           </address>
         </div>
@@ -205,6 +215,7 @@
       </div>
     </div>
   </footer>
+  <script src="js/script.js"></script>
 </body>
 
 </html>

@@ -1,0 +1,9 @@
+.social__link-instagram {
+  margin-left: 40px;
+  margin-right: 40px;
+
+  @media (min-width: $tablet-width) {
+    margin-left: 30px;
+    margin-right: 30px;
+  }
+}

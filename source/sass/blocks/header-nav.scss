@@ -6,11 +6,13 @@
   line-height: 20px;
   color: #000000;
 
+
   @media (min-width: $tablet-width) {
-    margin-left: 94px;
+    margin-left: auto;
   }
 
   @media (min-width: $desktop-width) {
+    flex-grow: 0;
     margin-left: auto;
   }
 }
@@ -28,7 +30,6 @@
 
   @media (min-width: $tablet-width) {
     position: static;
-    align-items: center;
   }
 
   @media (min-width: $desktop-width) {
@@ -43,18 +44,34 @@
     position: relative;
     color: $white;
 
+    &::after {
+      content: "";
+      position: absolute;
+      height: 694px;
+      top: 0;
+      left: 100%;
+      width: 100vw;
+      background-color: $basic-green;
+      z-index: -2;
+    }
+
     &::before {
       content: "";
       position: absolute;
       top: 0;
+      left: -130px;
       right: -110px;
       height: 694px;
-      min-width: 720px;
-      background: url("../../img/index-background-desktop.jpg") no-repeat,
+      background: url("../img/index-background-desktop.jpg") right/cover no-repeat,
         $basic-green;
-      background-size: contain;
       background-blend-mode: soft-light;
       z-index: -1;
+
+      @media (min-resolution: 2dppx) {
+        background: url("../img/bg-image-cat-desctop@2x.jpg") right/cover  no-repeat,
+          $basic-green;
+        background-blend-mode: soft-light;
+      }
     }
   }
 }
@@ -72,6 +89,7 @@
 
     &:last-child {
       margin-right: 0;
+      margin-left: auto;
     }
   }
 }
@@ -98,7 +116,7 @@
   }
 
   @media (min-width: $desktop-width) {
-    &--current {
+    &--current-index {
       border-bottom: 2px solid $white;
     }
   }

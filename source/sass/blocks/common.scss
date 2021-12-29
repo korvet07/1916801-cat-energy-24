@@ -20,3 +20,31 @@
   text-transform: uppercase;
   color: $black;
 }
+
+.line {
+  position: relative;
+  display: inline-block;
+
+  &::after,
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    width: 100vw;
+    height: 2px;
+    margin-top: calc(1em / 2 + 2px);
+    background-color: $basic-green;
+    overflow-x: hidden;
+    overflow-y: hidden;
+  }
+
+  &::after {
+    margin-left: 18px;
+    left: 100%;
+  }
+
+  &::before {
+    margin-right: 22px;
+    right: 100%;
+  }
+}

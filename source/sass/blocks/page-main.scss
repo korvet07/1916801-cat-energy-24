@@ -6,7 +6,7 @@
   display: flex;
   flex-direction: column;
   min-height: 302px;
-  background: url("../img/bg-image-cat.jpg") center/cover no-repeat,
+  background: url("../img/bg-image-cat-mob.jpg") center/cover no-repeat,
     $basic-green;
   background-blend-mode: soft-light;
   font-family: $font-default;
@@ -14,6 +14,12 @@
   font-weight: normal;
   color: $white;
   margin-bottom: 138px;
+
+  @media (min-resolution: 2dppx) {
+    background: url("../img/bg-image-cat-mob@2x.jpg") center/cover no-repeat,
+      $basic-green;
+    background-blend-mode: soft-light;
+  }
 
   @media (min-width: $tablet-width) {
     background-color: $white;
@@ -27,6 +33,7 @@
   line-height: 36px;
   color: $white;
   margin: 26px auto;
+  text-transform: none;
 
   @media (min-width: $tablet-width) {
     color: $black;

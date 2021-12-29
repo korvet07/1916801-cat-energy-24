@@ -1,6 +1,70 @@
 .control-data {
-  min-width: 280px;
+  position: relative;
   display: grid;
   grid-template-columns: max-content 1fr;
-  grid-auto-rows: 46px;
+  column-gap: 12px;
+  width: 280px;
+
+  @media (min-width: 321px) {
+    width: auto;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin: 0;
+    max-width: auto;
+
+    &:last-child {
+      margin: 0;
+    }
+  }
+}
+
+.control-data__title {
+  font-size: 16px;
+  line-height: 18px;
+  color: $special_dark-grey;
+  align-self: center;
+}
+
+.control-data__input {
+  border: 2px solid #e7e7e7;
+  padding: 0 5px;
+  padding-top: 7px;
+
+  &::placeholder {
+    font-family: $font-default;
+    font-size: 16px;
+    line-height: 18px;
+    text-transform: uppercase;
+    color: $special_dark-grey;
+
+    @media (min-width: $tablet-width) {
+      font-size: 20px;
+      line-height: 30px;
+    }
+  }
+}
+
+.control-data__mail-icon {
+  position: absolute;
+  width: 18px;
+  height: 13px;
+  right: 16px;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+  background: url("../../img/mail-icon.svg") center no-repeat;
+  background-size: cover;
+}
+
+.control-data__tel-icon {
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  right: 13px;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+  background: url("../../img/tel-icon.svg") center no-repeat;
+  background-size: cover;
 }
