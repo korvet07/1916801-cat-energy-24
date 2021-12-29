@@ -5,12 +5,11 @@
   @media (min-width: $tablet-width) {
     display: flex;
     min-height: 76px;
-    align-items: center;
+    align-items: flex-end;
   }
 
   @media (min-width: $desktop-width) {
     min-height: 107px;
-    align-items: flex-end;
   }
 }
 

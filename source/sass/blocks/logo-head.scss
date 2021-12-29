@@ -15,6 +15,7 @@
 
 .logo-head__icon {
   @media (min-width: $tablet-width) {
+    display: block;
     width: 174px;
     height: 52px;
   }
