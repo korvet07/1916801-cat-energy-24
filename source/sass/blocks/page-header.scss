@@ -93,10 +93,6 @@
   display: flex;
   align-items: center;
   min-height: 66px;
-
-  @media (min-width: $tablet-width) {
-    display: block;
-  }
 }
 
 .page-header {
