@@ -5,9 +5,16 @@
   min-width: 280px;
   margin: 35px 0;
   background: url("../img/bg-addition.png") center no-repeat,
-    rgba(104, 183, 56, 0.85);
+    $basic-green;
   background-blend-mode: soft-light;
   background-size: cover;
+
+  @media (min-resolution: 2dppx) {
+    background: url("../img/bg-addition@2x.png") center no-repeat,
+      $basic-green;
+    background-blend-mode: soft-light;
+    background-size: cover;
+  }
 
 
   @media (min-width: $tablet-width) {
