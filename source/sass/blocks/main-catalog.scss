@@ -43,6 +43,9 @@
     }
 
     @media (min-width: $desktop-width) {
+      width: 172px;
+      height: 198px;
+
       .product-card__image {
         top: -80px;
       }
