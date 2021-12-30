@@ -53,8 +53,13 @@
       <h1 class="page-main__title title">Функциональное <br> питание для котов</h1>
       <span class="page-main__slogan">Занялся собой? Займись котом!</span>
     </div>
-    <div class="page-main__background"> <img class="page-main__image" src="img/index-can.png" alt="упаковка Cat Energy"
-        width="280" height="270">
+    <div class="page-main__background">
+      <picture>
+        <source media="(min-width: 1440px)" srcset="img/index-pack-desktop.png 1x, img/index-pack-desktop@2x.png 2x">
+        <source media="(min-width: 768px)" srcset="img/index-pack-tab.png 1x, img/index-pack-tab@2x.png 2x">
+        <img class="page-main__image" src="img/index-pack.png" srcset="img/index-pack@2x.png 2x"
+          alt="упаковка Cat Energy" width="280" height="270">
+      </picture>
     </div>
     <a class="page-main__button button" href="form.html">Подобрать программу</a>
     <section class="page-main__selection-diet selection-diet">
@@ -151,8 +156,11 @@
               checked>
             <input class="visually-hidden example__result-input-after" type="radio" id="result-after" name="result">
             <div class="example__result-control-mark">
-              <img class="example__result-image-fat" src="img/cat-fat.png" alt="фото до применения Cat Energy Slim"
-                width="280" height="232">
+              <picture>
+              <source media="(min-width: 768px)" srcset="img/cat-fat-tab.png 1x, img/cat-fat-tab@2x.png 2x">
+              <img class="example__result-image-fat" src="img/cat-fat.png" srcset="img/cat-fat@2x.png 2x"
+                alt="фото до применения Cat Energy Slim" width="280" height="232">
+              </picture>
             </div>
             <div class="example__result-wrap">
               <label class="example__result-before title" for="result-before">было</label>

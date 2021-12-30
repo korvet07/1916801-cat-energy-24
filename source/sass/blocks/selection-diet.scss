@@ -17,3 +17,21 @@
     margin-bottom: 71px;
   }
 }
+
+.selection-diet__fatten {
+  @media (min-width: $desktop-width) {
+    grid-template-columns: 134px auto;
+    column-gap: 47px;
+    grid-template-rows: 100px auto;
+    row-gap: 27px;
+  }
+}
+
+.selection-diet__slimming {
+  @media (min-width: $desktop-width) {
+    grid-template-columns: 100px auto;
+    column-gap: 62px;
+    grid-template-rows: 100px auto;
+    row-gap: 40px;
+  }
+}

@@ -62,11 +62,14 @@
 .example__wrap-result {
   @media (min-width: $tablet-width) {
     background-color: #eaeaea;
+    position: relative;
+    min-height: 462px;
   }
 
   @media (min-width: $desktop-width) {
     background-color: #f2f2f2;
     margin-top: auto;
+    min-width: 592px;
   }
 }
 
@@ -191,6 +194,10 @@
   @media (min-width: $tablet-width) {
     margin-top: 25px;
   }
+
+  @media (min-width: $tablet-width) {
+    margin-top: 41px;
+  }
 }
 
 .example__result-after {
@@ -208,6 +215,14 @@
   display: block;
   margin: 0 auto;
   transition: all 1s ease-out;
+
+  @media (min-width: $tablet-width) {
+    width: 100%;
+  }
+
+  @media (min-width: $tablet-width) {
+    height: 511px;
+  }
 }
 
 .example__title {
@@ -266,8 +281,18 @@
     bottom: 0;
     top: 0;
     margin: auto;
-    background: url("../img/cat-skinny.png") center no-repeat;
-    background-size: contain;
+    background: url("../img/cat-skinny.png") center/contain no-repeat;
+    transition: all 1s ease-out;
+
+    @media (min-resolution: 2dppx) {
+      background: url("../img/cat-skinny@2x.png") center/contain no-repeat;
+    }
+
+    @media (min-width: $tablet-width) {
+      width: 592px;
+      height: 511px;
+      transition: all 1s ease-out;
+    }
   }
 }
 
@@ -279,14 +304,15 @@
   }
 
   @media (min-width: $tablet-width) {
-    position: relative;
+    position: absolute;
     margin: 0 auto;
-    padding-bottom: 55px;
+    top: -170px;
+    left: 0;
+    right: 0;
   }
 
   @media (min-width: $desktop-width) {
-    min-width: 592px;
-    padding-bottom: 25px;
+    top: -180px;
   }
 }
 
@@ -309,5 +335,11 @@
     font-size: 16px;
     line-height: 24px;
     color: #000000;
+  }
+}
+
+.example__result-control-mark {
+  @media (min-width: $tablet-width) {
+    height: 511px;
   }
 }

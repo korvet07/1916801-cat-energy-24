@@ -4,16 +4,14 @@
   min-height: 290px;
   min-width: 280px;
   margin: 35px 0;
-  background: url("../img/bg-addition.png") center no-repeat,
+  background: url("../img/bg-addition.png") center/cover no-repeat,
     $basic-green;
   background-blend-mode: soft-light;
-  background-size: cover;
 
   @media (min-resolution: 2dppx) {
-    background: url("../img/bg-addition@2x.png") center no-repeat,
+    background: url("../img/bg-addition@2x.png") center/cover no-repeat,
       $basic-green;
     background-blend-mode: soft-light;
-    background-size: cover;
   }
 
 
@@ -21,23 +19,34 @@
     flex-direction: row;
     min-height: 200px;
     max-width: 707px;
-    background: url("../img/bg-addition-tab.png") center no-repeat,
-      rgba(104, 183, 56, 0.85);
+    background: url("../img/bg-addition-tab.png") center/contain no-repeat,
+      $basic-green;
     background-blend-mode: soft-light;
-    background-size: cover;
+
     margin-top: 70px;
     margin-bottom: 76px;
+
+    @media (min-resolution: 2dppx) {
+      background: url("../img/bg-addition-tab@2x.png") center/contain no-repeat,
+        $basic-green;
+      background-blend-mode: soft-light;
+    }
   }
 
   @media (min-width: $desktop-width) {
     min-width: 245px;
     min-height: 289px;
-    background: url("../img/bg-addition.png") center no-repeat,
-      rgba(104, 183, 56, 0.85);
+    background: url("../img/bg-addition-desktop.png") center/contain no-repeat,
+      $basic-green;
     background-blend-mode: soft-light;
-    background-size: cover;
     flex-direction: column;
     margin: 0;
+
+    @media (min-resolution: 2dppx) {
+      background: url("../img/bg-addition-desktop@2x.png") center/contain no-repeat,
+        $basic-green;
+      background-blend-mode: soft-light;
+    }
   }
 }
 
