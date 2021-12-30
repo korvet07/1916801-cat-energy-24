@@ -72,6 +72,7 @@
 
   @media (min-width: $tablet-width) {
     align-self: center;
+    position: relative;
   }
 }
 
@@ -111,5 +112,13 @@
 .product-card__price {
   &--num {
     margin-left: auto;
+  }
+}
+
+.product-card__image {
+  @media (min-width: $tablet-width) {
+    width: 100%;
+    height: auto;
+    position: absolute;
   }
 }
