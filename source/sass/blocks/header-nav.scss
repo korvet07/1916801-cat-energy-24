@@ -51,16 +51,14 @@
       top: 0;
       left: -130px;
       height: 694px;
-      background: url("../img/index-background-desktop.jpg") center/contain no-repeat,
-        $basic-green;
-      background-blend-mode: soft-light;
+      background: linear-gradient(rgba(104, 183, 56, 0.85), rgba(104, 183, 56, 0.85)),
+        url("../img/index-background-desktop.jpg") center/cover no-repeat;
       z-index: -1;
       width: calc(100vw - 720px);
 
       @media (min-resolution: 2dppx) {
-        background: url("../img/bg-image-cat-desctop@2x.jpg") right/cover  no-repeat,
-          $basic-green;
-        background-blend-mode: soft-light;
+        background:linear-gradient(rgba(104, 183, 56, 0.85), rgba(104, 183, 56, 0.85)),
+          url("../img/bg-image-cat-desctop@2x.jpg") center/cover  no-repeat;
       }
     }
   }
