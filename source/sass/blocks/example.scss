@@ -140,11 +140,11 @@
 }
 
 .example__result-wrap {
+  position: relative;
   display: flex;
   justify-content: space-between;
   margin: 0 auto;
   margin-top: 15px;
-  position: relative;
 
   &::before {
     content: "";
@@ -181,19 +181,26 @@
     @media (min-width: $tablet-width) {
       width: 34px;
       height: 34px;
-      border: 2px solid $special_grey;
-      border-radius: 50%;
-      background: url("../img/slider-control.svg") center no-repeat,
+      background: url("../img/slider-control.svg") center/contain no-repeat,
         $white;
       background-size: 8px 8px;
+      border: 2px solid $special_grey;
+      border-radius: 50%;
       top: -30%;
       left: 10%;
       transition: all 1s ease-out;
+      z-index: 1;
     }
   }
 
   @media (min-width: $tablet-width) {
     margin-top: 25px;
+
+    &:active {
+      &::after {
+        border: 2px solid $basic-green;
+      }
+    }
   }
 
   @media (min-width: $tablet-width) {
@@ -210,6 +217,23 @@
 .example__result-before {
   font-size: 16px;
   line-height: 20px;
+}
+
+.example__result-after,
+.example__result-before {
+  cursor: pointer;
+
+  @media (min-width: $tablet-width) {
+    border-bottom: 2px dotted rgba(000, 000, 000, 0.4);
+
+    &:hover {
+      border-bottom: 2px solid rgba(000, 000, 000, 0.4);
+    }
+
+    &:active {
+      border: none;
+    }
+  }
 }
 
 .example__result-image-fat {
