@@ -56,6 +56,7 @@
   @media (min-width: $desktop-width) {
     margin-top: 70px;
     margin-bottom: 55px;
+    justify-content: start;
   }
 }
 
@@ -132,9 +133,14 @@
 
   @media (min-width: $tablet-width) {
     font-size: 20px;
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    align-self: center;
   }
 
   @media (min-width: $desktop-width) {
+    display: block;
     text-align: left;
   }
 }
@@ -263,7 +269,7 @@
   @media (min-width: $desktop-width) {
     padding: 0;
     position: relative;
-    top: -215px;
+    top: -136px;
   }
 }
 
@@ -359,11 +365,24 @@
     font-size: 16px;
     line-height: 24px;
     color: #000000;
+    margin-bottom: 54px;
   }
 }
 
 .example__result-control-mark {
   @media (min-width: $tablet-width) {
     height: 511px;
+  }
+}
+
+.example__profit-price {
+  @media (min-width: $tablet-width) {
+    text-align: right;
+    padding-top: 10px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 0;
+    margin-left: 63px;
   }
 }

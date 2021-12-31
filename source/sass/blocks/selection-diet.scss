@@ -19,7 +19,12 @@
 }
 
 .selection-diet__fatten {
+  @media (min-width: $tablet-width) {
+    padding: 77px 28px 37px 52px;
+  }
+
   @media (min-width: $desktop-width) {
+    padding: 47px 61px 40px 33px;
     grid-template-columns: 134px auto;
     column-gap: 47px;
     grid-template-rows: 100px auto;
@@ -28,7 +33,12 @@
 }
 
 .selection-diet__slimming {
+  @media (min-width: $tablet-width) {
+    padding: 75px 62px 37px 52px;
+  }
+
   @media (min-width: $desktop-width) {
+    padding: 41px 52px 40px;
     grid-template-columns: 100px auto;
     column-gap: 62px;
     grid-template-rows: 100px auto;
