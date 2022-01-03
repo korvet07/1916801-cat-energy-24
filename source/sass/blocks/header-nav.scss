@@ -44,33 +44,20 @@
     position: relative;
     color: $white;
 
-    &::after {
-      content: "";
-      position: absolute;
-      height: 694px;
-      top: 0;
-      left: 100%;
-      width: 100vw;
-      background-color: $basic-green;
-      z-index: -2;
-    }
-
     &::before {
       content: "";
       position: absolute;
       top: 0;
       left: -130px;
-      right: -110px;
       height: 694px;
-      background: url("../img/index-background-desktop.jpg") right/cover no-repeat,
-        $basic-green;
-      background-blend-mode: soft-light;
+      background: linear-gradient(rgba(104, 183, 56, 0.85), rgba(104, 183, 56, 0.85)),
+        url("../img/index-background-desktop.jpg") center/cover no-repeat;
       z-index: -1;
+      width: calc(100vw - 720px);
 
       @media (min-resolution: 2dppx) {
-        background: url("../img/bg-image-cat-desctop@2x.jpg") right/cover  no-repeat,
-          $basic-green;
-        background-blend-mode: soft-light;
+        background:linear-gradient(rgba(104, 183, 56, 0.85), rgba(104, 183, 56, 0.85)),
+          url("../img/bg-image-cat-desctop@2x.jpg") center/cover  no-repeat;
       }
     }
   }
@@ -102,7 +89,7 @@
   line-height: 20px;
   max-width: 400px;
   margin: 0 auto;
-  padding: 17px 0;
+  padding-top: 22px;
 
   @media (min-width: $tablet-width) {
     border: none;
@@ -110,14 +97,25 @@
     font-size: 18px;
     line-height: 24px;
 
+    &:hover {
+      opacity: 0.6;
+    }
+
+    &:active {
+      opacity: 0.3;
+    }
+
     &--current {
       border-bottom: 1px solid $basic-green;
     }
   }
 
   @media (min-width: $desktop-width) {
+    font-size: 20px;
+    line-height: 30px;
+
     &--current-index {
-      border-bottom: 2px solid $white;
+      border-bottom: 1px solid $white;
     }
   }
 }

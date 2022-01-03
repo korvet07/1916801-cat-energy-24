@@ -34,6 +34,10 @@
   }
 }
 
+.addition__item:hover .addition__mark {
+  border: 1px solid #bababa;
+}
+
 .addition__mark {
   position: relative;
   display: inline-block;
@@ -69,4 +73,11 @@
 
 .addition__label {
   align-self: center;
+}
+
+.addition__input:disabled {
+  ~.addition__mark,
+  ~.addition__label {
+    opacity: 0.3;
+  }
 }

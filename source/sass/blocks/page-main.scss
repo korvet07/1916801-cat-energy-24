@@ -6,9 +6,8 @@
   display: flex;
   flex-direction: column;
   min-height: 302px;
-  background: url("../img/bg-image-cat-mob.jpg") center/cover no-repeat,
-    $basic-green;
-  background-blend-mode: soft-light;
+  background: linear-gradient(rgba(104, 183, 56, 0.85), rgba(104, 183, 56, 0.85)),
+    url("../img/bg-image-cat-mob.jpg") center/cover no-repeat;
   font-family: $font-default;
   font-style: normal;
   font-weight: normal;
@@ -16,13 +15,12 @@
   margin-bottom: 138px;
 
   @media (min-resolution: 2dppx) {
-    background: url("../img/bg-image-cat-mob@2x.jpg") center/cover no-repeat,
-      $basic-green;
-    background-blend-mode: soft-light;
+    background: linear-gradient(rgba(104, 183, 56, 0.85), rgba(104, 183, 56, 0.85)),
+      url("../img/bg-image-cat-mob@2x.jpg") center/cover no-repeat;
   }
 
   @media (min-width: $tablet-width) {
-    background-color: $white;
+    background: $white;
     margin-bottom: 50px;
     min-height: auto;
   }
@@ -43,6 +41,7 @@
 
   @media (min-width: $desktop-width) {
     margin-right: 650px;
+    margin-top: 110px;
   }
 }
 
@@ -63,37 +62,42 @@
 .page-main__image {
   position: absolute;
   margin: auto;
-  top: 0;
+  top: -30px;
   left: 0;
   right: 0;
   bottom: 0;
 
   @media (min-width: $tablet-width) {
     position: static;
+    width: 100%;
+    height: auto;
   }
 
   @media (min-width: $desktop-width) {
     position: absolute;
     z-index: 1;
+    background-color: transparent;
   }
 }
 
 .page-main__background {
   position: relative;
   top: -110px;
+  width: 320px;
+  margin: 0 auto;
 
   @media (min-width: $tablet-width) {
     position: static;
     width: 709px;
     height: 609px;
-    margin: 0 auto;
   }
 
   @media (min-width: $desktop-width) {
     position: relative;
     width: 552px;
     height: 500px;
-    top: -240px;
+    top: -260px;
+    left: 150px;
   }
 }
 
@@ -106,14 +110,18 @@
   @media (min-width: $tablet-width) {
     position: relative;
     max-width: 244px;
-    max-height: 54px;
+    min-height: 54px;
     top: -600px;
     left: -130px;
+    font-size: 20px;
+    line-height: 20px;
+    padding: 10px;
+    padding-top: 15px;
   }
 
   @media (min-width: $desktop-width) {
     top: -420px;
-    left: -400px;
+    left: -388px;
     margin-top: -100px;
   }
 }

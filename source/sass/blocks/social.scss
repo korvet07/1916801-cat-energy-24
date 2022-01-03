@@ -7,3 +7,20 @@
     margin-right: 30px;
   }
 }
+
+.social__link-facebook svg {
+  stroke: #666666;
+}
+
+.page-footer__copyright-link svg,
+.social__link-vkontakte svg,
+.social__link-instagram svg,
+.social__link-facebook svg {
+  &:hover {
+    stroke: $basic-green;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+}
