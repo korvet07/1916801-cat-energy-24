@@ -243,9 +243,13 @@
 }
 
 .example__result-image-fat {
-  display: block;
-  margin: 0 auto;
+  position: absolute;
+  margin: auto;
   transition: all 1s ease-out;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
 
   @media (min-width: $tablet-width) {
     width: 100%;
@@ -258,6 +262,7 @@
 
 .example__title {
   padding-top: 10px;
+  text-align: left;
 
   @media (min-width: $tablet-width) {
     font-size: 60px;
@@ -292,6 +297,17 @@
   }
 }
 
+.example__result-input-before:checked ~ .example__result-control-mark {
+  position: relative;
+
+  .example__result-image-skinny {
+    opacity: 0;
+  }
+
+  .example__result-image-fat {
+    opacity: 1;
+  }
+}
 
 .example__result-input-after:checked + .example__result-control-mark {
   position: relative;
@@ -301,28 +317,8 @@
     transition: all 1s ease-out;
   }
 
-  &::after {
-    content: "";
-    position: absolute;
-    width: 280px;
-    height: 232px;
-    right: 0;
-    left: 0;
-    bottom: 0;
-    top: 0;
-    margin: auto;
-    background: url("../img/cat-skinny.png") center/contain no-repeat;
-    transition: all 1s ease-out;
-
-    @media (min-resolution: 2dppx) {
-      background: url("../img/cat-skinny@2x.png") center/contain no-repeat;
-    }
-
-    @media (min-width: $tablet-width) {
-      width: 592px;
-      height: 511px;
-      transition: all 1s ease-out;
-    }
+  .example__result-image-skinny {
+    opacity: 1;
   }
 }
 
