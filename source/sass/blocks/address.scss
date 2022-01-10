@@ -107,11 +107,9 @@
 .address__map-interactiv {
   position: absolute;
   top: 0;
-
   height: 362px;
 
   @media (min-width: $tablet-width) {
-    width: calc(100vw + 200px);
     height: 400px;
   }
 }
