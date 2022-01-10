@@ -56,8 +56,8 @@
       width: calc(100vw - 720px);
 
       @media (min-resolution: 2dppx) {
-        background:linear-gradient(rgba(104, 183, 56, 0.85), rgba(104, 183, 56, 0.85)),
-          url("../img/bg-image-cat-desctop@2x.jpg") center/cover  no-repeat;
+        background: linear-gradient(rgba(104, 183, 56, 0.85), rgba(104, 183, 56, 0.85)),
+          url("../img/bg-image-cat-desctop@2x.jpg") center/cover no-repeat;
       }
     }
   }
