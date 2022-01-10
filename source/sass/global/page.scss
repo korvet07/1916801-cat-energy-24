@@ -26,6 +26,6 @@ img {
   overflow-x: hidden;
 
   @media (min-width: $desktop-width) {
-    width: 100vw;
+    width: calc(100vw + 15%);
   }
 }
