@@ -23,4 +23,9 @@ img {
   line-height: 18px;
   color: #444444;
   margin: 0;
+  overflow-x: hidden;
+
+  @media (min-width: $desktop-width) {
+    width: 100vw;
+  }
 }
