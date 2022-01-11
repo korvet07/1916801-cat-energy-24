@@ -2,6 +2,10 @@
   background-color: $white;
 }
 
+.main-catalog__inner {
+  overflow: hidden;
+}
+
 .main-catalog__wrapper {
   @media (min-width: $tablet-width) {
     display: grid;

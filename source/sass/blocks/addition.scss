@@ -23,6 +23,7 @@
 }
 
 .addition__item {
+  position: relative;
   display: grid;
   grid-template-columns: 30px 1fr;
   column-gap: 16px;
@@ -72,7 +73,19 @@
 }
 
 .addition__label {
+  position: absolute;
+  padding-left: 46px;
   align-self: center;
+  font-family: $font-default;
+  font-size: 16px;
+  color: $black;
+  text-transform: uppercase;
+
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+    line-height: 30px;
+    padding-left: 60px;
+  }
 }
 
 .addition__input:disabled {

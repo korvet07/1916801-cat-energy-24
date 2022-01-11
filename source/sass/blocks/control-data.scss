@@ -11,7 +11,7 @@
 
   @media (min-width: $desktop-width) {
     margin: 0;
-    max-width: auto;
+    column-gap: 14px;
 
     &:last-child {
       margin: 0;
@@ -24,6 +24,11 @@
   line-height: 18px;
   color: $special_dark-grey;
   align-self: center;
+
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+    line-height: 30px;
+  }
 }
 
 .control-data__input {

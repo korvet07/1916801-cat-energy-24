@@ -1,3 +1,7 @@
+.additional {
+  overflow: hidden;
+}
+
 .additional-item {
   display: flex;
   flex-direction: column;
@@ -56,6 +60,7 @@
   @media (min-width: $desktop-width) {
     align-self: center;
     margin-bottom: 0;
+    width: 150px;
   }
 }
 
@@ -98,6 +103,7 @@
 
 .additional-item__size {
   @media (min-width: $desktop-width) {
+    width: 125px;
     margin: 0 auto;
   }
 }
