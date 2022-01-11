@@ -48,7 +48,7 @@
       position: absolute;
       top: 0;
       left: -120px;
-      right: -110px;
+      width: calc(100vw - 720px);
       height: 694px;
       background: linear-gradient(rgba(104, 183, 56, 0.85), rgba(104, 183, 56, 0.85)),
         url("../img/index-background-desktop.jpg") center/cover no-repeat;
