@@ -44,16 +44,18 @@
     position: relative;
     color: $white;
 
+
     &::before {
       content: "";
       position: absolute;
       top: 0;
-      left: -130px;
+      right: -110px;
+      left: -120px;
       height: 694px;
       background: linear-gradient(rgba(104, 183, 56, 0.85), rgba(104, 183, 56, 0.85)),
         url("../img/index-background-desktop.jpg") center/cover no-repeat;
       z-index: -1;
-      width: calc(100vw - 720px);
+
 
       @media (min-resolution: 2dppx) {
         background: linear-gradient(rgba(104, 183, 56, 0.85), rgba(104, 183, 56, 0.85)),
@@ -96,6 +98,7 @@
     font-weight: 400;
     font-size: 18px;
     line-height: 24px;
+    padding-bottom: 10px;
 
     &:hover {
       opacity: 0.6;
