@@ -5,3 +5,5 @@ headToggle.onclick = function () {
   headNav.classList.toggle("page-header__container--closed");
   headNav.classList.toggle("page-header__container--opened");
 }
+let addressMap = document.querySelector(".address__map-interactiv");
+addressMap.classList.remove("address__map-interactiv--nojs");

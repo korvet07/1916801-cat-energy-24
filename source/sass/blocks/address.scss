@@ -81,6 +81,8 @@
 .address__map {
   height: 362px;
   position: relative;
+  background-color: #f2f2f2;
+
 
   @media (min-width: $tablet-width) {
     height: 400px;
@@ -109,9 +111,14 @@
   top: 0;
   height: 362px;
 
+
   @media (min-width: $tablet-width) {
     height: 400px;
   }
+}
+
+.address__map-interactiv--nojs {
+  display: none;
 }
 
 .address__contacts {

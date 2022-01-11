@@ -34,8 +34,7 @@
     height: 2px;
     margin-top: calc(1em / 2 + 2px);
     background-color: $basic-green;
-    overflow-x: hidden;
-    overflow-y: hidden;
+    overflow: hidden;
   }
 
   &::after {
