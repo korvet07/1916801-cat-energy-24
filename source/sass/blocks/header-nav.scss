@@ -6,7 +6,6 @@
   line-height: 20px;
   color: #000000;
 
-
   @media (min-width: $tablet-width) {
     margin-left: auto;
   }
@@ -44,7 +43,6 @@
     position: relative;
     color: $white;
 
-
     &::before {
       content: "";
       position: absolute;
@@ -55,7 +53,6 @@
       background: linear-gradient(rgba(104, 183, 56, 0.85), rgba(104, 183, 56, 0.85)),
         url("../img/index-background-desktop.jpg") center/cover no-repeat;
       z-index: -1;
-
 
       @media (min-resolution: 2dppx) {
         background: linear-gradient(rgba(104, 183, 56, 0.85), rgba(104, 183, 56, 0.85)),
