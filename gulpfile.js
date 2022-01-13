@@ -32,7 +32,7 @@ export const styles = () => {
 const html = () => {
   return gulp
     .src("source/*.html")
-    .pipe(htmlmin({ collapseWhitespace: true }))
+    // .pipe(htmlmin({ collapseWhitespace: true }))
     .pipe(gulp.dest("build"));
 }
 
@@ -59,12 +59,12 @@ const copyImages = () => {
 
 // WebP
 
-const createWebp = () => {
+ const createWebp = () => {
   return gulp.src('source/img/**/*.{png,jpg}')
     .pipe(squoosh({
       webp: {}
     }))
-    .pipe(gulp.dest('build/img'))
+    .pipe(gulp.dest('build/img/'))
 }
 
 // SVG
