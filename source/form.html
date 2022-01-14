@@ -22,7 +22,7 @@
   <header class="page-header">
     <div
       class="container container--short  page-header__container page-header__container--closed page-header__container--nojs">
-      <a class="page-header__logo logo-head" href="index.html">
+      <a class="page-header__logo logo-head" href="index.html" aria-label="логотип магазина cat energy">
         <div class="logo-head__wrapper-icon">
           <picture>
             <source media="(min-width: 1440px)" srcset="img/logo-desktop.svg">
@@ -63,16 +63,18 @@
           <div class="form__wrapper">
             <fieldset class="form__data-cat">
               <div class="control-data">
-                <label class="control-data__title title" for="cat-name">Имя:* </label>
+                <label class="control-data__title title" for="cat-name" aria-label="введите имя кота">Имя:* </label>
                 <input class="control-data__input" type="text" id="cat-name" name="cat-name" placeholder="Барсик"
                   required>
               </div>
               <div class="control-data">
-                <label class="control-data__title title" for="cat-heft">Вес (кг):* </label>
+                <label class="control-data__title title" for="cat-heft" aria-label="введите вес кота">Вес (кг):*
+                </label>
                 <input class="control-data__input" type="text" id="cat-heft" name="cat-heft" placeholder="7" required>
               </div>
               <div class="control-data">
-                <label class="control-data__title title" for="cat-age">Возраст (лет): </label>
+                <label class="control-data__title title" for="cat-age" aria-label="введите возраст кота">Возраст (лет):
+                </label>
                 <input class="control-data__input" type="text" id="cat-age" name="cat-age" placeholder="7">
               </div>
             </fieldset>
@@ -82,19 +84,22 @@
                   <input class="visually-hidden control-select__input" type="radio" id="slimming-programm"
                     name="select-programm" value="slimming">
                   <span class="control-select__mark"></span>
-                  <label class="control-select__title title" for="slimming-programm">Похудение</label>
+                  <label class="control-select__title title" for="slimming-programm"
+                    aria-label="выбор программы похудение">Похудение</label>
                 </li>
                 <li class="control-select__item">
                   <input class="visually-hidden control-select__input" id="fatten-programm" type="radio"
                     name="select-programm" value="fatten">
                   <span class="control-select__mark"></span>
-                  <label class="control-select__title title" for="fatten-programm">Набор массы </label>
+                  <label class="control-select__title title" for="fatten-programm" aria-label="выбор программы набор массы">Набор
+                    массы </label>
                 </li>
                 <li class="control-select__item">
                   <input class="visually-hidden control-select__input" type="radio" id="no-savvy" name="select-programm"
                     value="no-savvy">
                   <span class="control-select__mark"></span>
-                  <label class="control-select__title title" for="no-savvy">Не знаю (Нужен ваш совет)
+                  <label class="control-select__title title" for="no-savvy" aria-label="выбор необходим совет">Не знаю (Нужен
+                    ваш совет)
                   </label>
                 </li>
               </ul>
@@ -105,7 +110,8 @@
             </legend>
             <div class="owner__wrap">
               <div class="control-data">
-                <label class="control-data__title title" for="owner-mail">E-mail:* </label>
+                <label class="control-data__title title" for="owner-mail" aria-label="введите e-mail">E-mail:*
+                </label>
                 <input class="control-data__input" type="email" placeholder="kuklachev@gmail.com" id="owner-mail"
                   name="owner-mail" required>
                 <span class="control-data__mail-icon">
@@ -120,7 +126,7 @@
                 </span>
               </div>
               <div class="control-data">
-                <label class="control-data__title title" for="owner-tel">Телефон:*</label>
+                <label class="control-data__title title" for="owner-tel" aria-label="введите телефон">Телефон:*</label>
                 <input class="control-data__input" type="tel" name="owner-tel" id="owner-tel"
                   placeholder="8 (960) 900-60-90" required>
                 <span class="control-data__tel-icon">
@@ -214,7 +220,7 @@
   </main>
   <footer class="page-footer">
     <div class="container  page-footer__container">
-      <a class="page-footer__logo">
+      <a class="page-footer__logo" aria-label="логотип cat energy">
         <div class="page-footer__logo-name-shop">
           <img class="page-footer__logo-name-shop-image" src="img/logo-footer-name-shop.svg" alt="логотип магазина"
             width="128" height="24">
@@ -222,21 +228,23 @@
       </a>
       <ul class="page-footer__social-list social">
         <li class="social__item">
-          <a class="social__link-vkontakte" href="https://vk.com/htmlacademy">
+          <a class="social__link-vkontakte" href="https://vk.com/htmlacademy" aria-label="мы в соцсети вконтакте">
             <svg class="social__icon-vk" width="23" height="16">
               <use xlink:href="img/sprite.svg#icon-vk"></use>
             </svg>
           </a>
         </li>
         <li class="social__item">
-          <a class="social__link-instagram" href="https://www.instagram.com/htmlacademy">
+          <a class="social__link-instagram" href="https://www.instagram.com/htmlacademy"
+            aria-label="мы в соцсети инстаграм">
             <svg class="social__instagram" width="16" height="16">
               <use xlink:href="img/sprite.svg#icon-instagram"></use>
             </svg>
           </a>
         </li>
         <li class="social__item">
-          <a class="social__link-facebook" href="https://www.facebook.com/htmlacademy">
+          <a class="social__link-facebook" href="https://www.facebook.com/htmlacademy"
+            aria-label="мы в соцсети фейсбук">
             <svg class="social__facebook" width="22" height="22">
               <use xlink:href="img/sprite.svg#icon-facebook"></use>
             </svg>
