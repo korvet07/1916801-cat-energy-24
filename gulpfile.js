@@ -27,12 +27,13 @@ export const styles = () => {
     .pipe(gulp.dest('build/css', { sourcemaps: '.' }))
     .pipe(browser.stream());
 }
+
 // HTML
 
 const html = () => {
   return gulp
     .src("source/*.html")
-    // .pipe(htmlmin({ collapseWhitespace: true }))
+    .pipe(htmlmin({ collapseWhitespace: true }))
     .pipe(gulp.dest("build"));
 }
 
@@ -40,10 +41,12 @@ const html = () => {
 
  const scripts = () => {
   return gulp
-    .src("source/js/script.js")
+		.src("source/js/script.js")
+		.pipe(terser())
     .pipe(gulp.dest("build/js"))
     .pipe(browser.stream());
-};
+ };
+
 // Images
 
 const optimizeImages = () => {
@@ -101,7 +104,6 @@ const copy = (done) => {
   done();
 }
 
-
 // Clean
 
 const clean = () => {
@@ -120,6 +122,13 @@ const server = (done) => {
     notify: false,
     ui: false,
   });
+  done();
+}
+
+// Reload
+
+const reload = (done) => {
+  browser.reload();
   done();
 }
 
@@ -148,7 +157,6 @@ export const build = gulp.series(
 );
 
 // Default
-
 
 export default gulp.series(
   clean,
