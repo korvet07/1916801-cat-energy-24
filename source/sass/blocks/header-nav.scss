@@ -7,7 +7,8 @@
   color: #000000;
 
   @media (min-width: $tablet-width) {
-    margin-left: auto;
+    margin-left: 85px;
+    flex-grow: 1;
   }
 
   @media (min-width: $desktop-width) {
@@ -70,8 +71,10 @@
   @media (min-width: $tablet-width) {
     flex-basis: auto;
     border: none;
-    min-height: 0;
-    margin-right: 35px;
+
+    &:nth-child(2) {
+      margin-left: 30px;
+    }
 
     &:last-child {
       margin-right: 0;
@@ -96,6 +99,7 @@
     font-size: 18px;
     line-height: 24px;
     padding-bottom: 10px;
+    padding-top: 40px;
 
     &:hover {
       opacity: 0.6;

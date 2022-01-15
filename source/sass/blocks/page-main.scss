@@ -1,3 +1,9 @@
+.page-main {
+  @media (min-width: $tablet-width) {
+    position: relative;
+  }
+}
+
 .page-main__selection-diet {
   background-color: $white;
 }
@@ -21,7 +27,7 @@
 
   @media (min-width: $tablet-width) {
     background: $white;
-    margin-bottom: 50px;
+    margin-bottom: 20px;
     min-height: auto;
   }
 }
@@ -35,8 +41,10 @@
 
   @media (min-width: $tablet-width) {
     color: $black;
-    margin: 62px auto 41px 90px;
-    text-align: start;
+    font-size: 60px;
+    line-height: 60px;
+    text-align: left;
+    margin: 62px 167px 41px 47px;
   }
 
   @media (min-width: $desktop-width) {
@@ -55,7 +63,7 @@
     color: $black;
     font-size: 20px;
     line-height: 20px;
-    margin-left: 90px;
+    margin-left: 47px;
   }
 }
 
@@ -110,10 +118,10 @@
 
   @media (min-width: $tablet-width) {
     position: relative;
-    max-width: 244px;
+    min-width: 244px;
     min-height: 54px;
-    top: -600px;
-    left: -130px;
+    top: -580px;
+    left: -120px;
     font-size: 20px;
     line-height: 20px;
     padding: 10px;
