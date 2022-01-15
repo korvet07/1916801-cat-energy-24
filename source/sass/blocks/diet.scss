@@ -1,13 +1,10 @@
 .diet {
+  height: 266px;
   margin-top: 0;
   background-color: #f2f2f2;
   padding: 20px;
   padding-bottom: 0;
-  display: grid;
-  grid-template-columns: 67px 1fr;
-  column-gap: 20px;
-  grid-template-rows: 53px auto auto;
-  row-gap: 22px;
+
 
   @media (min-width: $tablet-width) {
     min-height: 372px;
@@ -65,6 +62,8 @@
 }
 
 .diet__title {
+  text-align: left;
+  align-self: center;
   grid-area: 1/2/2/3;
 
   @media (min-width: $tablet-width) {
@@ -81,6 +80,7 @@
 }
 
 .diet__argument {
+  margin: 0;
   grid-area: 2/1/3/-1;
 
   @media (min-width: $tablet-width) {
@@ -104,6 +104,7 @@
   padding: 20px;
   position: relative;
   grid-column: 1/-1;
+  padding-left: 0;
   justify-self: start;
 
   &::after {
@@ -137,8 +138,8 @@
   position: absolute;
   width: 24px;
   height: 12px;
-  right: -30px;
-  top: calc(1em / 2 + 12px);
+  right: -20px;
+  top: calc(1em / 2 + 15px);
   background: url("../img/icon-arrow.svg") center no-repeat;
   background-size: cover;
 

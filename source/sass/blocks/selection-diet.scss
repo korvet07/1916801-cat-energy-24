@@ -19,6 +19,13 @@
 }
 
 .selection-diet__fatten {
+  display: grid;
+  grid-template-columns: 67px 1fr;
+  column-gap: 10px;
+  grid-template-rows: 53px 90px auto;
+  row-gap: 22px;
+  padding-left: 10px;
+
   @media (min-width: $tablet-width) {
     padding: 77px 28px 37px 52px;
   }
@@ -32,7 +39,21 @@
   }
 }
 
+.selection-diet__fatten .diet__link {
+  padding-left: 5px;
+}
+
+.selection-diet__fatten .diet__argument {
+  padding-left: 10px;
+}
+
 .selection-diet__slimming {
+  display: grid;
+  grid-template-columns: 50px 1fr;
+  column-gap: 20px;
+  grid-template-rows: 53px 90px auto;
+  row-gap: 22px;
+
   @media (min-width: $tablet-width) {
     padding: 75px 62px 37px 52px;
   }

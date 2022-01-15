@@ -92,12 +92,12 @@
 }
 
 .example__description {
-  display: inline-block;
   background-color: #eaeaea;
-  line-height: 14px;
-  margin: 0 15px;
+  font-size: 12px;
+  line-height: 12px;
+  margin: 0 20px;
   position: relative;
-  bottom: -10px;
+  bottom: -5px;
 
   @media (min-width: $tablet-width) {
     bottom: -16px;
@@ -115,7 +115,8 @@
   line-height: 24px;
   text-align: center;
   color: $black;
-  padding-top: 10px;
+  padding-top: 13px;
+  text-transform: uppercase;
 
   @media (min-width: $tablet-width) {
     font-size: 30px;
@@ -130,6 +131,8 @@
   line-height: 20px;
   text-transform: uppercase;
   color: #000000;
+  margin-top: 20px;
+  margin-bottom: 40px;
 
   @media (min-width: $tablet-width) {
     font-size: 20px;
@@ -146,6 +149,7 @@
 }
 
 .example__result-wrap {
+  width: 70%;
   position: relative;
   display: flex;
   justify-content: space-between;
@@ -155,12 +159,12 @@
   &::before {
     content: "";
     position: absolute;
-    width: 31%;
+    width: 45%;
     height: 70%;
     border: 2px solid $special_grey;
     border-radius: 6px;
     background-color: $white;
-    right: 35%;
+    right: 28%;
     top: 25%;
 
     @media (min-width: $tablet-width) {
@@ -175,11 +179,11 @@
   &::after {
     content: "";
     position: absolute;
-    width: 12.5%;
+    width: 20%;
     height: 30%;
     border-radius: 6px;
     background-color: $basic-green;
-    left: 37%;
+    left: 30%;
     top: 45%;
     z-index: 1;
     transition: all 1s ease-out;
@@ -261,7 +265,11 @@
 }
 
 .example__title {
-  padding-top: 10px;
+  font-size: 36px;
+  line-height: 40px;
+  text-transform: none;
+  padding-top: 25px;
+  padding-bottom: 40px;
   text-align: left;
 
   @media (min-width: $tablet-width) {
@@ -357,6 +365,9 @@
 }
 
 .example__argument {
+  margin: 0;
+  margin-bottom: 20px;
+
   @media (min-width: $tablet-width) {
     font-size: 16px;
     line-height: 24px;
@@ -366,8 +377,13 @@
 }
 
 .example__result-control-mark {
+  width: 280px;
+  height: 232px;
+  margin: 0 auto;
+
   @media (min-width: $tablet-width) {
     height: 511px;
+    width: 592px;
   }
 }
 

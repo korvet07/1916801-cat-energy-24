@@ -39,7 +39,7 @@ const html = () => {
 
 // Scripts
 
- const scripts = () => {
+const scripts = () => {
   return gulp
 		.src("source/js/script.js")
 		.pipe(terser())
@@ -62,7 +62,7 @@ const copyImages = () => {
 
 // WebP
 
- const createWebp = () => {
+const createWebp = () => {
   return gulp.src('source/img/**/*.{png,jpg}')
     .pipe(squoosh({
       webp: {}

@@ -98,6 +98,7 @@
 }
 
 .advantages__argument {
+  margin: 0;
   grid-column: 2/3;
   z-index: 1;
 
@@ -109,6 +110,9 @@
 }
 
 .advantages__title {
+  font-size: 36px;
+  line-height: 40px;
+  text-transform: none;
   margin-bottom: 40px;
   text-align: left;
 

@@ -48,3 +48,15 @@
     opacity: 0.3;
   }
 }
+
+.page-footer__copyright-link {
+  padding-top: 10px;
+}
+
+.social__link-facebook {
+  margin-left: -10px;
+
+  @media (min-width: 321px) {
+    margin: 0;
+  }
+}
