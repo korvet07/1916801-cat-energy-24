@@ -71,7 +71,7 @@
   width: 280px;
   position: absolute;
   margin: auto;
-  top: -55px;
+  top: -95px;
   left: 0;
   right: 0;
   bottom: 0;
@@ -111,6 +111,8 @@
 }
 
 .page-main__button {
+  position: relative;
+  top: 110px;
   padding: 10px 44px;
   max-width: 280px;
   margin: 0 auto;
