@@ -162,23 +162,28 @@
             <input class="visually-hidden example__result-input-before" type="radio" id="result-before" name="result"
               checked>
             <input class="visually-hidden example__result-input-after" type="radio" id="result-after" name="result">
-            <div class="example__result-control-mark">
-              <picture>
-                <source type="image/webp" media="(min-width: 768px)"
-                  srcset="img/cat-fat-tab.webp 1x, img/cat-fat-tab@2x.webp 2x">
-                <source type="image/webp" srcset="img/cat-fat.webp 1x, img/cat-fat@2x.webp 2x">
-                <source media="(min-width: 768px)" srcset="img/cat-fat-tab.png 1x, img/cat-fat-tab@2x.png 2x">
-                <img class="example__result-image-fat" src="img/cat-fat.png" srcset="img/cat-fat@2x.png 2x"
-                  alt="фото до применения Cat Energy Slim" width="280" height="232">
-              </picture>
-              <picture>
-                <source type="image/webp" media="(min-width: 768px)"
-                  srcset="img/cat-skinny-tab.webp 1x, img/cat-skinny-tab@2x.webp 2x">
-                <source type="image/webp" srcset="img/cat-skinny.webp 1x, img/cat-skinny@2x.webp 2x">
-                <source media="(min-width: 768px)" srcset="img/cat-skinny-tab.png 1x, img/cat-skinny-tab@2x.png 2x">
-                <img class="example__result-image-skinny" src="img/cat-skinny.png" srcset="img/cat-skinny@2x.png 2x"
-                  alt="фото после применения Cat Energy Slim" width="243" height="232">
-              </picture>
+            <div class="example__result-control-mark compare">
+              <div class="compare__image-before-wrapper">
+                <picture>
+                  <source type="image/webp" media="(min-width: 768px)"
+                    srcset="img/cat-fat-tab.webp 1x, img/cat-fat-tab@2x.webp 2x">
+                  <source type="image/webp" srcset="img/cat-fat.webp 1x, img/cat-fat@2x.webp 2x">
+                  <source media="(min-width: 768px)" srcset="img/cat-fat-tab.png 1x, img/cat-fat-tab@2x.png 2x">
+                  <img class="example__result-image-fat compare-image" src="img/cat-fat.png"
+                    srcset="img/cat-fat@2x.png 2x" alt="фото до применения Cat Energy Slim" width="280" height="232">
+                </picture>
+              </div>
+              <div class="compare__image-after-wrapper">
+                <picture>
+                  <source type="image/webp" media="(min-width: 768px)"
+                    srcset="img/cat-skinny-tab.webp 1x, img/cat-skinny-tab@2x.webp 2x">
+                  <source type="image/webp" srcset="img/cat-skinny.webp 1x, img/cat-skinny@2x.webp 2x">
+                  <source media="(min-width: 768px)" srcset="img/cat-skinny-tab.png 1x, img/cat-skinny-tab@2x.png 2x">
+                  <img class="example__result-image-skinny compare-image" src="img/cat-skinny.png"
+                    srcset="img/cat-skinny@2x.png 2x" alt="фото после применения Cat Energy Slim" width="243"
+                    height="232">
+                </picture>
+              </div>
             </div>
             <div class="example__result-wrap">
               <label class="example__result-before title" for="result-before">было</label>
