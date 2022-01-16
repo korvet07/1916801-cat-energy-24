@@ -9,6 +9,10 @@
 .advantages__container {
   padding-top: 20px;
   background-color: $white;
+
+  @media (min-width: $tablet-width) {
+    padding-top: 0;
+  }
 }
 
 .advantages__list {
@@ -22,7 +26,7 @@
     grid-template-columns: repeat(2, auto);
     grid-auto-rows: 280px;
     row-gap: 37px;
-    column-gap: 137px;
+    column-gap: 50px;
   }
 
   @media (min-width: $desktop-width) {
