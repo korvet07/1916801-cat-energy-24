@@ -8,10 +8,6 @@
 
   @media (min-width: $tablet-width) {
     min-height: 372px;
-    grid-template-columns: auto 200px;
-    column-gap: 54px;
-    grid-template-rows: auto auto auto;
-    row-gap: 0;
   }
 }
 
@@ -31,8 +27,11 @@
     background-size: contain;
 
     @media (min-width: $tablet-width) {
-      width: 200px;
+      width: 268px;
       height: 200px;
+      background-size: 268px 200px;
+      align-self: start;
+      margin-top: 14px;
     }
 
     @media (min-width: $desktop-width) {
@@ -50,7 +49,10 @@
 
     @media (min-width: $tablet-width) {
       width: 200px;
-      height: 200px;
+      height: 205px;
+      background-size: 200px 205px;
+      align-self: start;
+      margin-top: 13px;
     }
 
     @media (min-width: $desktop-width) {
@@ -67,6 +69,8 @@
   grid-area: 1/2/2/3;
 
   @media (min-width: $tablet-width) {
+    font-size: 36px;
+    line-height: 36px;
     grid-area: 1/1/2/2;
     align-self: end;
     text-align: left;
@@ -88,6 +92,7 @@
     line-height: 24px;
     color: $black;
     grid-area: 2/1/3/2;
+    align-self: center;
   }
 
   @media (min-width: $desktop-width) {
@@ -122,6 +127,7 @@
     line-height: 30px;
     grid-area: 3/1/4/2;
     align-self: end;
+    padding-right: 30px;
 
     &::after {
       display: none;
@@ -155,4 +161,8 @@
 .diet__link:active,
 .diet__link:active .diet__link-arrow {
   opacity: 0.3;
+}
+
+.selection-diet__fatten .diet__title {
+  align-self: start;
 }

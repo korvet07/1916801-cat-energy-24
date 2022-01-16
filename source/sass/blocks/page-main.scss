@@ -120,10 +120,10 @@
 
   @media (min-width: $tablet-width) {
     position: relative;
-    min-width: 244px;
+    max-width: 244px;
     min-height: 54px;
     top: -580px;
-    left: -120px;
+    left: -140px;
     font-size: 20px;
     line-height: 20px;
     padding: 10px;
