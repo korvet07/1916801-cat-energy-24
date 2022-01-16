@@ -1,5 +1,5 @@
 .diet {
-  height: 266px;
+  min-height: 266px;
   margin-top: 0;
   background-color: #f2f2f2;
   padding: 20px;
@@ -8,6 +8,7 @@
 
   @media (min-width: $tablet-width) {
     min-height: 372px;
+    max-width: 708px;
   }
 }
 
