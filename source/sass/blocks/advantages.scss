@@ -63,12 +63,24 @@
       right: 77px;
     }
   }
+
+  @media (min-width: $desktop-width) {
+    &::after {
+      right: 0;
+    }
+  }
 }
 
 .advantages__item:first-child {
   @media (min-width: $tablet-width) {
     &::after {
       right: 95px;
+    }
+  }
+
+  @media (min-width: $tablet-width) {
+    &::after {
+      right: 20px;
     }
   }
 }

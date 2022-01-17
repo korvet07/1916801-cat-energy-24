@@ -22,6 +22,7 @@
   }
 
   @media (min-width: $desktop-width) {
+    height: 480px;
     display: flex;
     justify-content: space-between;
     max-width: 1440px;
@@ -334,6 +335,7 @@
 
   @media (min-width: $desktop-width) {
     top: -180px;
+    margin-left: 20px;
   }
 }
 
