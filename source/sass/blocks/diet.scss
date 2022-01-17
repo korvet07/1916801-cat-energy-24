@@ -112,6 +112,7 @@
   grid-column: 1/-1;
   padding-left: 0;
   justify-self: start;
+  color: $black;
 
   &::after {
     content: "";
@@ -165,5 +166,19 @@
 }
 
 .selection-diet__fatten .diet__title {
-  align-self: start;
+  padding-left: 5px;
+
+  @media (min-width: $tablet-width) {
+    align-self: start;
+    padding-left: 0;
+  }
+}
+
+.selection-diet__fatten .diet__argument,
+.selection-diet__fatten .diet__link {
+  padding-left: 10px;
+
+  @media (min-width: $tablet-width) {
+    padding-left: 0;
+  }
 }
