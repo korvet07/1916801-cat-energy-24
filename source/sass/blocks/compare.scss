@@ -19,6 +19,7 @@
 .compare__image-after-wrapper {
   @media (min-width: $tablet-width) {
     position: absolute;
+    height: 511px;
     width: 50%;
     top: 0;
     right: 0;
@@ -31,6 +32,7 @@
 .compare__image-before-wrapper {
   @media (min-width: $tablet-width) {
     position: absolute;
+    height: 511px;
     width: 50%;
     top: 0;
     left: 0;
