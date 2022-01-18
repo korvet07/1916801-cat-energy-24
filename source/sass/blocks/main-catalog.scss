@@ -27,6 +27,7 @@
   text-transform: inherit;
   padding-top: 27px;
   padding-bottom: 41px;
+  margin-bottom: 20px;
 
   @media (min-width: $tablet-width) {
     font-size: 60px;
@@ -37,6 +38,8 @@
 
 .main-catalog__wrapper .product-card:nth-child(2n) {
   .product-card__image-link {
+    align-items: flex-end;
+
     @media (min-width: $tablet-width) {
       width: 168px;
       height: 200px;
@@ -53,6 +56,17 @@
       .product-card__image {
         top: -80px;
       }
+    }
+  }
+}
+
+.main-catalog__wrapper .product-card:nth-child(3),
+.main-catalog__wrapper .product-card:nth-child(5) {
+  * img {
+    margin-top: 18px;
+
+    @media (min-width: $tablet-width) {
+      margin: 0;
     }
   }
 }

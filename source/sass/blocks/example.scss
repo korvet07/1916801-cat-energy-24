@@ -64,7 +64,6 @@
 
 .example__wrap-result {
   @media (width: $tablet-width) {
-    margin-bottom: -20px;
     background-color: #eaeaea;
     position: relative;
     min-height: 462px;
@@ -222,8 +221,8 @@
 
   @media (min-width: $tablet-width) {
     width: 592px;
-    margin-top: 45px;
-    top: -30px;
+    margin-top: 40px;
+    top: -15px;
 
     &:active {
       &::after {
@@ -277,6 +276,8 @@
   height: 232px;
 
   @media (min-width: $tablet-width) {
+    position: relative;
+    bottom: -8px;
     width: 650px;
     height: 511px;
   }
@@ -309,7 +310,7 @@
     max-width: 768px;
     margin: 0 auto;
     background-color: $white;
-    padding: 0 30px 250px;
+    padding: 0 30px 240px;
   }
 
   @media (min-width: $desktop-width) {
@@ -338,8 +339,7 @@
   }
 
   @media (min-width: $desktop-width) {
-    top: -180px;
-    margin-left: 20px;
+    top: -195px;
   }
 }
 
@@ -393,5 +393,6 @@
   @media (min-width: $tablet-width) {
     display: block;
     position: relative;
+    bottom: -15px;
   }
 }
