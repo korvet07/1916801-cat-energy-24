@@ -200,3 +200,13 @@
     padding-left: 20px;
   }
 }
+
+.selection-diet__fatten .diet__argument {
+  @media (min-width: $tablet-width) {
+    padding-bottom: 5px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-bottom: 0;
+  }
+}

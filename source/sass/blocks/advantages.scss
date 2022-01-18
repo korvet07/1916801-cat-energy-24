@@ -74,11 +74,11 @@
 .advantages__item:first-child {
   @media (min-width: $tablet-width) {
     &::after {
-      right: 95px;
+      right: 97px;
     }
   }
 
-  @media (min-width: $tablet-width) {
+  @media (min-width: $desktop-width) {
     &::after {
       right: 20px;
     }
