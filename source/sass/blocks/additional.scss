@@ -3,7 +3,8 @@
   flex-direction: column;
   min-height: 290px;
   min-width: 280px;
-  margin: 35px 0;
+  margin-top: 30px;
+  margin-bottom: 35px;
   background: linear-gradient(rgba(104, 183, 56, 0.85), rgba(104, 183, 56, 0.85)),
     url("../img/bg-addition.png") center/cover no-repeat;
 
@@ -15,6 +16,8 @@
 
 
   @media (min-width: $tablet-width) {
+    justify-content: space-between;
+    align-items: center;
     flex-direction: row;
     min-height: 200px;
     max-width: 707px;
@@ -36,21 +39,20 @@
       url("../img/bg-addition-desktop.png") center/cover no-repeat;
     flex-direction: column;
     margin: 0;
+    justify-content: center;
 
     @media (min-resolution: 2dppx) {
-      background: url("../img/bg-addition-desktop@2x.png") center/contain no-repeat,
-        $basic-green;
-      background-blend-mode: soft-light;
+      background: linear-gradient(rgba(104, 183, 56, 0.85), rgba(104, 183, 56, 0.85)),
+        url("../img/bg-addition-desktop@2x.png") center/contain no-repeat;
     }
   }
 }
 
 .additional__container {
   @media (min-width: $desktop-width) {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin-bottom: 86px;
+    display: grid;
+    grid-template-columns: 1fr 245px;
+    column-gap: 79px;
   }
 }
 
@@ -63,10 +65,10 @@
 }
 
 .additional__title {
-  padding-right: 22px;
+  padding-right: 5px;
   line-height: 24px;
   text-align: left;
-  margin-bottom: 36px;
+  margin-bottom: 33px;
   text-transform: none;
 
 
@@ -74,27 +76,54 @@
     font-size: 36px;
     line-height: 36px;
     padding: 0 37px;
-    padding-left: 0;
+    margin-top: 68px;
+    margin-bottom: 80px;
+
+    &::before {
+      margin-right: 0;
+    }
+
+    &::after {
+      margin-left: 0;
+    }
   }
 
   @media (min-width: $desktop-width) {
     padding-right: 35px;
     margin-top: 75px;
     margin-bottom: 81px;
+    padding-left: 0;
+
+    &::before {
+      margin-right: 40px;
+    }
   }
 }
 
 .additional__action-icon {
-  width: 62px;
-  height: 62px;
+  width: 56px;
+  height: 60px;
   background: url("../img/additional-icon-mob.svg") center no-repeat;
-  margin: 0 auto;
+  background-size: 56px 60px;
+  align-self: center;
   margin-top: 65px;
+
+  @media (min-width: $tablet-width) {
+    width: 58px;
+    height: 64px;
+    background-size: 58px 64px;
+    margin-left: 87px;
+    margin-bottom: 74px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin: 0;
+    margin-top: 20px;
+  }
 }
 
 .additional__action-content {
   min-height: 60px;
-  width: 160px;
   margin: 0 auto;
   margin-top: 61px;
   text-align: center;
@@ -103,5 +132,14 @@
   @media (min-width: $tablet-width) {
     font-size: 16px;
     line-height: 20px;
+    margin: 0;
+    margin-right: 125px;
+    text-align: left;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin: 0;
+    text-align: center;
+    margin-top: 60px;
   }
 }

@@ -1,6 +1,6 @@
 .social__link-instagram {
-  margin-left: 40px;
-  margin-right: 40px;
+  margin-left: 35px;
+  margin-right: 43px;
 
   @media (min-width: $tablet-width) {
     margin-left: 25px;
@@ -9,10 +9,12 @@
 }
 
 .social__facebook {
+  margin-top: 5px;
   stroke: #666666;
   fill: $basic_grey;
 
   @media (min-width: $tablet-width) {
+    margin: 0;
     width: 28px;
     height: 33px;
   }

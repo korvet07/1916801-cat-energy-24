@@ -1,16 +1,22 @@
 .additional {
-  overflow: hidden;
+  @media (min-width: $desktop-width) {
+    margin-bottom: 86px;
+  }
 }
 
 .additional-item {
   display: flex;
   flex-direction: column;
-  min-height: 100px;
+  min-height: 98px;
   max-width: 500px;
   margin: 0 auto;
-  margin-bottom: 20px;
+  padding-bottom: 20px;
   padding-top: 13px;
   border-top: 1px solid $special_grey;
+
+  &:last-child {
+    border-bottom: 1px solid $special_grey;
+  }
 
   @media (min-width: $tablet-width) {
     min-height: 140px;
@@ -18,6 +24,7 @@
     max-width: 708px;
     padding: 27px 38px;
     margin-bottom: 0;
+    justify-content: space-between;
 
     &:not(:last-child) {
       border-bottom: none;
@@ -25,13 +32,15 @@
   }
 
   @media (min-width: $desktop-width) {
-    min-width: 895px;
-    min-height: 72px;
-    flex-direction: row;
-    margin: 0;
-    padding: 0;
+    display: grid;
+    grid-template-columns: 1fr 244px;
+    padding: 14px 0 17px;
+    align-items: center;
     border: none;
     border-top: 1px solid $special_grey;
+    margin: 0;
+    max-width: none;
+    min-height: 0;
 
     &:last-child {
       border-bottom: 1px solid $special_grey;
@@ -43,7 +52,13 @@
   @media (min-width: $tablet-width) {
     display: flex;
     max-width: 632px;
-    flex-grow: 1;
+    justify-content: space-between;
+  }
+
+  @media (min-width: $desktop-width) {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    max-width: none;
   }
 }
 
@@ -54,13 +69,13 @@
   margin-bottom: 13px;
 
   @media (min-width: $tablet-width) {
-    margin-right: auto;
+    font-size: 20px;
+    line-height: 20px;
   }
 
   @media (min-width: $desktop-width) {
     align-self: center;
     margin-bottom: 0;
-    width: 150px;
   }
 }
 
@@ -87,23 +102,24 @@
   display: flex;
   justify-content: space-between;
 
-  @media (min-width: $desktop-width) {
-    display: flex;
-    flex-grow: 1;
-    align-items: center;
-    margin-bottom: 0;
-  }
-}
-
-.additional-item__price {
   @media (min-width: $tablet-width) {
-    margin-left: 50px;
+    font-size: 16px;
+    line-height: 20px;
+    display: grid;
+    grid-template-columns: auto minmax(92px, auto);
+    padding-top: 3px;
+    text-align: left;
+  }
+
+  @media (min-width: $desktop-width) {
+    display: grid;
+    grid-template-columns: auto minmax(82px, auto);
+    margin: 0;
   }
 }
 
 .additional-item__size {
   @media (min-width: $desktop-width) {
-    width: 125px;
-    margin: 0 auto;
+    margin-right: auto;
   }
 }
