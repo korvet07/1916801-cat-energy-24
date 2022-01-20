@@ -20,15 +20,15 @@
 
 .selection-diet__fatten {
   display: grid;
-  grid-template-columns: 67px 1fr;
+  grid-template-columns: minmax(67px, auto) 1fr;
   column-gap: 10px;
-  grid-template-rows: 53px 90px auto;
+  grid-template-rows: minmax(53px, auto) auto auto;
   row-gap: 22px;
   padding-left: 10px;
 
   @media (min-width: $tablet-width) {
     padding: 77px 28px 37px 52px;
-    grid-template-columns: auto 268px;
+    grid-template-columns: auto minmax(268px, auto);
     column-gap: 20px;
     grid-template-rows: auto auto auto;
     row-gap: 0;
@@ -47,12 +47,12 @@
   display: grid;
   grid-template-columns: 50px 1fr;
   column-gap: 20px;
-  grid-template-rows: auto auto auto;
+  grid-template-rows: minmax(50px, auto) auto auto;
   row-gap: 22px;
 
   @media (min-width: $tablet-width) {
     padding: 75px 62px 37px 52px;
-    grid-template-columns: auto 200px;
+    grid-template-columns: auto minmax(200px, auto);
     column-gap: 54px;
     grid-template-rows: auto auto auto;
     row-gap: 24px;

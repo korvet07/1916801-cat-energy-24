@@ -95,6 +95,17 @@
 .diet__argument {
   margin: 0;
   grid-area: 2/1/3/-1;
+  position: relative;
+
+  &::after {
+    content: "";
+    position: absolute;
+    height: 1px;
+    background-color: #d9d9d9;
+    left: 0;
+    right: 0;
+    bottom: -23px;
+  }
 
   @media (min-width: $tablet-width) {
     font-size: 16px;
@@ -102,6 +113,10 @@
     color: $black;
     grid-area: 2/1/3/2;
     align-self: center;
+
+    &::after {
+      display: none;
+    }
   }
 
   @media (min-width: $desktop-width) {
@@ -114,25 +129,16 @@
 
 .diet__link {
   @include link-default;
+  position: relative;
   font-family: $font-default;
   font-size: 16px;
   line-height: 16px;
   padding: 20px;
-  position: relative;
   grid-column: 1/-1;
   padding-left: 0;
   justify-self: start;
   color: $black;
 
-  &::after {
-    content: "";
-    position: absolute;
-    height: 1px;
-    width: 240px;
-    background-color: #d9d9d9;
-    left: 0;
-    top: -10px;
-  }
 
   @media (min-width: $tablet-width) {
     font-size: 20px;

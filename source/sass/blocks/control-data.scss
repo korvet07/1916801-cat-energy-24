@@ -9,13 +9,13 @@
     width: auto;
   }
 
-  @media (min-width: $desktop-width) {
-    margin: 0;
-    column-gap: 14px;
+  @media (min-width: $tablet-width) {
+    column-gap: 17px;
+  }
 
-    &:last-child {
-      margin: 0;
-    }
+  @media (min-width: $desktop-width) {
+    grid-template-columns: auto 1fr;
+    column-gap: 17px;
   }
 }
 
@@ -32,8 +32,7 @@
 }
 
 .control-data__input {
-  padding: 0 5px;
-  padding-top: 7px;
+  padding: 7px 5px 0 15px;
 
   &:invalid {
     border: 2px solid $status_error;
@@ -60,6 +59,10 @@
       font-size: 20px;
       line-height: 30px;
     }
+  }
+
+  @media (min-width: $tablet-width) {
+    padding-left: 18px;
   }
 }
 

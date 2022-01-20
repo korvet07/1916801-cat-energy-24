@@ -11,3 +11,9 @@
   text-transform: uppercase;
   text-align: center;
 }
+
+@mixin fieldset-default {
+  margin: 0;
+  border: none;
+  padding: 0;
+}

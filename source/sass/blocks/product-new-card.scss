@@ -83,6 +83,7 @@
 }
 
 .product-new-card__button {
+  @include link-default;
   position: relative;
   margin-bottom: 50px;
 
