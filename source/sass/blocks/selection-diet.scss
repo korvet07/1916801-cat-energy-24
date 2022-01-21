@@ -38,7 +38,7 @@
     padding: 47px 61px 60px 33px;
     grid-template-columns: 134px auto;
     column-gap: 47px;
-    grid-template-rows: 100px auto auto;
+    grid-template-rows: minmax(101px, auto) auto auto;
     row-gap: 23px;
   }
 }
@@ -62,7 +62,7 @@
     padding: 41px 52px 60px;
     grid-template-columns: 100px auto;
     column-gap: 62px;
-    grid-template-rows: 106px auto auto;
+    grid-template-rows: minmax(106px, auto) auto auto;
     row-gap: 23px;
   }
 }
