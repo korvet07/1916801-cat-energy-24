@@ -6,18 +6,23 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>HTML Academy: Кэт энерджи</title>
-  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/style.min.css">
   <link rel="icon" href="favicon.ico"> <!-- 32×32 -->
   <link rel="icon" href="img/favicons/favicon-svg.svg" type="image/svg+xml">
   <link rel="apple-touch-icon" href="img/favicons/apple-icon-180x180.png"> <!-- 180×180 -->
   <link rel="manifest" href="manifest.webmanifest">
+  <link rel="preload" href="js/script.js" as="script" crossorigin="anonymous">
+  <link rel="preload" href="fonts/oswaldmedium.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+  <link rel="preload" href="fonts/oswaldregular.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+  <link rel="preload" href="fonts/oswaldmedium.woff" as="font" type="font/woff" crossorigin="anonymous">
+  <link rel="preload" href="fonts/oswaldregular.woff" as="font" type="font/woff" crossorigin="anonymous">
 </head>
 
 <body class="page__body">
-  <header class="page-header">
+  <header class="page-header line-solid">
     <div
       class="container container--short  page-header__container page-header__container--closed page-header__container--nojs">
-      <a class="page-header__logo logo-head" href="index.html">
+      <a class="page-header__logo logo-head" href="index.html" aria-label="логотип магазина cat energy">
         <div class="logo-head__wrapper-icon">
           <picture>
             <source media="(min-width: 1440px)" srcset="img/logo-desktop.svg">
@@ -41,7 +46,7 @@
           <li class="header-nav__item">
             <a class="header-nav__link header-nav__link" href="catalog.html">Каталог продукции</a>
           </li>
-          <li class="header-nav__item"><a class="header-nav__link header-nav__link--current" href="#">Подобор
+          <li class="header-nav__item"><a class="header-nav__link header-nav__link--current" href="#">Подбор
               программы</a>
           </li>
         </ul>
@@ -56,51 +61,57 @@
           программу питания для вашего кота</p>
         <form class="questionnaire__form form" action="https://echo.htmlacademy.ru/" method="get">
           <div class="form__wrapper">
-            <fieldset class="form__data-cat">
+            <fieldset class="form-data form__data-cat">
               <div class="control-data">
-                <label class="control-data__title title" for="cat-name">Имя:* </label>
+                <label class="control-data__title title" for="cat-name" aria-label="введите имя кота">Имя:* </label>
                 <input class="control-data__input" type="text" id="cat-name" name="cat-name" placeholder="Барсик"
                   required>
               </div>
               <div class="control-data">
-                <label class="control-data__title title" for="cat-heft">Вес (кг):* </label>
+                <label class="control-data__title title" for="cat-heft" aria-label="введите вес кота">Вес (кг):*
+                </label>
                 <input class="control-data__input" type="text" id="cat-heft" name="cat-heft" placeholder="7" required>
               </div>
               <div class="control-data">
-                <label class="control-data__title title" for="cat-age">Возраст (лет): </label>
+                <label class="control-data__title title" for="cat-age" aria-label="введите возраст кота">Возраст (лет):
+                </label>
                 <input class="control-data__input" type="text" id="cat-age" name="cat-age" placeholder="7">
               </div>
             </fieldset>
-            <fieldset class="form__select">
+            <fieldset class="form__select line-solid">
               <ul class="form__select-list control-select">
                 <li class="control-select__item">
                   <input class="visually-hidden control-select__input" type="radio" id="slimming-programm"
-                    name="select-programm" value="slimming">
+                    name="select-programm" value="slimming" checked>
                   <span class="control-select__mark"></span>
-                  <label class="control-select__title title" for="slimming-programm">Похудение</label>
+                  <label class="control-select__title title" for="slimming-programm"
+                    aria-label="выбор программы похудение">Похудение</label>
                 </li>
                 <li class="control-select__item">
                   <input class="visually-hidden control-select__input" id="fatten-programm" type="radio"
                     name="select-programm" value="fatten">
                   <span class="control-select__mark"></span>
-                  <label class="control-select__title title" for="fatten-programm">Набор массы </label>
+                  <label class="control-select__title title" for="fatten-programm" aria-label="выбор программы набор массы">Набор
+                    массы </label>
                 </li>
                 <li class="control-select__item">
                   <input class="visually-hidden control-select__input" type="radio" id="no-savvy" name="select-programm"
                     value="no-savvy">
                   <span class="control-select__mark"></span>
-                  <label class="control-select__title title" for="no-savvy">Не знаю (Нужен ваш совет)
+                  <label class="control-select__title title" for="no-savvy" aria-label="выбор необходим совет">Не знаю (Нужен
+                    ваш совет)
                   </label>
                 </li>
               </ul>
             </fieldset>
           </div>
           <fieldset class="form__data-owner owner">
-            <legend class="form-title title line">Контактные данные (владельца кота)
+            <legend class="form-title title line-broken">Контактные данные (владельца кота)
             </legend>
-            <div class="owner__wrap">
+            <div class="form-data owner__form-data">
               <div class="control-data">
-                <label class="control-data__title title" for="owner-mail">E-mail:* </label>
+                <label class="control-data__title title" for="owner-mail" aria-label="введите e-mail">E-mail:*
+                </label>
                 <input class="control-data__input" type="email" placeholder="kuklachev@gmail.com" id="owner-mail"
                   name="owner-mail" required>
                 <span class="control-data__mail-icon">
@@ -115,7 +126,7 @@
                 </span>
               </div>
               <div class="control-data">
-                <label class="control-data__title title" for="owner-tel">Телефон:*</label>
+                <label class="control-data__title title" for="owner-tel" aria-label="введите телефон">Телефон:*</label>
                 <input class="control-data__input" type="tel" name="owner-tel" id="owner-tel"
                   placeholder="8 (960) 900-60-90" required>
                 <span class="control-data__tel-icon">
@@ -139,12 +150,12 @@
             </div>
           </fieldset>
           <fieldset class="form__owner-comment ">
-            <legend class="form-title form-title--comment title line">Комментарий</legend>
+            <legend class="form-title form-title--comment title line-broken">Комментарий</legend>
             <textarea class="form__owner-comment-input" placeholder="Расскажите обо всех повадках кота"
               name="owner-comment" cols="30" rows="6"></textarea>
           </fieldset>
           <fieldset class="form__addition addition">
-            <legend class="form-title form-title--addition title line">Дополнительно</legend>
+            <legend class="form-title form-title--addition title line-broken">Дополнительно</legend>
             <ul class="addition__list">
               <li class="addition__item">
                 <input class="visually-hidden addition__input" type="checkbox" id="sweetener" name="sweetener" checked>
@@ -202,14 +213,14 @@
         </picture>
         <iframe class="address__map-interactiv address__map-interactiv--nojs"
           src="https://yandex.ru/map-widget/v1/?um=constructor%3A30b1dbaf7c60cbd706fba8a5d840b9d8e5735e79ad29369a826a5ca131a28db3&amp;source=constructor"
-          width="100%" height="400" frameborder="0">
+          frameborder="0">
         </iframe>
       </div>
     </section>
   </main>
   <footer class="page-footer">
     <div class="container  page-footer__container">
-      <a class="page-footer__logo">
+      <a class="page-footer__logo" aria-label="логотип cat energy">
         <div class="page-footer__logo-name-shop">
           <img class="page-footer__logo-name-shop-image" src="img/logo-footer-name-shop.svg" alt="логотип магазина"
             width="128" height="24">
@@ -217,22 +228,24 @@
       </a>
       <ul class="page-footer__social-list social">
         <li class="social__item">
-          <a class="social__link-vkontakte" href="https://vk.com/htmlacademy">
-            <svg class="social__icon-vk" width="23" height="16">
+          <a class="social__link-vkontakte" href="https://vk.com/htmlacademy" aria-label="мы в соцсети вконтакте">
+            <svg class="social__icon-vk" width="23" height="16" viewBox="0 0 23 16">
               <use xlink:href="img/sprite.svg#icon-vk"></use>
             </svg>
           </a>
         </li>
         <li class="social__item">
-          <a class="social__link-instagram" href="https://www.instagram.com/htmlacademy">
-            <svg class="social__instagram" width="16" height="16">
+          <a class="social__link-instagram" href="https://www.instagram.com/htmlacademy"
+            aria-label="мы в соцсети инстаграм">
+            <svg class="social__instagram" width="16" height="16" viewBox="0 0 16 16">
               <use xlink:href="img/sprite.svg#icon-instagram"></use>
             </svg>
           </a>
         </li>
         <li class="social__item">
-          <a class="social__link-facebook" href="https://www.facebook.com/htmlacademy">
-            <svg class="social__facebook" width="22" height="22">
+          <a class="social__link-facebook" href="https://www.facebook.com/htmlacademy"
+            aria-label="мы в соцсети фейсбук">
+            <svg class="social__facebook" width="22" height="22" viewBox="0 0 22 22">
               <use xlink:href="img/sprite.svg#icon-facebook"></use>
             </svg>
           </a>

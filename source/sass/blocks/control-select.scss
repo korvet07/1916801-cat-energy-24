@@ -1,10 +1,7 @@
 .control-select {
-  @include list-default;
   display: grid;
-  margin-top: 26px;
-  grid-template-rows: repeat(3, 30px);
+  grid-template-rows: 30px 30px 30px;
   row-gap: 13px;
-  padding-bottom: 20px;
 
   @media (min-width: $tablet-width) {
     grid-template-rows: repeat(3, 40px);
@@ -14,7 +11,7 @@
 .control-select__item {
   position: relative;
   display: grid;
-  grid-template-columns: 30px auto;
+  grid-template-columns: 30px 1fr;
   column-gap: 15px;
   height: 30px;
   align-items: center;
@@ -35,6 +32,7 @@
   grid-column: 2/3;
   left: -45px;
   padding-left: 45px;
+  cursor: pointer;
 
   @media (min-width: $tablet-width) {
     font-size: 20px;
@@ -77,4 +75,12 @@
       height: 18px;
     }
   }
+}
+
+.control-select__input:hover + .control-select__mark {
+  border: 1px solid #bababa;
+}
+
+.control-select__input:disabled {
+  opacity: 0.3;
 }

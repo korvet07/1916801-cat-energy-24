@@ -12,6 +12,8 @@
     column-gap: 123px;
     grid-template-rows: repeat(2, 40px);
     row-gap: 32px;
+    margin: 0;
+    margin-top: 15px;
   }
 
   @media (min-width: $desktop-width) {
@@ -66,8 +68,9 @@
     margin: auto;
 
     @media (min-width: $tablet-width) {
-      width: 24px;
-      height: 18px;
+      width: 35px;
+      height: 35px;
+      background-size: 100% 100%;
     }
   }
 }

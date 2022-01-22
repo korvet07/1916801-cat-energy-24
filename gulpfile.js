@@ -27,23 +27,26 @@ export const styles = () => {
     .pipe(gulp.dest('build/css', { sourcemaps: '.' }))
     .pipe(browser.stream());
 }
+
 // HTML
 
 const html = () => {
   return gulp
     .src("source/*.html")
-    // .pipe(htmlmin({ collapseWhitespace: true }))
+    .pipe(htmlmin({ collapseWhitespace: true }))
     .pipe(gulp.dest("build"));
 }
 
 // Scripts
 
- const scripts = () => {
+const scripts = () => {
   return gulp
-    .src("source/js/script.js")
+		.src("source/js/script.js")
+		.pipe(terser())
     .pipe(gulp.dest("build/js"))
     .pipe(browser.stream());
-};
+ };
+
 // Images
 
 const optimizeImages = () => {
@@ -59,7 +62,7 @@ const copyImages = () => {
 
 // WebP
 
- const createWebp = () => {
+const createWebp = () => {
   return gulp.src('source/img/**/*.{png,jpg}')
     .pipe(squoosh({
       webp: {}
@@ -101,7 +104,6 @@ const copy = (done) => {
   done();
 }
 
-
 // Clean
 
 const clean = () => {
@@ -114,7 +116,7 @@ const clean = () => {
 const server = (done) => {
   browser.init({
     server: {
-      baseDir: 'source'
+      baseDir: 'build'
     },
     cors: true,
     notify: false,
@@ -123,12 +125,21 @@ const server = (done) => {
   done();
 }
 
+// Reload
+
+const reload = (done) => {
+  browser.reload();
+  done();
+}
+
 // Watcher
 
 const watcher = () => {
-  gulp.watch('source/sass/**/*.scss', gulp.series(styles));
-  gulp.watch("source/js/script.js", gulp.series(scripts));
-  gulp.watch('source/*.html').on('change', browser.reload);
+  gulp
+    .watch("source/sass/**/*.scss", gulp.series(styles))
+    .on("change", browser.reload);
+  gulp.watch('source/js/script.js', gulp.series(scripts));
+  gulp.watch('source/*.html', gulp.series(html)).on('change', browser.reload);
 }
 
 // Build
@@ -148,7 +159,6 @@ export const build = gulp.series(
 );
 
 // Default
-
 
 export default gulp.series(
   clean,

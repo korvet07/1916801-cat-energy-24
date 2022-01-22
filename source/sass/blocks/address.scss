@@ -37,16 +37,20 @@
 
 .address__container {
   display: flex;
-  justify-content: space-between;
   background-color: #f2f2f2;
+
+  @media (min-width: 321px) {
+    justify-content: space-between;
+  }
 
   &--index {
     background-color: $white;
   }
 
   @media (min-width: $tablet-width) {
+    min-height: 199px;
     max-width: 768px;
-    padding: 58px 70px;
+    padding: 30px 70px;
   }
 
   @media (min-width: $desktop-width) {
@@ -54,10 +58,10 @@
     min-width: 565px;
     min-height: 198px;
     position: absolute;
-    bottom: -260px;
+    top: 95px;
     left: 110px;
     z-index: 1;
-    padding: 56px 80px;
+    padding: 30px 80px;
     align-items: center;
   }
 }
@@ -75,6 +79,7 @@
   @media (min-width: $tablet-width) {
     font-size: 20px;
     line-height: 26px;
+    align-self: center;
   }
 }
 
@@ -110,6 +115,7 @@
   position: absolute;
   top: 0;
   height: 362px;
+  width: 100%;
 
 
   @media (min-width: $tablet-width) {
@@ -125,9 +131,18 @@
   font-style: normal;
   font-size: 14px;
   line-height: 20px;
+  margin-left: 18px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 16px;
+    line-height: 20px;
+    text-align: right;
+    margin-top: 28px;
+  }
 
   @media (min-width: $desktop-width) {
     margin: 0;
+    text-align: left;
   }
 }
 
@@ -151,5 +166,8 @@
   @media (min-width: $tablet-width) {
     font-size: 20px;
     line-height: 26px;
+    align-self: flex-end;
+    margin-bottom: 35px;
+    padding-right: 40px;
   }
 }

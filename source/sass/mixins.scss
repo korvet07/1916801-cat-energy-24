@@ -10,4 +10,11 @@
   color: inherit;
   text-transform: uppercase;
   text-align: center;
+  transition: all 0.2s;
+}
+
+@mixin fieldset-default {
+  margin: 0;
+  border: none;
+  padding: 0;
 }

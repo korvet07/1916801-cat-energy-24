@@ -1,5 +1,7 @@
-.page-main__selection-diet {
-  background-color: $white;
+.page-main {
+  @media (min-width: $tablet-width) {
+    position: relative;
+  }
 }
 
 .page-main__wrapper {
@@ -21,7 +23,7 @@
 
   @media (min-width: $tablet-width) {
     background: $white;
-    margin-bottom: 50px;
+    margin-bottom: 20px;
     min-height: auto;
   }
 }
@@ -35,13 +37,16 @@
 
   @media (min-width: $tablet-width) {
     color: $black;
-    margin: 62px auto 41px 90px;
-    text-align: start;
+    font-size: 60px;
+    line-height: 60px;
+    text-align: left;
+    margin: 62px 167px 41px 47px;
   }
 
   @media (min-width: $desktop-width) {
     margin-right: 650px;
     margin-top: 110px;
+    margin-left: 80px;
   }
 }
 
@@ -55,14 +60,19 @@
     color: $black;
     font-size: 20px;
     line-height: 20px;
-    margin-left: 90px;
+    margin-left: 47px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-left: 80px;
   }
 }
 
 .page-main__image {
+  width: 280px;
   position: absolute;
   margin: auto;
-  top: -30px;
+  top: -95px;
   left: 0;
   right: 0;
   bottom: 0;
@@ -76,7 +86,7 @@
   @media (min-width: $desktop-width) {
     position: absolute;
     z-index: 1;
-    background-color: transparent;
+    left: -60px;
   }
 }
 
@@ -96,23 +106,25 @@
     position: relative;
     width: 552px;
     height: 500px;
-    top: -260px;
+    top: -235px;
     left: 150px;
+    margin-bottom: -148px;
   }
 }
 
 .page-main__button {
+  position: relative;
+  top: 110px;
   padding: 10px 44px;
   max-width: 280px;
   margin: 0 auto;
-
 
   @media (min-width: $tablet-width) {
     position: relative;
     max-width: 244px;
     min-height: 54px;
-    top: -600px;
-    left: -130px;
+    top: -580px;
+    left: -140px;
     font-size: 20px;
     line-height: 20px;
     padding: 10px;
@@ -120,8 +132,9 @@
   }
 
   @media (min-width: $desktop-width) {
-    top: -420px;
-    left: -388px;
-    margin-top: -100px;
+    position: absolute;
+    top: 267px;
+    left: -395px;
+    min-width: 244px;
   }
 }

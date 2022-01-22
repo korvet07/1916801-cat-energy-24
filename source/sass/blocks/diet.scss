@@ -1,20 +1,17 @@
 .diet {
-  margin-top: 0;
+  min-height: 266px;
   background-color: #f2f2f2;
   padding: 20px;
   padding-bottom: 0;
-  display: grid;
-  grid-template-columns: 67px 1fr;
-  column-gap: 20px;
-  grid-template-rows: 53px auto auto;
-  row-gap: 22px;
+
 
   @media (min-width: $tablet-width) {
     min-height: 372px;
-    grid-template-columns: auto 200px;
-    column-gap: 54px;
-    grid-template-rows: auto auto auto;
-    row-gap: 0;
+    max-width: 708px;
+  }
+
+  @media (min-width: $tablet-width) {
+    min-height: 374px;
   }
 }
 
@@ -34,14 +31,20 @@
     background-size: contain;
 
     @media (min-width: $tablet-width) {
-      width: 200px;
+      width: 268px;
       height: 200px;
+      background-size: 268px 200px;
+      align-self: start;
+      margin-top: 14px;
     }
 
     @media (min-width: $desktop-width) {
+      margin: 0;
       width: 134px;
       height: 100px;
       grid-area: 1/1/2/2;
+      background-size: 134px 100px;
+      align-self: end;
     }
   }
 
@@ -53,21 +56,30 @@
 
     @media (min-width: $tablet-width) {
       width: 200px;
-      height: 200px;
+      height: 205px;
+      background-size: 200px 205px;
+      align-self: start;
+      margin-top: 13px;
     }
 
     @media (min-width: $desktop-width) {
       width: 100px;
-      height: 100px;
+      height: 106px;
       grid-area: 1/1/2/2;
+      background-size: 100px 106px;
+      margin: 0;
     }
   }
 }
 
 .diet__title {
+  text-align: left;
+  align-self: center;
   grid-area: 1/2/2/3;
 
   @media (min-width: $tablet-width) {
+    font-size: 36px;
+    line-height: 36px;
     grid-area: 1/1/2/2;
     align-self: end;
     text-align: left;
@@ -81,46 +93,26 @@
 }
 
 .diet__argument {
+  margin: 0;
   grid-area: 2/1/3/-1;
+  position: relative;
+
+  &::after {
+    content: "";
+    position: absolute;
+    height: 1px;
+    background-color: #d9d9d9;
+    left: 0;
+    right: 0;
+    bottom: -23px;
+  }
 
   @media (min-width: $tablet-width) {
     font-size: 16px;
     line-height: 24px;
     color: $black;
     grid-area: 2/1/3/2;
-  }
-
-  @media (min-width: $desktop-width) {
-    margin: 0;
-    grid-area: 2/1/3/-1;
-  }
-}
-
-.diet__link {
-  @include link-default;
-  font-family: $font-default;
-  font-size: 16px;
-  line-height: 16px;
-  padding: 20px;
-  position: relative;
-  grid-column: 1/-1;
-  justify-self: start;
-
-  &::after {
-    content: "";
-    position: absolute;
-    height: 1px;
-    width: 240px;
-    background-color: #d9d9d9;
-    left: 0;
-    top: -10px;
-  }
-
-  @media (min-width: $tablet-width) {
-    font-size: 20px;
-    line-height: 30px;
-    grid-area: 3/1/4/2;
-    align-self: end;
+    align-self: center;
 
     &::after {
       display: none;
@@ -128,8 +120,43 @@
   }
 
   @media (min-width: $desktop-width) {
+    margin: 0;
     grid-area: 2/1/3/-1;
     align-self: end;
+    padding-top: 20px;
+  }
+}
+
+.diet__link {
+  @include link-default;
+  position: relative;
+  font-family: $font-default;
+  font-size: 16px;
+  line-height: 16px;
+  padding: 20px;
+  grid-column: 1/-1;
+  padding-left: 0;
+  justify-self: start;
+  color: $black;
+
+
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+    line-height: 30px;
+    grid-area: 3/1/4/2;
+    align-self: end;
+    padding-right: 30px;
+
+    &::after {
+      display: none;
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    grid-area: 3/1/4/-1;
+    align-self: start;
+    padding-bottom: 0;
+    padding-top: 0;
   }
 }
 
@@ -137,13 +164,17 @@
   position: absolute;
   width: 24px;
   height: 12px;
-  right: -30px;
-  top: calc(1em / 2 + 12px);
+  right: -20px;
+  top: calc(1em / 2 + 15px);
   background: url("../img/icon-arrow.svg") center no-repeat;
   background-size: cover;
 
   @media (min-width: $tablet-width) {
     top: calc(1em / 2 + 20px);
+  }
+
+  @media (min-width: $desktop-width) {
+    top: 0.5em;
   }
 }
 
@@ -154,4 +185,40 @@
 .diet__link:active,
 .diet__link:active .diet__link-arrow {
   opacity: 0.3;
+}
+
+.selection-diet__fatten .diet__title {
+  padding-left: 5px;
+
+  @media (min-width: $tablet-width) {
+    align-self: start;
+    padding-left: 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    align-self: center;
+  }
+}
+
+.selection-diet__fatten .diet__argument,
+.selection-diet__fatten .diet__link {
+  padding-left: 10px;
+
+  @media (min-width: $tablet-width) {
+    padding-left: 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-left: 20px;
+  }
+}
+
+.selection-diet__fatten .diet__argument {
+  @media (min-width: $tablet-width) {
+    padding-bottom: 5px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-bottom: 0;
+  }
 }

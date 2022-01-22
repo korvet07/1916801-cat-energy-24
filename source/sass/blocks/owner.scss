@@ -1,18 +1,15 @@
-.owner__wrap {
-  display: grid;
-  grid-auto-rows: 45px;
-  row-gap: 14px;
+.owner__form-data {
   margin-bottom: 25px;
   margin-top: 35px;
 
   @media (min-width: $tablet-width) {
-    margin-bottom: 71px;
+    margin-bottom: 60px;
   }
 
   @media (min-width: $desktop-width) {
-    display: grid;
     grid-template-columns: 1fr 1fr;
-    column-gap: 78px;
-    grid-template-rows: 52px;
+    column-gap: 80px;
+    margin: 0;
+    margin-bottom: 69px;
   }
 }
