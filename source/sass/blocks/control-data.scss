@@ -1,9 +1,9 @@
 .control-data {
   position: relative;
   display: grid;
-  grid-template-columns: max-content 1fr;
-  column-gap: 12px;
-  width: 280px;
+  grid-template-columns: max-content auto;
+  column-gap: 10px;
+
 
   @media (min-width: 321px) {
     width: auto;
@@ -63,6 +63,12 @@
 
   @media (min-width: $tablet-width) {
     padding-left: 18px;
+  }
+}
+
+.form-data__owner .control-data {
+  .control-data__input {
+    padding: 7px 33px 0 15px;
   }
 }
 
