@@ -32,6 +32,10 @@
 }
 
 .control-data__input {
+  font-family: $font-default;
+  font-size: 16px;
+  line-height: 18px;
+  color: #444444;
   padding: 7px 5px 0 15px;
 
   &:invalid {
@@ -66,7 +70,7 @@
   }
 }
 
-.form-data__owner .control-data {
+.owner__form-data .control-data {
   .control-data__input {
     padding: 7px 33px 0 15px;
   }

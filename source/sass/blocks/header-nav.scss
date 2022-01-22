@@ -5,6 +5,16 @@
   font-size: 20px;
   line-height: 20px;
   color: #000000;
+
+  @media (min-width: $tablet-width) {
+    margin-left: 85px;
+    flex-grow: 1;
+  }
+
+  @media (min-width: $desktop-width) {
+    flex-grow: 0;
+    margin-left: auto;
+  }
 }
 
 .header-nav__list {
