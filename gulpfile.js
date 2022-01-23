@@ -94,10 +94,7 @@ const copy = (done) => {
     'source/fonts/*.{woff2,woff}',
     'source/*.ico',
     'source/manifest.webmanifest',
-    'source/css/style.css',
-    'source/css/style.css.map',
-    'source/css/README',
-  ], {
+     ], {
     base: 'source'
   })
     .pipe(gulp.dest('build'))

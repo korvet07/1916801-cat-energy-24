@@ -44,15 +44,26 @@
 
 .social__instagram,
 .social__icon-vk,
-.social__facebook,
-.page-footer__copyright-link > svg {
-  &:hover {
+.social__facebook {
+  &:hover,
+  &:focus {
+    transition: all 0.5s;
     stroke: $basic-green;
   }
 
   &:active {
     opacity: 0.3;
   }
+}
+
+.page-footer__copyright-link:hover > svg,
+.page-footer__copyright-link:focus > svg {
+  stroke: $basic-green;
+  transition: all 0.5s;
+}
+
+.page-footer__copyright-link:active {
+  opacity: 0.3;
 }
 
 .social__link-facebook {

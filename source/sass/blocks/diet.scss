@@ -168,6 +168,7 @@
   top: calc(1em / 2 + 15px);
   background: url("../img/icon-arrow.svg") center no-repeat;
   background-size: cover;
+  transition: all 0.3s;
 
   @media (min-width: $tablet-width) {
     top: calc(1em / 2 + 20px);
@@ -180,6 +181,7 @@
 
 .diet__link:hover .diet__link-arrow {
   width: 32px;
+  transform: translateX(8px);
 }
 
 .diet__link:active,
