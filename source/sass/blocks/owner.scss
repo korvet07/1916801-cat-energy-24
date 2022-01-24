@@ -13,3 +13,17 @@
     margin-bottom: 69px;
   }
 }
+
+.owner__form-data .control-data {
+  .control-data__input {
+    padding: 7px 33px 5px 15px;
+  }
+}
+
+.owner__form-data .control-data:first-child {
+  .control-data__input {
+    @media (min-width: $tablet-width) {
+      padding: 7px 33px 5px 22px;
+    }
+  }
+}

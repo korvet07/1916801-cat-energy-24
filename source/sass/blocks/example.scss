@@ -7,7 +7,7 @@
 
   @media (min-width: $desktop-width) {
     background-color: #f2f2f2;
-    max-height: 462px;
+    min-height: 462px;
   }
 }
 
@@ -22,15 +22,16 @@
   }
 
   @media (min-width: $desktop-width) {
-    height: 480px;
-    display: flex;
-    justify-content: space-between;
+    min-height: 480px;
+    display: grid;
+    column-gap: 59px;
+    grid-template-columns: 1fr 591px;
     max-width: 1440px;
-    margin: 0 auto;
     border: none;
     background-color: #f2f2f2;
     padding-left: 110px;
     padding-right: 110px;
+    margin: 0 auto;
   }
 }
 
@@ -171,54 +172,6 @@
   margin: 0 auto;
   margin-top: 18px;
 
-  &::before {
-    content: "";
-    position: absolute;
-    width: 41%;
-    height: 70%;
-    border: 1px solid $special_grey;
-    box-shadow: 0 1px 3px rgb(0 0 0 / 16%);
-    border-radius: 6px;
-    background-color: $white;
-    right: 30%;
-    top: 25%;
-
-    @media (min-width: $tablet-width) {
-      width: 426px;
-      height: 6px;
-      right: 80px;
-      top: 14px;
-      background-color: $special_grey;
-      bottom: 30px;
-    }
-  }
-
-  &::after {
-    content: "";
-    position: absolute;
-    width: 17%;
-    height: 30%;
-    border-radius: 6px;
-    background-color: $basic-green;
-    left: 32%;
-    top: 45%;
-    z-index: 1;
-    transition: all 0.3s ease-out;
-
-    @media (min-width: $tablet-width) {
-      width: 34px;
-      height: 34px;
-      background: url("../img/slider-control.svg") center/contain no-repeat,
-        $white;
-      background-size: 8px 8px;
-      border: 2px solid $special_grey;
-      border-radius: 50%;
-      top: 0;
-      left: 279px;
-      transition: all 1s ease-out;
-      z-index: 1;
-    }
-  }
 
   @media (min-width: $tablet-width) {
     width: 592px;
@@ -226,14 +179,14 @@
     top: -15px;
 
     &:active {
-      &::after {
+      .switcher__range-button {
         border: 2px solid $basic-green;
         box-shadow: 0 3px 5px rgba(0, 0, 0, 0.2);
       }
     }
 
     &:hover {
-      &::after {
+      .switcher__range-button {
         cursor: pointer;
         box-shadow: 0 2px 4px rgba(0, 0, 0, 0.19);
       }
@@ -349,7 +302,6 @@
 
   @media (min-width: $desktop-width) {
     top: -195px;
-    margin-left: 20px;
   }
 }
 
@@ -396,8 +348,10 @@
 }
 
 .example__result-image-skinny {
-  @media (max-width: 767px) {
-    display: none;
+  display: none;
+
+  @media (min-width: $tablet-width) {
+    display: block;
   }
 
   @media (min-width: $tablet-width) {

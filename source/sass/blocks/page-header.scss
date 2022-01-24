@@ -76,12 +76,7 @@
   &:active::after {
     background-color: fade-out($color: $black, $amount: 0.5);
   }
-}
 
-.page-header__container--closed .header-nav {
-  @media (max-width: $tablet-width) {
-    display: none;
-  }
 
   @media (min-width: $tablet-width) {
     display: block;
@@ -92,8 +87,8 @@
   display: none;
 }
 
-.page-header__container--nojs .header-nav {
-  display: block;
+.page-header__container--nojs .header-nav__list {
+  position: static;
 }
 
 .page-header__container--closed .page-header__toggle::after {

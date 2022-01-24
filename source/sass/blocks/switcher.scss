@@ -1,0 +1,48 @@
+.swtcher__range-line {
+  position: absolute;
+  width: 41%;
+  height: 70%;
+  border: 1px solid $special_grey;
+  box-shadow: 0 1px 3px rgb(0 0 0 / 16%);
+  border-radius: 6px;
+  background-color: $white;
+  right: 30%;
+  top: 25%;
+
+  @media (min-width: $tablet-width) {
+    width: 426px;
+    height: 6px;
+    right: 80px;
+    top: 14px;
+    background-color: $special_grey;
+    bottom: 30px;
+  }
+}
+
+.switcher__range-button {
+  position: absolute;
+  width: 43%;
+  height: 40%;
+  border-radius: 6px;
+  background-color: $basic-green;
+  left: 6px;
+  top: 33%;
+  z-index: 1;
+  transition: all 0.3s ease-out;
+  border: none;
+
+  @media (min-width: $tablet-width) {
+    width: 34px;
+    height: 34px;
+    background: url("../img/slider-control.svg") center/contain no-repeat,
+      $white;
+    background-size: 8px 8px;
+    border: 2px solid $special_grey;
+    border-radius: 50%;
+    top: -15px;
+    left: 196px;
+    transition: all 1s ease-out;
+    z-index: 1;
+  }
+}
+

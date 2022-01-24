@@ -1,0 +1,7 @@
+.compare-image {
+  @media (min-width: $tablet-width) {
+    max-width: initial;
+    height: 100%;
+    width: auto;
+  }
+}

@@ -108,3 +108,17 @@
     margin-top: 0;
   }
 }
+
+.page-footer__icon {
+  fill: #444444;
+}
+
+.page-footer__copyright-link:hover > svg,
+.page-footer__copyright-link:focus > svg {
+  stroke: $basic-green;
+  transition: all 0.5s;
+}
+
+.page-footer__copyright-link:active {
+  opacity: 0.3;
+}

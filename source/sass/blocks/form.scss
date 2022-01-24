@@ -6,17 +6,6 @@
   }
 }
 
-.form-data {
-  display: grid;
-  grid-auto-rows: 45px;
-  row-gap: 13px;
-
-  @media (min-width: $tablet-width) {
-    grid-auto-rows: 52px;
-    row-gap: 20px;
-  }
-}
-
 .form__data-cat {
   @include fieldset-default;
   margin-bottom: 27px;
@@ -105,66 +94,6 @@
 
   @media (min-width: $tablet-width) {
     padding: 0;
-  }
-}
-
-.form-title {
-  font-size: 24px;
-  line-height: 26px;
-  text-transform: none;
-  text-align: left;
-  max-width: 187px;
-  word-break: break-all;
-
-  &--comment {
-    padding: 0;
-    padding-bottom: 38px;
-
-    @media (min-width: $tablet-width) {
-      margin-bottom: 37px;
-    }
-  }
-
-  &--addition {
-    padding-right: 7px;
-  }
-
-  @media (min-width: $tablet-width) {
-    max-width: none;
-    font-size: 36px;
-    line-height: 36px;
-    padding: 5px 20px 40px 0;
-
-    &::before {
-      margin-top: calc(0.5em + 5px);
-      margin-right: 40px;
-    }
-
-    &::after {
-      margin-top: calc(0.5em + 5px);
-    }
-  }
-
-  @media (min-width: $desktop-width) {
-    padding: 0;
-    padding-bottom: 76px;
-
-    &::after {
-      margin-left: 40px;
-    }
-
-    &::before {
-      margin-right: 40px;
-    }
-
-    &--comment {
-      margin: 0;
-    }
-
-    &--addition {
-      padding-top: 5px;
-      padding-bottom: 45px;
-    }
   }
 }
 

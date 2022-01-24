@@ -23,8 +23,12 @@
 
   @media (min-width: $tablet-width) {
     background: $white;
-    margin-bottom: 20px;
+    margin-bottom: 267px;
     min-height: auto;
+  }
+
+  @media (min-width: $desktop-width) {
+    position: relative;
   }
 }
 
@@ -70,9 +74,9 @@
 
 .page-main__image {
   width: 280px;
-  position: absolute;
+  position: relative;
   margin: auto;
-  top: -95px;
+  top: 0;
   left: 0;
   right: 0;
   bottom: 0;
@@ -86,13 +90,14 @@
   @media (min-width: $desktop-width) {
     position: absolute;
     z-index: 1;
-    left: -60px;
+    left: 0;
+    top: 0;
   }
 }
 
 .page-main__background {
   position: relative;
-  top: -110px;
+  top: 0;
   width: 320px;
   margin: 0 auto;
 
@@ -103,12 +108,11 @@
   }
 
   @media (min-width: $desktop-width) {
-    position: relative;
+    position: absolute;
     width: 552px;
     height: 500px;
-    top: -235px;
-    left: 150px;
-    margin-bottom: -148px;
+    top: 35px;
+    left: 555px;
   }
 }
 
@@ -132,9 +136,9 @@
   }
 
   @media (min-width: $desktop-width) {
-    position: absolute;
-    top: 267px;
-    left: -395px;
+    position: relative;
+    top: 52px;
+    left: -400px;
     min-width: 244px;
   }
 }
