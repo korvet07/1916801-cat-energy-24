@@ -137,7 +137,11 @@
 }
 
 .page-header__container--closed .header-nav {
-  @media (max-width: 767px) {
+  @media (max-width: $tablet-width) {
     display: none;
+  }
+
+  @media (min-width: $tablet-width) {
+    display: block;
   }
 }
