@@ -1,4 +1,4 @@
-.swtcher__range-line {
+.switcher__range-line {
   position: absolute;
   width: 41%;
   height: 70%;
@@ -22,11 +22,11 @@
 .switcher__range-button {
   position: absolute;
   width: 43%;
-  height: 40%;
+  height: 50%;
   border-radius: 6px;
   background-color: $basic-green;
   left: 6px;
-  top: 33%;
+  top: 30%;
   z-index: 1;
   transition: all 0.3s ease-out;
   border: none;
@@ -37,7 +37,8 @@
     background: url("../img/slider-control.svg") center/contain no-repeat,
       $white;
     background-size: 8px 8px;
-    border: 2px solid $special_grey;
+    border: 1px solid $special_grey;
+    box-shadow: (0 1px 3px rgba(0, 0, 0, 0.16));
     border-radius: 50%;
     top: -15px;
     left: 196px;
@@ -45,4 +46,3 @@
     z-index: 1;
   }
 }
-

@@ -32,7 +32,12 @@
   padding-bottom: 41px;
   margin-bottom: 20px;
 
+  @media (min-width: 321px) {
+    text-align: center;
+  }
+
   @media (min-width: $tablet-width) {
+    text-align: left;
     font-size: 60px;
     line-height: 60px;
     margin-bottom: 122px;

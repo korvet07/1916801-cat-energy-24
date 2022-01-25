@@ -83,11 +83,15 @@
   font-size: 16px;
   color: $black;
   text-transform: uppercase;
+  min-height: 30px;
+  display: flex;
+  align-items: center;
 
   @media (min-width: $tablet-width) {
     font-size: 20px;
     line-height: 30px;
     padding-left: 60px;
+    min-height: 40px;
   }
 }
 
@@ -96,4 +100,13 @@
   ~.addition__label {
     opacity: 0.3;
   }
+}
+
+.addition__input:focus ~ .addition__label {
+  outline: 1px solid;
+}
+
+.addition__input:active ~ .addition__label,
+.addition__input:active ~ .addition__mark {
+  opacity: 0.3;
 }
