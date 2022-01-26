@@ -36,8 +36,8 @@
       <button class="page-header__toggle" type="button" tabindex="1">
         <span class="visually-hidden">Открыть меню</span>
       </button>
-      <nav class="header-nav">
-        <ul class="header-nav__list">
+      <nav class="header-nav page-header__nav">
+        <ul class="header-nav__list page-header__list">
           <li class="header-nav__item">
             <a class="header-nav__link" href="index.html">Главная</a>
           </li>
@@ -108,10 +108,10 @@
             <legend class="form-title title line-broken">Контактные данные (владельца кота)
             </legend>
             <div class="form-data owner__form-data">
-              <div class="control-data">
+              <div class="control-data owner__data">
                 <label class="control-data__title title" for="owner-mail" aria-label="введите e-mail">E-mail:*
                 </label>
-                <input class="control-data__input" type="email" value="kuklachev@gmail.com" id="owner-mail"
+                <input class="control-data__input owner__input" type="email" value="kuklachev@gmail.com" id="owner-mail"
                   name="owner-mail" required>
                 <span class="control-data__mail-icon">
                   <svg width="20" height="15" viewBox="0 0 20 15" fill="none">
@@ -119,10 +119,10 @@
                   </svg>
                 </span>
               </div>
-              <div class="control-data">
+              <div class="control-data owner__data">
                 <label class="control-data__title title" for="owner-tel" aria-label="введите телефон">Телефон:*</label>
-                <input class="control-data__input" type="tel" name="owner-tel" id="owner-tel" value="8 (960) 900-60-90"
-                  required>
+                <input class="control-data__input owner__input" type="tel" name="owner-tel" id="owner-tel"
+                  value="8 (960) 900-60-90" required>
                 <span class="control-data__tel-icon">
                   <svg width="20" height="21" viewBox="0 0 20 21">
                     <use xlink:href="img/sprite.svg#icon-tel"></use>

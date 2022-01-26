@@ -71,7 +71,7 @@
   }
 }
 
-.selection-diet__fatten .diet__title {
+.selection-diet__title-fatten {
   padding-left: 5px;
 
   @media (min-width: $tablet-width) {
@@ -84,8 +84,8 @@
   }
 }
 
-.selection-diet__fatten .diet__argument,
-.selection-diet__fatten .diet__link {
+.selection-diet__argument-fatten,
+.selection-diet__link-fatten {
   padding-left: 10px;
 
   @media (min-width: $tablet-width) {
@@ -97,7 +97,7 @@
   }
 }
 
-.selection-diet__fatten .diet__argument {
+.selection-diet__argument-fatten {
   @media (min-width: $tablet-width) {
     padding-bottom: 5px;
   }

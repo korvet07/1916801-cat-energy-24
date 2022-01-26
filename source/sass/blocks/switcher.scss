@@ -45,4 +45,8 @@
     transition: all 1s ease-out;
     z-index: 1;
   }
+
+  @media (min-width: $tablet-width) {
+    left: 190px;
+  }
 }

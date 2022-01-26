@@ -82,7 +82,7 @@
   display: none;
 }
 
-.page-header__container--nojs .header-nav__list {
+.page-header__container--nojs .page-header__list {
   position: static;
 }
 
@@ -128,4 +128,23 @@
 
 .page-header__name-shop-image {
   margin-top: 5px;
+}
+
+.page-header__container--nojs .page-header__nav {
+  display: block;
+}
+
+.page-header__container--closed .page-header__nav {
+  @media (max-width: $tablet-width) {
+    display: none;
+  }
+
+  @media (min-width: $tablet-width) {
+    display: block;
+  }
+}
+
+.page-header__container--closed .page-header__toggle:active::after {
+  background-color: rgba($color: $black, $alpha: 0.5);
+  cursor: pointer;
 }

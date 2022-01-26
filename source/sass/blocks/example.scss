@@ -22,6 +22,7 @@
   }
 
   @media (min-width: $desktop-width) {
+    position: relative;
     display: grid;
     column-gap: 59px;
     grid-template-columns: 1fr 591px;
@@ -80,6 +81,7 @@
     background-color: #f2f2f2;
     margin-top: auto;
     min-width: 592px;
+    position: static;
   }
 }
 
@@ -242,6 +244,10 @@
     width: 650px;
     height: 511px;
   }
+
+  @media (min-width: $desktop-width) {
+    width: 649px;
+  }
 }
 
 .example__title {
@@ -301,6 +307,8 @@
 
   @media (min-width: $desktop-width) {
     top: -180px;
+    right: 90px;
+    left: auto;
   }
 }
 
