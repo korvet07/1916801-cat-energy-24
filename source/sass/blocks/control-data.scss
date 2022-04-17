@@ -36,7 +36,8 @@
   font-size: 16px;
   line-height: 18px;
   color: #444444;
-  padding: 7px 5px 0 15px;
+  padding: 7px 5px 5px 18px;
+  text-transform: uppercase;
 
   &:invalid {
     border: 2px solid $status_error;
@@ -66,13 +67,9 @@
   }
 
   @media (min-width: $tablet-width) {
+    font-size: 20px;
+    line-height: 30px;
     padding-left: 18px;
-  }
-}
-
-.owner__form-data .control-data {
-  .control-data__input {
-    padding: 7px 33px 0 15px;
   }
 }
 

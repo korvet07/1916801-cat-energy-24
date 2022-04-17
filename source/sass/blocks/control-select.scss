@@ -34,6 +34,7 @@
   padding-left: 45px;
   cursor: pointer;
 
+
   @media (min-width: $tablet-width) {
     font-size: 20px;
     line-height: 30px;
@@ -79,6 +80,19 @@
 
 .control-select__input:hover + .control-select__mark {
   border: 1px solid #bababa;
+}
+
+.control-select__input:active + .control-select__mark {
+  opacity: 0.3;
+}
+
+.control-select__input:focus ~ .control-select__title {
+  outline: 1px solid;
+  outline-offset: 10px;
+}
+
+.control-select__input:not(:disabled) ~ .control-select__title:active {
+  opacity: 0.3;
 }
 
 .control-select__input:disabled {

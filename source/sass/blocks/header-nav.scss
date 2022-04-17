@@ -6,6 +6,7 @@
   line-height: 20px;
   color: #000000;
 
+
   @media (min-width: $tablet-width) {
     margin-left: 85px;
     flex-grow: 1;
@@ -14,52 +15,6 @@
   @media (min-width: $desktop-width) {
     flex-grow: 0;
     margin-left: auto;
-  }
-}
-
-.header-nav__list {
-  @include list-default;
-  position: absolute;
-  z-index: 1;
-  background-color: $white;
-  left: 0;
-  min-width: 320px;
-  display: flex;
-  flex-wrap: wrap;
-  width: 100%;
-
-  @media (min-width: $tablet-width) {
-    position: static;
-  }
-
-  @media (min-width: $desktop-width) {
-    min-height: 110px;
-    min-width: 478px;
-    align-items: flex-end;
-  }
-}
-
-.header-nav__list--index-bg {
-  @media (min-width: $desktop-width) {
-    position: relative;
-    color: $white;
-
-    &::before {
-      content: "";
-      position: absolute;
-      top: 0;
-      left: -132px;
-      width: calc(100vw - 720px);
-      height: 694px;
-      background: linear-gradient(rgba(104, 183, 56, 0.85), rgba(104, 183, 56, 0.85)),
-        url("../img/index-background-desktop.jpg") center/cover no-repeat;
-      z-index: -1;
-
-      @media (min-resolution: 2dppx) {
-        background: linear-gradient(rgba(104, 183, 56, 0.85), rgba(104, 183, 56, 0.85)),
-          url("../img/bg-image-cat-desctop@2x.jpg") center/cover no-repeat;
-      }
-    }
   }
 }
 
@@ -124,9 +79,48 @@
   }
 }
 
-.header-nav--closed .page-header__toggle:active::after {
-  background-color: rgba($color: $black, $alpha: 0.5);
-  box-shadow: 0 8px 0 0 rgba($color: $black, $alpha: 0.5),
-    0 16px 0 0 rgba($color: $black, $alpha: 0.5);
-  cursor: pointer;
+.header-nav__list {
+  @include list-default;
+  position: absolute;
+  z-index: 1;
+  background-color: $white;
+  left: 0;
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+
+  @media (min-width: $tablet-width) {
+    position: static;
+  }
+
+  @media (min-width: $desktop-width) {
+    max-width: 550px;
+    min-height: 110px;
+    min-width: 478px;
+    align-items: flex-end;
+  }
+}
+
+.header-nav__list--index-bg {
+  @media (min-width: $desktop-width) {
+    position: relative;
+    color: $white;
+
+    &::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: -132px;
+      width: calc(100vw - 720px);
+      height: 694px;
+      background: linear-gradient(rgba(104, 183, 56, 0.85), rgba(104, 183, 56, 0.85)),
+        url("../img/index-background-desktop.jpg") center/cover no-repeat;
+      z-index: -1;
+
+      @media (min-resolution: 2dppx) {
+        background: linear-gradient(rgba(104, 183, 56, 0.85), rgba(104, 183, 56, 0.85)),
+          url("../img/bg-image-cat-desctop@2x.jpg") center/cover no-repeat;
+      }
+    }
+  }
 }

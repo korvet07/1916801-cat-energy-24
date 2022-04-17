@@ -70,3 +70,39 @@
     row-gap: 23px;
   }
 }
+
+.selection-diet__title-fatten {
+  padding-left: 5px;
+
+  @media (min-width: $tablet-width) {
+    align-self: start;
+    padding-left: 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    align-self: center;
+  }
+}
+
+.selection-diet__argument-fatten,
+.selection-diet__link-fatten {
+  padding-left: 10px;
+
+  @media (min-width: $tablet-width) {
+    padding-left: 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-left: 20px;
+  }
+}
+
+.selection-diet__argument-fatten {
+  @media (min-width: $tablet-width) {
+    padding-bottom: 5px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-bottom: 0;
+  }
+}

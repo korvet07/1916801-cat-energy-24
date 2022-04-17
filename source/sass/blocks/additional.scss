@@ -1,3 +1,9 @@
+.additional {
+  @media (min-width: $desktop-width) {
+    margin-bottom: 86px;
+  }
+}
+
 .additional__action {
   display: flex;
   flex-direction: column;

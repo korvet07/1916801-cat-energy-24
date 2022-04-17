@@ -38,15 +38,12 @@
   }
 }
 
-.page-footer__icon {
-  fill: #444444;
-}
-
 .social__instagram,
 .social__icon-vk,
-.social__facebook,
-.page-footer__copyright-link > svg {
-  &:hover {
+.social__facebook {
+  &:hover,
+  &:focus {
+    transition: all 0.5s;
     stroke: $basic-green;
   }
 

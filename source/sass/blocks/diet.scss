@@ -168,6 +168,7 @@
   top: calc(1em / 2 + 15px);
   background: url("../img/icon-arrow.svg") center no-repeat;
   background-size: cover;
+  transition: all 0.3s;
 
   @media (min-width: $tablet-width) {
     top: calc(1em / 2 + 20px);
@@ -180,45 +181,10 @@
 
 .diet__link:hover .diet__link-arrow {
   width: 32px;
+  transform: translateX(8px);
 }
 
 .diet__link:active,
 .diet__link:active .diet__link-arrow {
   opacity: 0.3;
-}
-
-.selection-diet__fatten .diet__title {
-  padding-left: 5px;
-
-  @media (min-width: $tablet-width) {
-    align-self: start;
-    padding-left: 0;
-  }
-
-  @media (min-width: $desktop-width) {
-    align-self: center;
-  }
-}
-
-.selection-diet__fatten .diet__argument,
-.selection-diet__fatten .diet__link {
-  padding-left: 10px;
-
-  @media (min-width: $tablet-width) {
-    padding-left: 0;
-  }
-
-  @media (min-width: $desktop-width) {
-    padding-left: 20px;
-  }
-}
-
-.selection-diet__fatten .diet__argument {
-  @media (min-width: $tablet-width) {
-    padding-bottom: 5px;
-  }
-
-  @media (min-width: $desktop-width) {
-    padding-bottom: 0;
-  }
 }

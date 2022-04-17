@@ -6,20 +6,9 @@
   }
 }
 
-.form-data {
-  display: grid;
-  grid-auto-rows: 45px;
-  row-gap: 13px;
-
-  @media (min-width: $tablet-width) {
-    grid-auto-rows: 52px;
-    row-gap: 20px;
-  }
-}
-
 .form__data-cat {
   @include fieldset-default;
-  margin-bottom: 27px;
+  margin-bottom: 24px;
 
   @media (min-width: $tablet-width) {
     margin-bottom: 72px;
@@ -62,32 +51,19 @@
 
 .form__select {
   @include fieldset-default;
-  position: relative;
-
-
-  &::after,
-  &::before {
-    background-color: #d9d9d9;
-  }
-
-  &::after {
-    bottom: 25px;
-  }
+  font-family: $font-default;
+  font-size: 16px;
+  line-height: 18px;
+  color: #222222;
+  margin-bottom: 25px;
 
   @media (min-width: $tablet-width) {
-    display: grid;
-    grid-auto-rows: 40px;
-    row-gap: 13px;
     min-width: 630px;
     min-height: 196px;
     border: 1px solid #e7e7e7;
-    padding-left: 28px;
     margin-bottom: 71px;
-
-    &::after,
-    &::before {
-      display: none;
-    }
+    font-size: 20px;
+    line-height: 30px;
   }
 
   @media (min-width: $desktop-width) {
@@ -99,70 +75,26 @@
 
 .form__select-list {
   @include list-default;
-  min-height: 157px;
+  position: relative;
+  padding-top: 22px;
   padding-bottom: 20px;
-  margin-top: 22px;
 
-  @media (min-width: $tablet-width) {
-    padding: 0;
-  }
-}
 
-.form-title {
-  font-size: 24px;
-  line-height: 26px;
-  text-transform: none;
-  text-align: left;
-  max-width: 187px;
-  word-break: break-all;
-
-  &--comment {
-    padding: 0;
-    padding-bottom: 38px;
-
-    @media (min-width: $tablet-width) {
-      margin-bottom: 37px;
-    }
+  &::after,
+  &::before {
+    background-color: #d9d9d9;
   }
 
-  &--addition {
-    padding-right: 7px;
+  &::after {
+    bottom: 0;
   }
 
   @media (min-width: $tablet-width) {
-    max-width: none;
-    font-size: 36px;
-    line-height: 36px;
-    padding: 5px 20px 40px 0;
+    padding: 25px 0  25px 28px;
 
+    &::after,
     &::before {
-      margin-top: calc(0.5em + 5px);
-      margin-right: 40px;
-    }
-
-    &::after {
-      margin-top: calc(0.5em + 5px);
-    }
-  }
-
-  @media (min-width: $desktop-width) {
-    padding: 0;
-    padding-bottom: 76px;
-
-    &::after {
-      margin-left: 40px;
-    }
-
-    &::before {
-      margin-right: 40px;
-    }
-
-    &--comment {
-      margin: 0;
-    }
-
-    &--addition {
-      padding-bottom: 45px;
+      display: none;
     }
   }
 }
